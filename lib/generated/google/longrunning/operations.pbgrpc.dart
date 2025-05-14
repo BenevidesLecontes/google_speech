@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/longrunning/operations.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -49,10 +49,7 @@ class OperationsClient extends $grpc.Client {
           ($0.WaitOperationRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $0.Operation.fromBuffer(value));
 
-  OperationsClient($grpc.ClientChannel channel,
-      {$grpc.CallOptions? options,
-      $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options, interceptors: interceptors);
+  OperationsClient(super.channel, {super.options, super.interceptors});
 
   $grpc.ResponseFuture<$0.ListOperationsResponse> listOperations(
       $0.ListOperationsRequest request,
@@ -134,29 +131,29 @@ abstract class OperationsServiceBase extends $grpc.Service {
   }
 
   $async.Future<$0.ListOperationsResponse> listOperations_Pre(
-      $grpc.ServiceCall call,
-      $async.Future<$0.ListOperationsRequest> request) async {
-    return listOperations(call, await request);
+      $grpc.ServiceCall $call,
+      $async.Future<$0.ListOperationsRequest> $request) async {
+    return listOperations($call, await $request);
   }
 
-  $async.Future<$0.Operation> getOperation_Pre($grpc.ServiceCall call,
-      $async.Future<$0.GetOperationRequest> request) async {
-    return getOperation(call, await request);
+  $async.Future<$0.Operation> getOperation_Pre($grpc.ServiceCall $call,
+      $async.Future<$0.GetOperationRequest> $request) async {
+    return getOperation($call, await $request);
   }
 
-  $async.Future<$1.Empty> deleteOperation_Pre($grpc.ServiceCall call,
-      $async.Future<$0.DeleteOperationRequest> request) async {
-    return deleteOperation(call, await request);
+  $async.Future<$1.Empty> deleteOperation_Pre($grpc.ServiceCall $call,
+      $async.Future<$0.DeleteOperationRequest> $request) async {
+    return deleteOperation($call, await $request);
   }
 
-  $async.Future<$1.Empty> cancelOperation_Pre($grpc.ServiceCall call,
-      $async.Future<$0.CancelOperationRequest> request) async {
-    return cancelOperation(call, await request);
+  $async.Future<$1.Empty> cancelOperation_Pre($grpc.ServiceCall $call,
+      $async.Future<$0.CancelOperationRequest> $request) async {
+    return cancelOperation($call, await $request);
   }
 
-  $async.Future<$0.Operation> waitOperation_Pre($grpc.ServiceCall call,
-      $async.Future<$0.WaitOperationRequest> request) async {
-    return waitOperation(call, await request);
+  $async.Future<$0.Operation> waitOperation_Pre($grpc.ServiceCall $call,
+      $async.Future<$0.WaitOperationRequest> $request) async {
+    return waitOperation($call, await $request);
   }
 
   $async.Future<$0.ListOperationsResponse> listOperations(

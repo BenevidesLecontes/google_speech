@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/api/monitored_resource.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -16,6 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../protobuf/struct.pb.dart' as $1;
 import 'label.pb.dart' as $0;
 import 'launch_stage.pbenum.dart' as $2;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 ///  An object that describes the schema of a
 ///  [MonitoredResource][google.api.MonitoredResource] object using a type name
@@ -112,7 +114,7 @@ class MonitoredResourceDescriptor extends $pb.GeneratedMessage {
 
   /// Required. The monitored resource type. For example, the type
   /// `"cloudsql_database"` represents databases in Google Cloud SQL.
-  ///  For a list of types, see [Monitoring resource
+  ///  For a list of types, see [Monitored resource
   ///  types](https://cloud.google.com/monitoring/api/resources)
   /// and [Logging resource
   /// types](https://cloud.google.com/logging/docs/api/v2/resource-list).
@@ -126,7 +128,7 @@ class MonitoredResourceDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// Optional. A concise name for the monitored resource type that might be
   /// displayed in user interfaces. It should be a Title Cased Noun Phrase,
@@ -142,7 +144,7 @@ class MonitoredResourceDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasDisplayName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearDisplayName() => clearField(2);
+  void clearDisplayName() => $_clearField(2);
 
   /// Optional. A detailed description of the monitored resource type that might
   /// be used in documentation.
@@ -156,13 +158,13 @@ class MonitoredResourceDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 
   /// Required. A set of labels used to describe instances of this monitored
   /// resource type. For example, an individual Google Cloud SQL database is
   /// identified by values for the labels `"database_id"` and `"zone"`.
   @$pb.TagNumber(4)
-  $core.List<$0.LabelDescriptor> get labels => $_getList(3);
+  $pb.PbList<$0.LabelDescriptor> get labels => $_getList(3);
 
   /// Optional. The resource name of the monitored resource descriptor:
   /// `"projects/{project_id}/monitoredResourceDescriptors/{type}"` where
@@ -180,20 +182,20 @@ class MonitoredResourceDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearName() => clearField(5);
+  void clearName() => $_clearField(5);
 
   /// Optional. The launch stage of the monitored resource definition.
   @$pb.TagNumber(7)
   $2.LaunchStage get launchStage => $_getN(5);
   @$pb.TagNumber(7)
   set launchStage($2.LaunchStage v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasLaunchStage() => $_has(5);
   @$pb.TagNumber(7)
-  void clearLaunchStage() => clearField(7);
+  void clearLaunchStage() => $_clearField(7);
 }
 
 ///  An object representing a resource that can be used for monitoring, logging,
@@ -215,14 +217,14 @@ class MonitoredResourceDescriptor extends $pb.GeneratedMessage {
 class MonitoredResource extends $pb.GeneratedMessage {
   factory MonitoredResource({
     $core.String? type,
-    $core.Map<$core.String, $core.String>? labels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? labels,
   }) {
     final $result = create();
     if (type != null) {
       $result.type = type;
     }
     if (labels != null) {
-      $result.labels.addAll(labels);
+      $result.labels.addEntries(labels);
     }
     return $result;
   }
@@ -286,13 +288,13 @@ class MonitoredResource extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearType() => clearField(1);
+  void clearType() => $_clearField(1);
 
   /// Required. Values for all of the labels listed in the associated monitored
   /// resource descriptor. For example, Compute Engine VM instances use the
   /// labels `"project_id"`, `"instance_id"`, and `"zone"`.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $core.String> get labels => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get labels => $_getMap(1);
 }
 
 /// Auxiliary metadata for a [MonitoredResource][google.api.MonitoredResource]
@@ -304,14 +306,14 @@ class MonitoredResource extends $pb.GeneratedMessage {
 class MonitoredResourceMetadata extends $pb.GeneratedMessage {
   factory MonitoredResourceMetadata({
     $1.Struct? systemLabels,
-    $core.Map<$core.String, $core.String>? userLabels,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? userLabels,
   }) {
     final $result = create();
     if (systemLabels != null) {
       $result.systemLabels = systemLabels;
     }
     if (userLabels != null) {
-      $result.userLabels.addAll(userLabels);
+      $result.userLabels.addEntries(userLabels);
     }
     return $result;
   }
@@ -375,19 +377,19 @@ class MonitoredResourceMetadata extends $pb.GeneratedMessage {
   $1.Struct get systemLabels => $_getN(0);
   @$pb.TagNumber(1)
   set systemLabels($1.Struct v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasSystemLabels() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSystemLabels() => clearField(1);
+  void clearSystemLabels() => $_clearField(1);
   @$pb.TagNumber(1)
   $1.Struct ensureSystemLabels() => $_ensure(0);
 
   /// Output only. A map of user-defined metadata labels.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $core.String> get userLabels => $_getMap(1);
+  $pb.PbMap<$core.String, $core.String> get userLabels => $_getMap(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

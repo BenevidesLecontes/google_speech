@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/cloud/speech/v2/cloud_speech.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -18,6 +18,8 @@ import '../../../protobuf/field_mask.pb.dart' as $4;
 import '../../../protobuf/timestamp.pb.dart' as $3;
 import '../../../rpc/status.pb.dart' as $6;
 import 'cloud_speech.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'cloud_speech.pbenum.dart';
 
@@ -95,13 +97,13 @@ class CreateRecognizerRequest extends $pb.GeneratedMessage {
   Recognizer get recognizer => $_getN(0);
   @$pb.TagNumber(1)
   set recognizer(Recognizer v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasRecognizer() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRecognizer() => clearField(1);
+  void clearRecognizer() => $_clearField(1);
   @$pb.TagNumber(1)
   Recognizer ensureRecognizer() => $_ensure(0);
 
@@ -117,7 +119,7 @@ class CreateRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasValidateOnly() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValidateOnly() => clearField(2);
+  void clearValidateOnly() => $_clearField(2);
 
   ///  The ID to use for the Recognizer, which will become the final component of
   ///  the Recognizer's resource name.
@@ -134,7 +136,7 @@ class CreateRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRecognizerId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearRecognizerId() => clearField(3);
+  void clearRecognizerId() => $_clearField(3);
 
   /// Required. The project and location where this Recognizer will be created.
   /// The expected format is `projects/{project}/locations/{location}`.
@@ -148,7 +150,7 @@ class CreateRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasParent() => $_has(3);
   @$pb.TagNumber(4)
-  void clearParent() => clearField(4);
+  void clearParent() => $_clearField(4);
 }
 
 enum OperationMetadata_Request {
@@ -387,24 +389,24 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   OperationMetadata_Request whichRequest() =>
       _OperationMetadata_RequestByTag[$_whichOneof(0)]!;
-  void clearRequest() => clearField($_whichOneof(0));
+  void clearRequest() => $_clearField($_whichOneof(0));
 
   OperationMetadata_Metadata whichMetadata() =>
       _OperationMetadata_MetadataByTag[$_whichOneof(1)]!;
-  void clearMetadata() => clearField($_whichOneof(1));
+  void clearMetadata() => $_clearField($_whichOneof(1));
 
   /// The time the operation was created.
   @$pb.TagNumber(1)
   $3.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
   set createTime($3.Timestamp v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCreateTime() => clearField(1);
+  void clearCreateTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $3.Timestamp ensureCreateTime() => $_ensure(0);
 
@@ -413,13 +415,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   $3.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
   set updateTime($3.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUpdateTime() => clearField(2);
+  void clearUpdateTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $3.Timestamp ensureUpdateTime() => $_ensure(1);
 
@@ -434,7 +436,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasResource() => $_has(2);
   @$pb.TagNumber(3)
-  void clearResource() => clearField(3);
+  void clearResource() => $_clearField(3);
 
   /// The method that triggered the operation.
   @$pb.TagNumber(4)
@@ -447,7 +449,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMethod() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMethod() => clearField(4);
+  void clearMethod() => $_clearField(4);
 
   /// The [KMS key
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#keys) with which
@@ -463,7 +465,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasKmsKeyName() => $_has(4);
   @$pb.TagNumber(6)
-  void clearKmsKeyName() => clearField(6);
+  void clearKmsKeyName() => $_clearField(6);
 
   /// The [KMS key version
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#key_versions)
@@ -479,20 +481,20 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasKmsKeyVersionName() => $_has(5);
   @$pb.TagNumber(7)
-  void clearKmsKeyVersionName() => clearField(7);
+  void clearKmsKeyVersionName() => $_clearField(7);
 
   /// The BatchRecognizeRequest that spawned the Operation.
   @$pb.TagNumber(8)
   BatchRecognizeRequest get batchRecognizeRequest => $_getN(6);
   @$pb.TagNumber(8)
   set batchRecognizeRequest(BatchRecognizeRequest v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasBatchRecognizeRequest() => $_has(6);
   @$pb.TagNumber(8)
-  void clearBatchRecognizeRequest() => clearField(8);
+  void clearBatchRecognizeRequest() => $_clearField(8);
   @$pb.TagNumber(8)
   BatchRecognizeRequest ensureBatchRecognizeRequest() => $_ensure(6);
 
@@ -501,13 +503,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   CreateRecognizerRequest get createRecognizerRequest => $_getN(7);
   @$pb.TagNumber(9)
   set createRecognizerRequest(CreateRecognizerRequest v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasCreateRecognizerRequest() => $_has(7);
   @$pb.TagNumber(9)
-  void clearCreateRecognizerRequest() => clearField(9);
+  void clearCreateRecognizerRequest() => $_clearField(9);
   @$pb.TagNumber(9)
   CreateRecognizerRequest ensureCreateRecognizerRequest() => $_ensure(7);
 
@@ -516,13 +518,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   UpdateRecognizerRequest get updateRecognizerRequest => $_getN(8);
   @$pb.TagNumber(10)
   set updateRecognizerRequest(UpdateRecognizerRequest v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasUpdateRecognizerRequest() => $_has(8);
   @$pb.TagNumber(10)
-  void clearUpdateRecognizerRequest() => clearField(10);
+  void clearUpdateRecognizerRequest() => $_clearField(10);
   @$pb.TagNumber(10)
   UpdateRecognizerRequest ensureUpdateRecognizerRequest() => $_ensure(8);
 
@@ -531,13 +533,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   DeleteRecognizerRequest get deleteRecognizerRequest => $_getN(9);
   @$pb.TagNumber(11)
   set deleteRecognizerRequest(DeleteRecognizerRequest v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasDeleteRecognizerRequest() => $_has(9);
   @$pb.TagNumber(11)
-  void clearDeleteRecognizerRequest() => clearField(11);
+  void clearDeleteRecognizerRequest() => $_clearField(11);
   @$pb.TagNumber(11)
   DeleteRecognizerRequest ensureDeleteRecognizerRequest() => $_ensure(9);
 
@@ -546,13 +548,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   UndeleteRecognizerRequest get undeleteRecognizerRequest => $_getN(10);
   @$pb.TagNumber(12)
   set undeleteRecognizerRequest(UndeleteRecognizerRequest v) {
-    setField(12, v);
+    $_setField(12, v);
   }
 
   @$pb.TagNumber(12)
   $core.bool hasUndeleteRecognizerRequest() => $_has(10);
   @$pb.TagNumber(12)
-  void clearUndeleteRecognizerRequest() => clearField(12);
+  void clearUndeleteRecognizerRequest() => $_clearField(12);
   @$pb.TagNumber(12)
   UndeleteRecognizerRequest ensureUndeleteRecognizerRequest() => $_ensure(10);
 
@@ -561,13 +563,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   CreateCustomClassRequest get createCustomClassRequest => $_getN(11);
   @$pb.TagNumber(13)
   set createCustomClassRequest(CreateCustomClassRequest v) {
-    setField(13, v);
+    $_setField(13, v);
   }
 
   @$pb.TagNumber(13)
   $core.bool hasCreateCustomClassRequest() => $_has(11);
   @$pb.TagNumber(13)
-  void clearCreateCustomClassRequest() => clearField(13);
+  void clearCreateCustomClassRequest() => $_clearField(13);
   @$pb.TagNumber(13)
   CreateCustomClassRequest ensureCreateCustomClassRequest() => $_ensure(11);
 
@@ -576,13 +578,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   UpdateCustomClassRequest get updateCustomClassRequest => $_getN(12);
   @$pb.TagNumber(14)
   set updateCustomClassRequest(UpdateCustomClassRequest v) {
-    setField(14, v);
+    $_setField(14, v);
   }
 
   @$pb.TagNumber(14)
   $core.bool hasUpdateCustomClassRequest() => $_has(12);
   @$pb.TagNumber(14)
-  void clearUpdateCustomClassRequest() => clearField(14);
+  void clearUpdateCustomClassRequest() => $_clearField(14);
   @$pb.TagNumber(14)
   UpdateCustomClassRequest ensureUpdateCustomClassRequest() => $_ensure(12);
 
@@ -591,13 +593,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   DeleteCustomClassRequest get deleteCustomClassRequest => $_getN(13);
   @$pb.TagNumber(15)
   set deleteCustomClassRequest(DeleteCustomClassRequest v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasDeleteCustomClassRequest() => $_has(13);
   @$pb.TagNumber(15)
-  void clearDeleteCustomClassRequest() => clearField(15);
+  void clearDeleteCustomClassRequest() => $_clearField(15);
   @$pb.TagNumber(15)
   DeleteCustomClassRequest ensureDeleteCustomClassRequest() => $_ensure(13);
 
@@ -606,13 +608,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   UndeleteCustomClassRequest get undeleteCustomClassRequest => $_getN(14);
   @$pb.TagNumber(16)
   set undeleteCustomClassRequest(UndeleteCustomClassRequest v) {
-    setField(16, v);
+    $_setField(16, v);
   }
 
   @$pb.TagNumber(16)
   $core.bool hasUndeleteCustomClassRequest() => $_has(14);
   @$pb.TagNumber(16)
-  void clearUndeleteCustomClassRequest() => clearField(16);
+  void clearUndeleteCustomClassRequest() => $_clearField(16);
   @$pb.TagNumber(16)
   UndeleteCustomClassRequest ensureUndeleteCustomClassRequest() => $_ensure(14);
 
@@ -621,13 +623,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   CreatePhraseSetRequest get createPhraseSetRequest => $_getN(15);
   @$pb.TagNumber(17)
   set createPhraseSetRequest(CreatePhraseSetRequest v) {
-    setField(17, v);
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasCreatePhraseSetRequest() => $_has(15);
   @$pb.TagNumber(17)
-  void clearCreatePhraseSetRequest() => clearField(17);
+  void clearCreatePhraseSetRequest() => $_clearField(17);
   @$pb.TagNumber(17)
   CreatePhraseSetRequest ensureCreatePhraseSetRequest() => $_ensure(15);
 
@@ -636,13 +638,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   UpdatePhraseSetRequest get updatePhraseSetRequest => $_getN(16);
   @$pb.TagNumber(18)
   set updatePhraseSetRequest(UpdatePhraseSetRequest v) {
-    setField(18, v);
+    $_setField(18, v);
   }
 
   @$pb.TagNumber(18)
   $core.bool hasUpdatePhraseSetRequest() => $_has(16);
   @$pb.TagNumber(18)
-  void clearUpdatePhraseSetRequest() => clearField(18);
+  void clearUpdatePhraseSetRequest() => $_clearField(18);
   @$pb.TagNumber(18)
   UpdatePhraseSetRequest ensureUpdatePhraseSetRequest() => $_ensure(16);
 
@@ -651,13 +653,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   DeletePhraseSetRequest get deletePhraseSetRequest => $_getN(17);
   @$pb.TagNumber(19)
   set deletePhraseSetRequest(DeletePhraseSetRequest v) {
-    setField(19, v);
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasDeletePhraseSetRequest() => $_has(17);
   @$pb.TagNumber(19)
-  void clearDeletePhraseSetRequest() => clearField(19);
+  void clearDeletePhraseSetRequest() => $_clearField(19);
   @$pb.TagNumber(19)
   DeletePhraseSetRequest ensureDeletePhraseSetRequest() => $_ensure(17);
 
@@ -666,13 +668,13 @@ class OperationMetadata extends $pb.GeneratedMessage {
   UndeletePhraseSetRequest get undeletePhraseSetRequest => $_getN(18);
   @$pb.TagNumber(20)
   set undeletePhraseSetRequest(UndeletePhraseSetRequest v) {
-    setField(20, v);
+    $_setField(20, v);
   }
 
   @$pb.TagNumber(20)
   $core.bool hasUndeletePhraseSetRequest() => $_has(18);
   @$pb.TagNumber(20)
-  void clearUndeletePhraseSetRequest() => clearField(20);
+  void clearUndeletePhraseSetRequest() => $_clearField(20);
   @$pb.TagNumber(20)
   UndeletePhraseSetRequest ensureUndeletePhraseSetRequest() => $_ensure(18);
 
@@ -683,7 +685,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(21)
   set updateConfigRequest(UpdateConfigRequest v) {
-    setField(21, v);
+    $_setField(21, v);
   }
 
   @$core.Deprecated('This field is deprecated.')
@@ -691,7 +693,7 @@ class OperationMetadata extends $pb.GeneratedMessage {
   $core.bool hasUpdateConfigRequest() => $_has(19);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(21)
-  void clearUpdateConfigRequest() => clearField(21);
+  void clearUpdateConfigRequest() => $_clearField(21);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(21)
   UpdateConfigRequest ensureUpdateConfigRequest() => $_ensure(19);
@@ -708,20 +710,20 @@ class OperationMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   $core.bool hasProgressPercent() => $_has(20);
   @$pb.TagNumber(22)
-  void clearProgressPercent() => clearField(22);
+  void clearProgressPercent() => $_clearField(22);
 
   /// Metadata specific to the BatchRecognize method.
   @$pb.TagNumber(23)
   BatchRecognizeMetadata get batchRecognizeMetadata => $_getN(21);
   @$pb.TagNumber(23)
   set batchRecognizeMetadata(BatchRecognizeMetadata v) {
-    setField(23, v);
+    $_setField(23, v);
   }
 
   @$pb.TagNumber(23)
   $core.bool hasBatchRecognizeMetadata() => $_has(21);
   @$pb.TagNumber(23)
-  void clearBatchRecognizeMetadata() => clearField(23);
+  void clearBatchRecognizeMetadata() => $_clearField(23);
   @$pb.TagNumber(23)
   BatchRecognizeMetadata ensureBatchRecognizeMetadata() => $_ensure(21);
 }
@@ -806,7 +808,7 @@ class ListRecognizersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
-  void clearParent() => clearField(1);
+  void clearParent() => $_clearField(1);
 
   /// The maximum number of Recognizers to return. The service may return fewer
   /// than this value. If unspecified, at most 5 Recognizers will be returned.
@@ -821,7 +823,7 @@ class ListRecognizersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPageSize() => clearField(2);
+  void clearPageSize() => $_clearField(2);
 
   ///  A page token, received from a previous
   ///  [ListRecognizers][google.cloud.speech.v2.Speech.ListRecognizers] call.
@@ -840,7 +842,7 @@ class ListRecognizersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPageToken() => clearField(3);
+  void clearPageToken() => $_clearField(3);
 
   /// Whether, or not, to show resources that have been deleted.
   @$pb.TagNumber(4)
@@ -853,7 +855,7 @@ class ListRecognizersRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasShowDeleted() => $_has(3);
   @$pb.TagNumber(4)
-  void clearShowDeleted() => clearField(4);
+  void clearShowDeleted() => $_clearField(4);
 }
 
 /// Response message for the
@@ -918,7 +920,7 @@ class ListRecognizersResponse extends $pb.GeneratedMessage {
 
   /// The list of requested Recognizers.
   @$pb.TagNumber(1)
-  $core.List<Recognizer> get recognizers => $_getList(0);
+  $pb.PbList<Recognizer> get recognizers => $_getList(0);
 
   /// A token, which can be sent as
   /// [page_token][google.cloud.speech.v2.ListRecognizersRequest.page_token] to
@@ -934,7 +936,7 @@ class ListRecognizersResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNextPageToken() => clearField(2);
+  void clearNextPageToken() => $_clearField(2);
 }
 
 /// Request message for the
@@ -1001,7 +1003,7 @@ class GetRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 }
 
 /// Request message for the
@@ -1077,13 +1079,13 @@ class UpdateRecognizerRequest extends $pb.GeneratedMessage {
   Recognizer get recognizer => $_getN(0);
   @$pb.TagNumber(1)
   set recognizer(Recognizer v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasRecognizer() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRecognizer() => clearField(1);
+  void clearRecognizer() => $_clearField(1);
   @$pb.TagNumber(1)
   Recognizer ensureRecognizer() => $_ensure(0);
 
@@ -1093,13 +1095,13 @@ class UpdateRecognizerRequest extends $pb.GeneratedMessage {
   $4.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
   set updateMask($4.FieldMask v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUpdateMask() => clearField(2);
+  void clearUpdateMask() => $_clearField(2);
   @$pb.TagNumber(2)
   $4.FieldMask ensureUpdateMask() => $_ensure(1);
 
@@ -1115,7 +1117,7 @@ class UpdateRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasValidateOnly() => $_has(2);
   @$pb.TagNumber(4)
-  void clearValidateOnly() => clearField(4);
+  void clearValidateOnly() => $_clearField(4);
 }
 
 /// Request message for the
@@ -1198,7 +1200,7 @@ class DeleteRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// If set, validate the request and preview the deleted Recognizer, but do not
   /// actually delete it.
@@ -1212,7 +1214,7 @@ class DeleteRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasValidateOnly() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValidateOnly() => clearField(2);
+  void clearValidateOnly() => $_clearField(2);
 
   /// This checksum is computed by the server based on the value of other
   /// fields. This may be sent on update, undelete, and delete requests to ensure
@@ -1227,7 +1229,7 @@ class DeleteRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEtag() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEtag() => clearField(3);
+  void clearEtag() => $_clearField(3);
 
   /// If set to true, and the Recognizer is not found, the request will succeed
   /// and  be a no-op (no Operation is recorded in this case).
@@ -1241,7 +1243,7 @@ class DeleteRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasAllowMissing() => $_has(3);
   @$pb.TagNumber(4)
-  void clearAllowMissing() => clearField(4);
+  void clearAllowMissing() => $_clearField(4);
 }
 
 /// Request message for the
@@ -1320,7 +1322,7 @@ class UndeleteRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// If set, validate the request and preview the undeleted Recognizer, but do
   /// not actually undelete it.
@@ -1334,7 +1336,7 @@ class UndeleteRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasValidateOnly() => $_has(1);
   @$pb.TagNumber(3)
-  void clearValidateOnly() => clearField(3);
+  void clearValidateOnly() => $_clearField(3);
 
   /// This checksum is computed by the server based on the value of other
   /// fields. This may be sent on update, undelete, and delete requests to ensure
@@ -1349,7 +1351,7 @@ class UndeleteRecognizerRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasEtag() => $_has(2);
   @$pb.TagNumber(4)
-  void clearEtag() => clearField(4);
+  void clearEtag() => $_clearField(4);
 }
 
 /// A Recognizer message. Stores recognition configuration and metadata.
@@ -1360,7 +1362,7 @@ class Recognizer extends $pb.GeneratedMessage {
     $core.String? displayName,
     @$core.Deprecated('This field is deprecated.') $core.String? model,
     RecognitionConfig? defaultRecognitionConfig,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
     Recognizer_State? state,
     $3.Timestamp? createTime,
     $3.Timestamp? updateTime,
@@ -1391,7 +1393,7 @@ class Recognizer extends $pb.GeneratedMessage {
       $result.defaultRecognitionConfig = defaultRecognitionConfig;
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     if (state != null) {
       $result.state = state;
@@ -1491,7 +1493,7 @@ class Recognizer extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<Recognizer>(create);
   static Recognizer? _defaultInstance;
 
-  /// Output only. The resource name of the Recognizer.
+  /// Output only. Identifier. The resource name of the Recognizer.
   /// Format: `projects/{project}/locations/{location}/recognizers/{recognizer}`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
@@ -1503,7 +1505,7 @@ class Recognizer extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. System-assigned unique identifier for the Recognizer.
   @$pb.TagNumber(2)
@@ -1516,7 +1518,7 @@ class Recognizer extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// User-settable, human-readable name for the Recognizer. Must be 63
   /// characters or less.
@@ -1530,10 +1532,14 @@ class Recognizer extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDisplayName() => clearField(3);
+  void clearDisplayName() => $_clearField(3);
 
-  ///  Optional. Which model to use for recognition requests. Select the model
-  ///  best suited to your domain to get best results.
+  ///  Optional. This field is now deprecated. Prefer the
+  ///  [`model`][google.cloud.speech.v2.RecognitionConfig.model] field in the
+  ///  [`RecognitionConfig`][google.cloud.speech.v2.RecognitionConfig] message.
+  ///
+  ///  Which model to use for recognition requests. Select the model best suited
+  ///  to your domain to get best results.
   ///
   ///  Guidance for choosing which model to use can be found in the [Transcription
   ///  Models
@@ -1555,7 +1561,7 @@ class Recognizer extends $pb.GeneratedMessage {
   $core.bool hasModel() => $_has(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  void clearModel() => clearField(4);
+  void clearModel() => $_clearField(4);
 
   /// Default configuration to use for requests with this Recognizer.
   /// This can be overwritten by inline configuration in the
@@ -1565,13 +1571,13 @@ class Recognizer extends $pb.GeneratedMessage {
   RecognitionConfig get defaultRecognitionConfig => $_getN(4);
   @$pb.TagNumber(6)
   set defaultRecognitionConfig(RecognitionConfig v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasDefaultRecognitionConfig() => $_has(4);
   @$pb.TagNumber(6)
-  void clearDefaultRecognitionConfig() => clearField(6);
+  void clearDefaultRecognitionConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   RecognitionConfig ensureDefaultRecognitionConfig() => $_ensure(4);
 
@@ -1579,33 +1585,33 @@ class Recognizer extends $pb.GeneratedMessage {
   /// Both the key and the value must be 63 characters or less each.
   /// At most 100 annotations.
   @$pb.TagNumber(7)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(5);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(5);
 
   /// Output only. The Recognizer lifecycle state.
   @$pb.TagNumber(8)
   Recognizer_State get state => $_getN(6);
   @$pb.TagNumber(8)
   set state(Recognizer_State v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasState() => $_has(6);
   @$pb.TagNumber(8)
-  void clearState() => clearField(8);
+  void clearState() => $_clearField(8);
 
   /// Output only. Creation time.
   @$pb.TagNumber(9)
   $3.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(9)
   set createTime($3.Timestamp v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(9)
-  void clearCreateTime() => clearField(9);
+  void clearCreateTime() => $_clearField(9);
   @$pb.TagNumber(9)
   $3.Timestamp ensureCreateTime() => $_ensure(7);
 
@@ -1614,13 +1620,13 @@ class Recognizer extends $pb.GeneratedMessage {
   $3.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(10)
   set updateTime($3.Timestamp v) {
-    setField(10, v);
+    $_setField(10, v);
   }
 
   @$pb.TagNumber(10)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(10)
-  void clearUpdateTime() => clearField(10);
+  void clearUpdateTime() => $_clearField(10);
   @$pb.TagNumber(10)
   $3.Timestamp ensureUpdateTime() => $_ensure(8);
 
@@ -1629,13 +1635,13 @@ class Recognizer extends $pb.GeneratedMessage {
   $3.Timestamp get deleteTime => $_getN(9);
   @$pb.TagNumber(11)
   set deleteTime($3.Timestamp v) {
-    setField(11, v);
+    $_setField(11, v);
   }
 
   @$pb.TagNumber(11)
   $core.bool hasDeleteTime() => $_has(9);
   @$pb.TagNumber(11)
-  void clearDeleteTime() => clearField(11);
+  void clearDeleteTime() => $_clearField(11);
   @$pb.TagNumber(11)
   $3.Timestamp ensureDeleteTime() => $_ensure(9);
 
@@ -1652,7 +1658,7 @@ class Recognizer extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasEtag() => $_has(10);
   @$pb.TagNumber(12)
-  void clearEtag() => clearField(12);
+  void clearEtag() => $_clearField(12);
 
   /// Output only. Whether or not this Recognizer is in the process of being
   /// updated.
@@ -1666,20 +1672,20 @@ class Recognizer extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasReconciling() => $_has(11);
   @$pb.TagNumber(13)
-  void clearReconciling() => clearField(13);
+  void clearReconciling() => $_clearField(13);
 
   /// Output only. The time at which this Recognizer will be purged.
   @$pb.TagNumber(14)
   $3.Timestamp get expireTime => $_getN(12);
   @$pb.TagNumber(14)
   set expireTime($3.Timestamp v) {
-    setField(14, v);
+    $_setField(14, v);
   }
 
   @$pb.TagNumber(14)
   $core.bool hasExpireTime() => $_has(12);
   @$pb.TagNumber(14)
-  void clearExpireTime() => clearField(14);
+  void clearExpireTime() => $_clearField(14);
   @$pb.TagNumber(14)
   $3.Timestamp ensureExpireTime() => $_ensure(12);
 
@@ -1697,7 +1703,7 @@ class Recognizer extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasKmsKeyName() => $_has(13);
   @$pb.TagNumber(15)
-  void clearKmsKeyName() => clearField(15);
+  void clearKmsKeyName() => $_clearField(15);
 
   /// Output only. The [KMS key version
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#key_versions)
@@ -1713,9 +1719,14 @@ class Recognizer extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasKmsKeyVersionName() => $_has(14);
   @$pb.TagNumber(16)
-  void clearKmsKeyVersionName() => clearField(16);
+  void clearKmsKeyVersionName() => $_clearField(16);
 
-  ///  Optional. The language of the supplied audio as a
+  ///  Optional. This field is now deprecated. Prefer the
+  ///  [`language_codes`][google.cloud.speech.v2.RecognitionConfig.language_codes]
+  ///  field in the
+  ///  [`RecognitionConfig`][google.cloud.speech.v2.RecognitionConfig] message.
+  ///
+  ///  The language of the supplied audio as a
   ///  [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tag.
   ///
   ///  Supported languages for each model are listed in the [Table of Supported
@@ -1729,7 +1740,7 @@ class Recognizer extends $pb.GeneratedMessage {
   ///  "en-US".
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(17)
-  $core.List<$core.String> get languageCodes => $_getList(15);
+  $pb.PbList<$core.String> get languageCodes => $_getList(15);
 }
 
 ///  Automatically detected decoding parameters.
@@ -1752,6 +1763,12 @@ class Recognizer extends $pb.GeneratedMessage {
 ///  * OGG_OPUS: Opus audio frames in an Ogg container.
 ///
 ///  * WEBM_OPUS: Opus audio frames in a WebM container.
+///
+///  * MP4_AAC: AAC audio frames in an MP4 container.
+///
+///  * M4A_AAC: AAC audio frames in an M4A container.
+///
+///  * MOV_AAC: AAC audio frames in an MOV container.
 class AutoDetectDecodingConfig extends $pb.GeneratedMessage {
   factory AutoDetectDecodingConfig() => create();
   AutoDetectDecodingConfig._() : super();
@@ -1869,25 +1886,20 @@ class ExplicitDecodingConfig extends $pb.GeneratedMessage {
   ExplicitDecodingConfig_AudioEncoding get encoding => $_getN(0);
   @$pb.TagNumber(1)
   set encoding(ExplicitDecodingConfig_AudioEncoding v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasEncoding() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEncoding() => clearField(1);
+  void clearEncoding() => $_clearField(1);
 
-  ///  Sample rate in Hertz of the audio data sent for recognition. Valid
-  ///  values are: 8000-48000. 16000 is optimal. For best results, set the
-  ///  sampling rate of the audio source to 16000 Hz. If that's not possible, use
-  ///  the native sample rate of the audio source (instead of re-sampling).
-  ///  Supported for the following encodings:
-  ///
-  ///  * LINEAR16: Headerless 16-bit signed little-endian PCM samples.
-  ///
-  ///  * MULAW: Headerless 8-bit companded mulaw samples.
-  ///
-  ///  * ALAW: Headerless 8-bit companded alaw samples.
+  /// Optional. Sample rate in Hertz of the audio data sent for recognition.
+  /// Valid values are: 8000-48000. 16000 is optimal. For best results, set the
+  /// sampling rate of the audio source to 16000 Hz. If that's not possible, use
+  /// the native sample rate of the audio source (instead of re-sampling).
+  /// Note that this field is marked as OPTIONAL for backward compatibility
+  /// reasons. It is (and has always been) effectively REQUIRED.
   @$pb.TagNumber(2)
   $core.int get sampleRateHertz => $_getIZ(1);
   @$pb.TagNumber(2)
@@ -1898,16 +1910,11 @@ class ExplicitDecodingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSampleRateHertz() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSampleRateHertz() => clearField(2);
+  void clearSampleRateHertz() => $_clearField(2);
 
-  ///  Number of channels present in the audio data sent for recognition.
-  ///  Supported for the following encodings:
-  ///
-  ///  * LINEAR16: Headerless 16-bit signed little-endian PCM samples.
-  ///
-  ///  * MULAW: Headerless 8-bit companded mulaw samples.
-  ///
-  ///  * ALAW: Headerless 8-bit companded alaw samples.
+  ///  Optional. Number of channels present in the audio data sent for
+  ///  recognition. Note that this field is marked as OPTIONAL for backward
+  ///  compatibility reasons. It is (and has always been) effectively REQUIRED.
   ///
   ///  The maximum allowed value is 8.
   @$pb.TagNumber(3)
@@ -1920,7 +1927,7 @@ class ExplicitDecodingConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasAudioChannelCount() => $_has(2);
   @$pb.TagNumber(3)
-  void clearAudioChannelCount() => clearField(3);
+  void clearAudioChannelCount() => $_clearField(3);
 }
 
 /// Configuration to enable speaker diarization.
@@ -1998,7 +2005,7 @@ class SpeakerDiarizationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMinSpeakerCount() => $_has(0);
   @$pb.TagNumber(2)
-  void clearMinSpeakerCount() => clearField(2);
+  void clearMinSpeakerCount() => $_clearField(2);
 
   /// Required. Maximum number of speakers in the conversation. Valid values are:
   /// 1-6. Must be >= `min_speaker_count`. This range gives you more flexibility
@@ -2014,7 +2021,7 @@ class SpeakerDiarizationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMaxSpeakerCount() => $_has(1);
   @$pb.TagNumber(3)
-  void clearMaxSpeakerCount() => clearField(3);
+  void clearMaxSpeakerCount() => $_clearField(3);
 }
 
 /// Available recognition features.
@@ -2129,7 +2136,7 @@ class RecognitionFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasProfanityFilter() => $_has(0);
   @$pb.TagNumber(1)
-  void clearProfanityFilter() => clearField(1);
+  void clearProfanityFilter() => $_clearField(1);
 
   /// If `true`, the top result includes a list of words and the start and end
   /// time offsets (timestamps) for those words. If `false`, no word-level time
@@ -2144,7 +2151,7 @@ class RecognitionFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasEnableWordTimeOffsets() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEnableWordTimeOffsets() => clearField(2);
+  void clearEnableWordTimeOffsets() => $_clearField(2);
 
   /// If `true`, the top result includes a list of words and the confidence for
   /// those words. If `false`, no word-level confidence information is returned.
@@ -2159,7 +2166,7 @@ class RecognitionFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEnableWordConfidence() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEnableWordConfidence() => clearField(3);
+  void clearEnableWordConfidence() => $_clearField(3);
 
   /// If `true`, adds punctuation to recognition result hypotheses. This feature
   /// is only available in select languages. The default `false` value does not
@@ -2174,7 +2181,7 @@ class RecognitionFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasEnableAutomaticPunctuation() => $_has(3);
   @$pb.TagNumber(4)
-  void clearEnableAutomaticPunctuation() => clearField(4);
+  void clearEnableAutomaticPunctuation() => $_clearField(4);
 
   /// Configuration to enable speaker diarization and set additional
   /// parameters to make diarization better suited for your application.
@@ -2188,13 +2195,13 @@ class RecognitionFeatures extends $pb.GeneratedMessage {
   SpeakerDiarizationConfig get diarizationConfig => $_getN(4);
   @$pb.TagNumber(9)
   set diarizationConfig(SpeakerDiarizationConfig v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasDiarizationConfig() => $_has(4);
   @$pb.TagNumber(9)
-  void clearDiarizationConfig() => clearField(9);
+  void clearDiarizationConfig() => $_clearField(9);
   @$pb.TagNumber(9)
   SpeakerDiarizationConfig ensureDiarizationConfig() => $_ensure(4);
 
@@ -2213,7 +2220,7 @@ class RecognitionFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasEnableSpokenPunctuation() => $_has(5);
   @$pb.TagNumber(14)
-  void clearEnableSpokenPunctuation() => clearField(14);
+  void clearEnableSpokenPunctuation() => $_clearField(14);
 
   /// The spoken emoji behavior for the call. If `true`, adds spoken emoji
   /// formatting for the request. This will replace spoken emojis with the
@@ -2229,7 +2236,7 @@ class RecognitionFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasEnableSpokenEmojis() => $_has(6);
   @$pb.TagNumber(15)
-  void clearEnableSpokenEmojis() => clearField(15);
+  void clearEnableSpokenEmojis() => $_clearField(15);
 
   /// Maximum number of recognition hypotheses to be returned.
   /// The server may return fewer than `max_alternatives`.
@@ -2245,20 +2252,254 @@ class RecognitionFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   $core.bool hasMaxAlternatives() => $_has(7);
   @$pb.TagNumber(16)
-  void clearMaxAlternatives() => clearField(16);
+  void clearMaxAlternatives() => $_clearField(16);
 
   /// Mode for recognizing multi-channel audio.
   @$pb.TagNumber(17)
   RecognitionFeatures_MultiChannelMode get multiChannelMode => $_getN(8);
   @$pb.TagNumber(17)
   set multiChannelMode(RecognitionFeatures_MultiChannelMode v) {
-    setField(17, v);
+    $_setField(17, v);
   }
 
   @$pb.TagNumber(17)
   $core.bool hasMultiChannelMode() => $_has(8);
   @$pb.TagNumber(17)
-  void clearMultiChannelMode() => clearField(17);
+  void clearMultiChannelMode() => $_clearField(17);
+}
+
+/// A single replacement configuration.
+class TranscriptNormalization_Entry extends $pb.GeneratedMessage {
+  factory TranscriptNormalization_Entry({
+    $core.String? search,
+    $core.String? replace,
+    $core.bool? caseSensitive,
+  }) {
+    final $result = create();
+    if (search != null) {
+      $result.search = search;
+    }
+    if (replace != null) {
+      $result.replace = replace;
+    }
+    if (caseSensitive != null) {
+      $result.caseSensitive = caseSensitive;
+    }
+    return $result;
+  }
+  TranscriptNormalization_Entry._() : super();
+  factory TranscriptNormalization_Entry.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TranscriptNormalization_Entry.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TranscriptNormalization.Entry',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v2'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'search')
+    ..aOS(2, _omitFieldNames ? '' : 'replace')
+    ..aOB(3, _omitFieldNames ? '' : 'caseSensitive')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TranscriptNormalization_Entry clone() =>
+      TranscriptNormalization_Entry()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TranscriptNormalization_Entry copyWith(
+          void Function(TranscriptNormalization_Entry) updates) =>
+      super.copyWith(
+              (message) => updates(message as TranscriptNormalization_Entry))
+          as TranscriptNormalization_Entry;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static TranscriptNormalization_Entry create() =>
+      TranscriptNormalization_Entry._();
+  TranscriptNormalization_Entry createEmptyInstance() => create();
+  static $pb.PbList<TranscriptNormalization_Entry> createRepeated() =>
+      $pb.PbList<TranscriptNormalization_Entry>();
+  @$core.pragma('dart2js:noInline')
+  static TranscriptNormalization_Entry getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TranscriptNormalization_Entry>(create);
+  static TranscriptNormalization_Entry? _defaultInstance;
+
+  /// What to replace. Max length is 100 characters.
+  @$pb.TagNumber(1)
+  $core.String get search => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set search($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasSearch() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearSearch() => $_clearField(1);
+
+  /// What to replace with. Max length is 100 characters.
+  @$pb.TagNumber(2)
+  $core.String get replace => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set replace($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasReplace() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearReplace() => $_clearField(2);
+
+  /// Whether the search is case sensitive.
+  @$pb.TagNumber(3)
+  $core.bool get caseSensitive => $_getBF(2);
+  @$pb.TagNumber(3)
+  set caseSensitive($core.bool v) {
+    $_setBool(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasCaseSensitive() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearCaseSensitive() => $_clearField(3);
+}
+
+/// Transcription normalization configuration. Use transcription normalization
+/// to automatically replace parts of the transcript with phrases of your
+/// choosing. For StreamingRecognize, this normalization only applies to stable
+/// partial transcripts (stability > 0.8) and final transcripts.
+class TranscriptNormalization extends $pb.GeneratedMessage {
+  factory TranscriptNormalization({
+    $core.Iterable<TranscriptNormalization_Entry>? entries,
+  }) {
+    final $result = create();
+    if (entries != null) {
+      $result.entries.addAll(entries);
+    }
+    return $result;
+  }
+  TranscriptNormalization._() : super();
+  factory TranscriptNormalization.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TranscriptNormalization.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TranscriptNormalization',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v2'),
+      createEmptyInstance: create)
+    ..pc<TranscriptNormalization_Entry>(
+        1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM,
+        subBuilder: TranscriptNormalization_Entry.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TranscriptNormalization clone() =>
+      TranscriptNormalization()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TranscriptNormalization copyWith(
+          void Function(TranscriptNormalization) updates) =>
+      super.copyWith((message) => updates(message as TranscriptNormalization))
+          as TranscriptNormalization;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static TranscriptNormalization create() => TranscriptNormalization._();
+  TranscriptNormalization createEmptyInstance() => create();
+  static $pb.PbList<TranscriptNormalization> createRepeated() =>
+      $pb.PbList<TranscriptNormalization>();
+  @$core.pragma('dart2js:noInline')
+  static TranscriptNormalization getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TranscriptNormalization>(create);
+  static TranscriptNormalization? _defaultInstance;
+
+  /// A list of replacement entries. We will perform replacement with one entry
+  /// at a time. For example, the second entry in ["cat" => "dog", "mountain cat"
+  /// => "mountain dog"] will never be applied because we will always process the
+  /// first entry before it. At most 100 entries.
+  @$pb.TagNumber(1)
+  $pb.PbList<TranscriptNormalization_Entry> get entries => $_getList(0);
+}
+
+/// Translation configuration. Use to translate the given audio into text for the
+/// desired language.
+class TranslationConfig extends $pb.GeneratedMessage {
+  factory TranslationConfig({
+    $core.String? targetLanguage,
+  }) {
+    final $result = create();
+    if (targetLanguage != null) {
+      $result.targetLanguage = targetLanguage;
+    }
+    return $result;
+  }
+  TranslationConfig._() : super();
+  factory TranslationConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TranslationConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TranslationConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v2'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'targetLanguage')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TranslationConfig clone() => TranslationConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TranslationConfig copyWith(void Function(TranslationConfig) updates) =>
+      super.copyWith((message) => updates(message as TranslationConfig))
+          as TranslationConfig;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static TranslationConfig create() => TranslationConfig._();
+  TranslationConfig createEmptyInstance() => create();
+  static $pb.PbList<TranslationConfig> createRepeated() =>
+      $pb.PbList<TranslationConfig>();
+  @$core.pragma('dart2js:noInline')
+  static TranslationConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TranslationConfig>(create);
+  static TranslationConfig? _defaultInstance;
+
+  /// Required. The language code to translate to.
+  @$pb.TagNumber(1)
+  $core.String get targetLanguage => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set targetLanguage($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasTargetLanguage() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearTargetLanguage() => $_clearField(1);
 }
 
 enum SpeechAdaptation_AdaptationPhraseSet_Value {
@@ -2339,7 +2580,7 @@ class SpeechAdaptation_AdaptationPhraseSet extends $pb.GeneratedMessage {
 
   SpeechAdaptation_AdaptationPhraseSet_Value whichValue() =>
       _SpeechAdaptation_AdaptationPhraseSet_ValueByTag[$_whichOneof(0)]!;
-  void clearValue() => clearField($_whichOneof(0));
+  void clearValue() => $_clearField($_whichOneof(0));
 
   /// The name of an existing PhraseSet resource. The user must have read
   /// access to the resource and it must not be deleted.
@@ -2353,20 +2594,20 @@ class SpeechAdaptation_AdaptationPhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasPhraseSet() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPhraseSet() => clearField(1);
+  void clearPhraseSet() => $_clearField(1);
 
   /// An inline defined PhraseSet.
   @$pb.TagNumber(2)
   PhraseSet get inlinePhraseSet => $_getN(1);
   @$pb.TagNumber(2)
   set inlinePhraseSet(PhraseSet v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasInlinePhraseSet() => $_has(1);
   @$pb.TagNumber(2)
-  void clearInlinePhraseSet() => clearField(2);
+  void clearInlinePhraseSet() => $_clearField(2);
   @$pb.TagNumber(2)
   PhraseSet ensureInlinePhraseSet() => $_ensure(1);
 }
@@ -2434,13 +2675,13 @@ class SpeechAdaptation extends $pb.GeneratedMessage {
 
   /// A list of inline or referenced PhraseSets.
   @$pb.TagNumber(1)
-  $core.List<SpeechAdaptation_AdaptationPhraseSet> get phraseSets =>
+  $pb.PbList<SpeechAdaptation_AdaptationPhraseSet> get phraseSets =>
       $_getList(0);
 
   /// A list of inline CustomClasses. Existing CustomClass resources can be
   /// referenced directly in a PhraseSet.
   @$pb.TagNumber(2)
-  $core.List<CustomClass> get customClasses => $_getList(1);
+  $pb.PbList<CustomClass> get customClasses => $_getList(1);
 }
 
 enum RecognitionConfig_DecodingConfig {
@@ -2459,6 +2700,8 @@ class RecognitionConfig extends $pb.GeneratedMessage {
     ExplicitDecodingConfig? explicitDecodingConfig,
     $core.String? model,
     $core.Iterable<$core.String>? languageCodes,
+    TranscriptNormalization? transcriptNormalization,
+    TranslationConfig? translationConfig,
   }) {
     final $result = create();
     if (features != null) {
@@ -2478,6 +2721,12 @@ class RecognitionConfig extends $pb.GeneratedMessage {
     }
     if (languageCodes != null) {
       $result.languageCodes.addAll(languageCodes);
+    }
+    if (transcriptNormalization != null) {
+      $result.transcriptNormalization = transcriptNormalization;
+    }
+    if (translationConfig != null) {
+      $result.translationConfig = translationConfig;
     }
     return $result;
   }
@@ -2513,6 +2762,11 @@ class RecognitionConfig extends $pb.GeneratedMessage {
         subBuilder: ExplicitDecodingConfig.create)
     ..aOS(9, _omitFieldNames ? '' : 'model')
     ..pPS(10, _omitFieldNames ? '' : 'languageCodes')
+    ..aOM<TranscriptNormalization>(
+        11, _omitFieldNames ? '' : 'transcriptNormalization',
+        subBuilder: TranscriptNormalization.create)
+    ..aOM<TranslationConfig>(15, _omitFieldNames ? '' : 'translationConfig',
+        subBuilder: TranslationConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2540,20 +2794,20 @@ class RecognitionConfig extends $pb.GeneratedMessage {
 
   RecognitionConfig_DecodingConfig whichDecodingConfig() =>
       _RecognitionConfig_DecodingConfigByTag[$_whichOneof(0)]!;
-  void clearDecodingConfig() => clearField($_whichOneof(0));
+  void clearDecodingConfig() => $_clearField($_whichOneof(0));
 
   /// Speech recognition features to enable.
   @$pb.TagNumber(2)
   RecognitionFeatures get features => $_getN(0);
   @$pb.TagNumber(2)
   set features(RecognitionFeatures v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasFeatures() => $_has(0);
   @$pb.TagNumber(2)
-  void clearFeatures() => clearField(2);
+  void clearFeatures() => $_clearField(2);
   @$pb.TagNumber(2)
   RecognitionFeatures ensureFeatures() => $_ensure(0);
 
@@ -2563,13 +2817,13 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   SpeechAdaptation get adaptation => $_getN(1);
   @$pb.TagNumber(6)
   set adaptation(SpeechAdaptation v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasAdaptation() => $_has(1);
   @$pb.TagNumber(6)
-  void clearAdaptation() => clearField(6);
+  void clearAdaptation() => $_clearField(6);
   @$pb.TagNumber(6)
   SpeechAdaptation ensureAdaptation() => $_ensure(1);
 
@@ -2579,13 +2833,13 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   AutoDetectDecodingConfig get autoDecodingConfig => $_getN(2);
   @$pb.TagNumber(7)
   set autoDecodingConfig(AutoDetectDecodingConfig v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasAutoDecodingConfig() => $_has(2);
   @$pb.TagNumber(7)
-  void clearAutoDecodingConfig() => clearField(7);
+  void clearAutoDecodingConfig() => $_clearField(7);
   @$pb.TagNumber(7)
   AutoDetectDecodingConfig ensureAutoDecodingConfig() => $_ensure(2);
 
@@ -2595,13 +2849,13 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   ExplicitDecodingConfig get explicitDecodingConfig => $_getN(3);
   @$pb.TagNumber(8)
   set explicitDecodingConfig(ExplicitDecodingConfig v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasExplicitDecodingConfig() => $_has(3);
   @$pb.TagNumber(8)
-  void clearExplicitDecodingConfig() => clearField(8);
+  void clearExplicitDecodingConfig() => $_clearField(8);
   @$pb.TagNumber(8)
   ExplicitDecodingConfig ensureExplicitDecodingConfig() => $_ensure(3);
 
@@ -2624,7 +2878,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasModel() => $_has(4);
   @$pb.TagNumber(9)
-  void clearModel() => clearField(9);
+  void clearModel() => $_clearField(9);
 
   ///  Optional. The language of the supplied audio as a
   ///  [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tag.
@@ -2638,7 +2892,41 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   ///  recognition in the most likely language detected. The recognition result
   ///  will include the language tag of the language detected in the audio.
   @$pb.TagNumber(10)
-  $core.List<$core.String> get languageCodes => $_getList(5);
+  $pb.PbList<$core.String> get languageCodes => $_getList(5);
+
+  /// Optional. Use transcription normalization to automatically replace parts of
+  /// the transcript with phrases of your choosing. For StreamingRecognize, this
+  /// normalization only applies to stable partial transcripts (stability > 0.8)
+  /// and final transcripts.
+  @$pb.TagNumber(11)
+  TranscriptNormalization get transcriptNormalization => $_getN(6);
+  @$pb.TagNumber(11)
+  set transcriptNormalization(TranscriptNormalization v) {
+    $_setField(11, v);
+  }
+
+  @$pb.TagNumber(11)
+  $core.bool hasTranscriptNormalization() => $_has(6);
+  @$pb.TagNumber(11)
+  void clearTranscriptNormalization() => $_clearField(11);
+  @$pb.TagNumber(11)
+  TranscriptNormalization ensureTranscriptNormalization() => $_ensure(6);
+
+  /// Optional. Optional configuration used to automatically run translation on
+  /// the given audio to the desired language for supported models.
+  @$pb.TagNumber(15)
+  TranslationConfig get translationConfig => $_getN(7);
+  @$pb.TagNumber(15)
+  set translationConfig(TranslationConfig v) {
+    $_setField(15, v);
+  }
+
+  @$pb.TagNumber(15)
+  $core.bool hasTranslationConfig() => $_has(7);
+  @$pb.TagNumber(15)
+  void clearTranslationConfig() => $_clearField(15);
+  @$pb.TagNumber(15)
+  TranslationConfig ensureTranslationConfig() => $_ensure(7);
 }
 
 enum RecognizeRequest_AudioSource { content, uri, notSet }
@@ -2729,7 +3017,7 @@ class RecognizeRequest extends $pb.GeneratedMessage {
 
   RecognizeRequest_AudioSource whichAudioSource() =>
       _RecognizeRequest_AudioSourceByTag[$_whichOneof(0)]!;
-  void clearAudioSource() => clearField($_whichOneof(0));
+  void clearAudioSource() => $_clearField($_whichOneof(0));
 
   /// Features and audio metadata to use for the Automatic Speech Recognition.
   /// This field in combination with the
@@ -2741,13 +3029,13 @@ class RecognizeRequest extends $pb.GeneratedMessage {
   RecognitionConfig get config => $_getN(0);
   @$pb.TagNumber(1)
   set config(RecognitionConfig v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearConfig() => clearField(1);
+  void clearConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   RecognitionConfig ensureConfig() => $_ensure(0);
 
@@ -2765,7 +3053,7 @@ class RecognizeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRecognizer() => $_has(1);
   @$pb.TagNumber(3)
-  void clearRecognizer() => clearField(3);
+  void clearRecognizer() => $_clearField(3);
 
   /// The audio data bytes encoded as specified in
   /// [RecognitionConfig][google.cloud.speech.v2.RecognitionConfig]. As
@@ -2781,7 +3069,7 @@ class RecognizeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasContent() => $_has(2);
   @$pb.TagNumber(5)
-  void clearContent() => clearField(5);
+  void clearContent() => $_clearField(5);
 
   /// URI that points to a file that contains audio data bytes as specified in
   /// [RecognitionConfig][google.cloud.speech.v2.RecognitionConfig]. The file
@@ -2801,7 +3089,7 @@ class RecognizeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasUri() => $_has(3);
   @$pb.TagNumber(6)
-  void clearUri() => clearField(6);
+  void clearUri() => $_clearField(6);
 
   /// The list of fields in
   /// [config][google.cloud.speech.v2.RecognizeRequest.config] that override the
@@ -2820,13 +3108,13 @@ class RecognizeRequest extends $pb.GeneratedMessage {
   $4.FieldMask get configMask => $_getN(4);
   @$pb.TagNumber(8)
   set configMask($4.FieldMask v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasConfigMask() => $_has(4);
   @$pb.TagNumber(8)
-  void clearConfigMask() => clearField(8);
+  void clearConfigMask() => $_clearField(8);
   @$pb.TagNumber(8)
   $4.FieldMask ensureConfigMask() => $_ensure(4);
 }
@@ -2835,10 +3123,14 @@ class RecognizeRequest extends $pb.GeneratedMessage {
 class RecognitionResponseMetadata extends $pb.GeneratedMessage {
   factory RecognitionResponseMetadata({
     $5.Duration? totalBilledDuration,
+    $core.String? requestId,
   }) {
     final $result = create();
     if (totalBilledDuration != null) {
       $result.totalBilledDuration = totalBilledDuration;
+    }
+    if (requestId != null) {
+      $result.requestId = requestId;
     }
     return $result;
   }
@@ -2857,6 +3149,7 @@ class RecognitionResponseMetadata extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOM<$5.Duration>(6, _omitFieldNames ? '' : 'totalBilledDuration',
         subBuilder: $5.Duration.create)
+    ..aOS(9, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2891,15 +3184,28 @@ class RecognitionResponseMetadata extends $pb.GeneratedMessage {
   $5.Duration get totalBilledDuration => $_getN(0);
   @$pb.TagNumber(6)
   set totalBilledDuration($5.Duration v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasTotalBilledDuration() => $_has(0);
   @$pb.TagNumber(6)
-  void clearTotalBilledDuration() => clearField(6);
+  void clearTotalBilledDuration() => $_clearField(6);
   @$pb.TagNumber(6)
   $5.Duration ensureTotalBilledDuration() => $_ensure(0);
+
+  /// Global request identifier auto-generated by the API.
+  @$pb.TagNumber(9)
+  $core.String get requestId => $_getSZ(1);
+  @$pb.TagNumber(9)
+  set requestId($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(9)
+  $core.bool hasRequestId() => $_has(1);
+  @$pb.TagNumber(9)
+  void clearRequestId() => $_clearField(9);
 }
 
 /// Alternative hypotheses (a.k.a. n-best list).
@@ -2979,7 +3285,7 @@ class SpeechRecognitionAlternative extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTranscript() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTranscript() => clearField(1);
+  void clearTranscript() => $_clearField(1);
 
   /// The confidence estimate between 0.0 and 1.0. A higher number
   /// indicates an estimated greater likelihood that the recognized words are
@@ -2999,14 +3305,14 @@ class SpeechRecognitionAlternative extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasConfidence() => $_has(1);
   @$pb.TagNumber(2)
-  void clearConfidence() => clearField(2);
+  void clearConfidence() => $_clearField(2);
 
   /// A list of word-specific information for each recognized word.
   /// When the
   /// [SpeakerDiarizationConfig][google.cloud.speech.v2.SpeakerDiarizationConfig]
   /// is set, you will see all the words from the beginning of the audio.
   @$pb.TagNumber(3)
-  $core.List<WordInfo> get words => $_getList(2);
+  $pb.PbList<WordInfo> get words => $_getList(2);
 }
 
 /// Word-specific information for recognized words.
@@ -3090,13 +3396,13 @@ class WordInfo extends $pb.GeneratedMessage {
   $5.Duration get startOffset => $_getN(0);
   @$pb.TagNumber(1)
   set startOffset($5.Duration v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartOffset() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartOffset() => clearField(1);
+  void clearStartOffset() => $_clearField(1);
   @$pb.TagNumber(1)
   $5.Duration ensureStartOffset() => $_ensure(0);
 
@@ -3110,13 +3416,13 @@ class WordInfo extends $pb.GeneratedMessage {
   $5.Duration get endOffset => $_getN(1);
   @$pb.TagNumber(2)
   set endOffset($5.Duration v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEndOffset() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEndOffset() => clearField(2);
+  void clearEndOffset() => $_clearField(2);
   @$pb.TagNumber(2)
   $5.Duration ensureEndOffset() => $_ensure(1);
 
@@ -3131,7 +3437,7 @@ class WordInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasWord() => $_has(2);
   @$pb.TagNumber(3)
-  void clearWord() => clearField(3);
+  void clearWord() => $_clearField(3);
 
   /// The confidence estimate between 0.0 and 1.0. A higher number
   /// indicates an estimated greater likelihood that the recognized words are
@@ -3151,7 +3457,7 @@ class WordInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasConfidence() => $_has(3);
   @$pb.TagNumber(4)
-  void clearConfidence() => clearField(4);
+  void clearConfidence() => $_clearField(4);
 
   /// A distinct label is assigned for every speaker within the audio. This field
   /// specifies which one of those speakers was detected to have spoken this
@@ -3168,7 +3474,7 @@ class WordInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasSpeakerLabel() => $_has(4);
   @$pb.TagNumber(6)
-  void clearSpeakerLabel() => clearField(6);
+  void clearSpeakerLabel() => $_clearField(6);
 }
 
 /// A speech recognition result corresponding to a portion of the audio.
@@ -3245,7 +3551,7 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   /// ordered in terms of accuracy, with the top (first) alternative being the
   /// most probable, as ranked by the recognizer.
   @$pb.TagNumber(1)
-  $core.List<SpeechRecognitionAlternative> get alternatives => $_getList(0);
+  $pb.PbList<SpeechRecognitionAlternative> get alternatives => $_getList(0);
 
   /// For multi-channel audio, this is the channel number corresponding to the
   /// recognized result for the audio from that channel.
@@ -3261,7 +3567,7 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasChannelTag() => $_has(1);
   @$pb.TagNumber(2)
-  void clearChannelTag() => clearField(2);
+  void clearChannelTag() => $_clearField(2);
 
   /// Time offset of the end of this result relative to the beginning of the
   /// audio.
@@ -3269,13 +3575,13 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   $5.Duration get resultEndOffset => $_getN(2);
   @$pb.TagNumber(4)
   set resultEndOffset($5.Duration v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasResultEndOffset() => $_has(2);
   @$pb.TagNumber(4)
-  void clearResultEndOffset() => clearField(4);
+  void clearResultEndOffset() => $_clearField(4);
   @$pb.TagNumber(4)
   $5.Duration ensureResultEndOffset() => $_ensure(2);
 
@@ -3292,7 +3598,7 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasLanguageCode() => $_has(3);
   @$pb.TagNumber(5)
-  void clearLanguageCode() => clearField(5);
+  void clearLanguageCode() => $_clearField(5);
 }
 
 /// Response message for the
@@ -3359,20 +3665,20 @@ class RecognizeResponse extends $pb.GeneratedMessage {
   RecognitionResponseMetadata get metadata => $_getN(0);
   @$pb.TagNumber(2)
   set metadata(RecognitionResponseMetadata v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasMetadata() => $_has(0);
   @$pb.TagNumber(2)
-  void clearMetadata() => clearField(2);
+  void clearMetadata() => $_clearField(2);
   @$pb.TagNumber(2)
   RecognitionResponseMetadata ensureMetadata() => $_ensure(0);
 
   /// Sequential list of transcription results corresponding to sequential
   /// portions of audio.
   @$pb.TagNumber(3)
-  $core.List<SpeechRecognitionResult> get results => $_getList(1);
+  $pb.PbList<SpeechRecognitionResult> get results => $_getList(1);
 }
 
 /// Events that a timeout can be set on for voice activity.
@@ -3453,13 +3759,13 @@ class StreamingRecognitionFeatures_VoiceActivityTimeout
   $5.Duration get speechStartTimeout => $_getN(0);
   @$pb.TagNumber(1)
   set speechStartTimeout($5.Duration v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasSpeechStartTimeout() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSpeechStartTimeout() => clearField(1);
+  void clearSpeechStartTimeout() => $_clearField(1);
   @$pb.TagNumber(1)
   $5.Duration ensureSpeechStartTimeout() => $_ensure(0);
 
@@ -3470,13 +3776,13 @@ class StreamingRecognitionFeatures_VoiceActivityTimeout
   $5.Duration get speechEndTimeout => $_getN(1);
   @$pb.TagNumber(2)
   set speechEndTimeout($5.Duration v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasSpeechEndTimeout() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSpeechEndTimeout() => clearField(2);
+  void clearSpeechEndTimeout() => $_clearField(2);
   @$pb.TagNumber(2)
   $5.Duration ensureSpeechEndTimeout() => $_ensure(1);
 }
@@ -3559,7 +3865,7 @@ class StreamingRecognitionFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEnableVoiceActivityEvents() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEnableVoiceActivityEvents() => clearField(1);
+  void clearEnableVoiceActivityEvents() => $_clearField(1);
 
   /// Whether or not to stream interim results to the client. If set to true,
   /// interim results will be streamed to the client. Otherwise, only the final
@@ -3574,7 +3880,7 @@ class StreamingRecognitionFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasInterimResults() => $_has(1);
   @$pb.TagNumber(2)
-  void clearInterimResults() => clearField(2);
+  void clearInterimResults() => $_clearField(2);
 
   /// If set, the server will automatically close the stream after the specified
   /// duration has elapsed after the last VOICE_ACTIVITY speech event has been
@@ -3585,13 +3891,13 @@ class StreamingRecognitionFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set voiceActivityTimeout(
       StreamingRecognitionFeatures_VoiceActivityTimeout v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasVoiceActivityTimeout() => $_has(2);
   @$pb.TagNumber(3)
-  void clearVoiceActivityTimeout() => clearField(3);
+  void clearVoiceActivityTimeout() => $_clearField(3);
   @$pb.TagNumber(3)
   StreamingRecognitionFeatures_VoiceActivityTimeout
       ensureVoiceActivityTimeout() => $_ensure(2);
@@ -3674,13 +3980,13 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
   RecognitionConfig get config => $_getN(0);
   @$pb.TagNumber(1)
   set config(RecognitionConfig v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearConfig() => clearField(1);
+  void clearConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   RecognitionConfig ensureConfig() => $_ensure(0);
 
@@ -3690,13 +3996,13 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
   StreamingRecognitionFeatures get streamingFeatures => $_getN(1);
   @$pb.TagNumber(2)
   set streamingFeatures(StreamingRecognitionFeatures v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasStreamingFeatures() => $_has(1);
   @$pb.TagNumber(2)
-  void clearStreamingFeatures() => clearField(2);
+  void clearStreamingFeatures() => $_clearField(2);
   @$pb.TagNumber(2)
   StreamingRecognitionFeatures ensureStreamingFeatures() => $_ensure(1);
 
@@ -3717,13 +4023,13 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
   $4.FieldMask get configMask => $_getN(2);
   @$pb.TagNumber(3)
   set configMask($4.FieldMask v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasConfigMask() => $_has(2);
   @$pb.TagNumber(3)
-  void clearConfigMask() => clearField(3);
+  void clearConfigMask() => $_clearField(3);
   @$pb.TagNumber(3)
   $4.FieldMask ensureConfigMask() => $_ensure(2);
 }
@@ -3827,7 +4133,7 @@ class StreamingRecognizeRequest extends $pb.GeneratedMessage {
 
   StreamingRecognizeRequest_StreamingRequest whichStreamingRequest() =>
       _StreamingRecognizeRequest_StreamingRequestByTag[$_whichOneof(0)]!;
-  void clearStreamingRequest() => clearField($_whichOneof(0));
+  void clearStreamingRequest() => $_clearField($_whichOneof(0));
 
   /// Required. The name of the Recognizer to use during recognition. The
   /// expected format is
@@ -3843,7 +4149,7 @@ class StreamingRecognizeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasRecognizer() => $_has(0);
   @$pb.TagNumber(3)
-  void clearRecognizer() => clearField(3);
+  void clearRecognizer() => $_clearField(3);
 
   /// Inline audio bytes to be Recognized.
   /// Maximum size for this field is 15 KB per request.
@@ -3857,7 +4163,7 @@ class StreamingRecognizeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasAudio() => $_has(1);
   @$pb.TagNumber(5)
-  void clearAudio() => clearField(5);
+  void clearAudio() => $_clearField(5);
 
   /// StreamingRecognitionConfig to be used in this recognition attempt.
   /// If provided, it will override the default RecognitionConfig stored in the
@@ -3866,13 +4172,13 @@ class StreamingRecognizeRequest extends $pb.GeneratedMessage {
   StreamingRecognitionConfig get streamingConfig => $_getN(2);
   @$pb.TagNumber(6)
   set streamingConfig(StreamingRecognitionConfig v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasStreamingConfig() => $_has(2);
   @$pb.TagNumber(6)
-  void clearStreamingConfig() => clearField(6);
+  void clearStreamingConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   StreamingRecognitionConfig ensureStreamingConfig() => $_ensure(2);
 }
@@ -3981,12 +4287,12 @@ class BatchRecognizeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasRecognizer() => $_has(0);
   @$pb.TagNumber(1)
-  void clearRecognizer() => clearField(1);
+  void clearRecognizer() => $_clearField(1);
 
   /// Audio files with file metadata for ASR.
-  /// The maximum number of files allowed to be specified is 5.
+  /// The maximum number of files allowed to be specified is 15.
   @$pb.TagNumber(3)
-  $core.List<BatchRecognizeFileMetadata> get files => $_getList(1);
+  $pb.PbList<BatchRecognizeFileMetadata> get files => $_getList(1);
 
   /// Features and audio metadata to use for the Automatic Speech Recognition.
   /// This field in combination with the
@@ -3998,13 +4304,13 @@ class BatchRecognizeRequest extends $pb.GeneratedMessage {
   RecognitionConfig get config => $_getN(2);
   @$pb.TagNumber(4)
   set config(RecognitionConfig v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasConfig() => $_has(2);
   @$pb.TagNumber(4)
-  void clearConfig() => clearField(4);
+  void clearConfig() => $_clearField(4);
   @$pb.TagNumber(4)
   RecognitionConfig ensureConfig() => $_ensure(2);
 
@@ -4025,13 +4331,13 @@ class BatchRecognizeRequest extends $pb.GeneratedMessage {
   $4.FieldMask get configMask => $_getN(3);
   @$pb.TagNumber(5)
   set configMask($4.FieldMask v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasConfigMask() => $_has(3);
   @$pb.TagNumber(5)
-  void clearConfigMask() => clearField(5);
+  void clearConfigMask() => $_clearField(5);
   @$pb.TagNumber(5)
   $4.FieldMask ensureConfigMask() => $_ensure(3);
 
@@ -4040,13 +4346,13 @@ class BatchRecognizeRequest extends $pb.GeneratedMessage {
   RecognitionOutputConfig get recognitionOutputConfig => $_getN(4);
   @$pb.TagNumber(6)
   set recognitionOutputConfig(RecognitionOutputConfig v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasRecognitionOutputConfig() => $_has(4);
   @$pb.TagNumber(6)
-  void clearRecognitionOutputConfig() => clearField(6);
+  void clearRecognitionOutputConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   RecognitionOutputConfig ensureRecognitionOutputConfig() => $_ensure(4);
 
@@ -4055,13 +4361,13 @@ class BatchRecognizeRequest extends $pb.GeneratedMessage {
   BatchRecognizeRequest_ProcessingStrategy get processingStrategy => $_getN(5);
   @$pb.TagNumber(7)
   set processingStrategy(BatchRecognizeRequest_ProcessingStrategy v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasProcessingStrategy() => $_has(5);
   @$pb.TagNumber(7)
-  void clearProcessingStrategy() => clearField(7);
+  void clearProcessingStrategy() => $_clearField(7);
 }
 
 /// Output configurations for Cloud Storage.
@@ -4126,7 +4432,7 @@ class GcsOutputConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUri() => clearField(1);
+  void clearUri() => $_clearField(1);
 }
 
 /// Output configurations for inline response.
@@ -4171,6 +4477,256 @@ class InlineOutputConfig extends $pb.GeneratedMessage {
   static InlineOutputConfig? _defaultInstance;
 }
 
+/// Output configurations for serialized `BatchRecognizeResults` protos.
+class NativeOutputFileFormatConfig extends $pb.GeneratedMessage {
+  factory NativeOutputFileFormatConfig() => create();
+  NativeOutputFileFormatConfig._() : super();
+  factory NativeOutputFileFormatConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory NativeOutputFileFormatConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'NativeOutputFileFormatConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v2'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  NativeOutputFileFormatConfig clone() =>
+      NativeOutputFileFormatConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  NativeOutputFileFormatConfig copyWith(
+          void Function(NativeOutputFileFormatConfig) updates) =>
+      super.copyWith(
+              (message) => updates(message as NativeOutputFileFormatConfig))
+          as NativeOutputFileFormatConfig;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static NativeOutputFileFormatConfig create() =>
+      NativeOutputFileFormatConfig._();
+  NativeOutputFileFormatConfig createEmptyInstance() => create();
+  static $pb.PbList<NativeOutputFileFormatConfig> createRepeated() =>
+      $pb.PbList<NativeOutputFileFormatConfig>();
+  @$core.pragma('dart2js:noInline')
+  static NativeOutputFileFormatConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<NativeOutputFileFormatConfig>(create);
+  static NativeOutputFileFormatConfig? _defaultInstance;
+}
+
+/// Output configurations for [WebVTT](https://www.w3.org/TR/webvtt1/) formatted
+/// subtitle file.
+class VttOutputFileFormatConfig extends $pb.GeneratedMessage {
+  factory VttOutputFileFormatConfig() => create();
+  VttOutputFileFormatConfig._() : super();
+  factory VttOutputFileFormatConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory VttOutputFileFormatConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'VttOutputFileFormatConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v2'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  VttOutputFileFormatConfig clone() =>
+      VttOutputFileFormatConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  VttOutputFileFormatConfig copyWith(
+          void Function(VttOutputFileFormatConfig) updates) =>
+      super.copyWith((message) => updates(message as VttOutputFileFormatConfig))
+          as VttOutputFileFormatConfig;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static VttOutputFileFormatConfig create() => VttOutputFileFormatConfig._();
+  VttOutputFileFormatConfig createEmptyInstance() => create();
+  static $pb.PbList<VttOutputFileFormatConfig> createRepeated() =>
+      $pb.PbList<VttOutputFileFormatConfig>();
+  @$core.pragma('dart2js:noInline')
+  static VttOutputFileFormatConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<VttOutputFileFormatConfig>(create);
+  static VttOutputFileFormatConfig? _defaultInstance;
+}
+
+/// Output configurations [SubRip
+/// Text](https://www.matroska.org/technical/subtitles.html#srt-subtitles)
+/// formatted subtitle file.
+class SrtOutputFileFormatConfig extends $pb.GeneratedMessage {
+  factory SrtOutputFileFormatConfig() => create();
+  SrtOutputFileFormatConfig._() : super();
+  factory SrtOutputFileFormatConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory SrtOutputFileFormatConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'SrtOutputFileFormatConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v2'),
+      createEmptyInstance: create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  SrtOutputFileFormatConfig clone() =>
+      SrtOutputFileFormatConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  SrtOutputFileFormatConfig copyWith(
+          void Function(SrtOutputFileFormatConfig) updates) =>
+      super.copyWith((message) => updates(message as SrtOutputFileFormatConfig))
+          as SrtOutputFileFormatConfig;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static SrtOutputFileFormatConfig create() => SrtOutputFileFormatConfig._();
+  SrtOutputFileFormatConfig createEmptyInstance() => create();
+  static $pb.PbList<SrtOutputFileFormatConfig> createRepeated() =>
+      $pb.PbList<SrtOutputFileFormatConfig>();
+  @$core.pragma('dart2js:noInline')
+  static SrtOutputFileFormatConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<SrtOutputFileFormatConfig>(create);
+  static SrtOutputFileFormatConfig? _defaultInstance;
+}
+
+/// Configuration for the format of the results stored to `output`.
+class OutputFormatConfig extends $pb.GeneratedMessage {
+  factory OutputFormatConfig({
+    NativeOutputFileFormatConfig? native,
+    VttOutputFileFormatConfig? vtt,
+    SrtOutputFileFormatConfig? srt,
+  }) {
+    final $result = create();
+    if (native != null) {
+      $result.native = native;
+    }
+    if (vtt != null) {
+      $result.vtt = vtt;
+    }
+    if (srt != null) {
+      $result.srt = srt;
+    }
+    return $result;
+  }
+  OutputFormatConfig._() : super();
+  factory OutputFormatConfig.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory OutputFormatConfig.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'OutputFormatConfig',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v2'),
+      createEmptyInstance: create)
+    ..aOM<NativeOutputFileFormatConfig>(1, _omitFieldNames ? '' : 'native',
+        subBuilder: NativeOutputFileFormatConfig.create)
+    ..aOM<VttOutputFileFormatConfig>(2, _omitFieldNames ? '' : 'vtt',
+        subBuilder: VttOutputFileFormatConfig.create)
+    ..aOM<SrtOutputFileFormatConfig>(3, _omitFieldNames ? '' : 'srt',
+        subBuilder: SrtOutputFileFormatConfig.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  OutputFormatConfig clone() => OutputFormatConfig()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  OutputFormatConfig copyWith(void Function(OutputFormatConfig) updates) =>
+      super.copyWith((message) => updates(message as OutputFormatConfig))
+          as OutputFormatConfig;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static OutputFormatConfig create() => OutputFormatConfig._();
+  OutputFormatConfig createEmptyInstance() => create();
+  static $pb.PbList<OutputFormatConfig> createRepeated() =>
+      $pb.PbList<OutputFormatConfig>();
+  @$core.pragma('dart2js:noInline')
+  static OutputFormatConfig getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<OutputFormatConfig>(create);
+  static OutputFormatConfig? _defaultInstance;
+
+  /// Configuration for the native output format. If this field is set or if no
+  /// other output format field is set, then transcripts will be written to the
+  /// sink in the native format.
+  @$pb.TagNumber(1)
+  NativeOutputFileFormatConfig get native => $_getN(0);
+  @$pb.TagNumber(1)
+  set native(NativeOutputFileFormatConfig v) {
+    $_setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasNative() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearNative() => $_clearField(1);
+  @$pb.TagNumber(1)
+  NativeOutputFileFormatConfig ensureNative() => $_ensure(0);
+
+  /// Configuration for the VTT output format. If this field is set, then
+  /// transcripts will be written to the sink in the VTT format.
+  @$pb.TagNumber(2)
+  VttOutputFileFormatConfig get vtt => $_getN(1);
+  @$pb.TagNumber(2)
+  set vtt(VttOutputFileFormatConfig v) {
+    $_setField(2, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasVtt() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearVtt() => $_clearField(2);
+  @$pb.TagNumber(2)
+  VttOutputFileFormatConfig ensureVtt() => $_ensure(1);
+
+  /// Configuration for the SRT output format. If this field is set, then
+  /// transcripts will be written to the sink in the SRT format.
+  @$pb.TagNumber(3)
+  SrtOutputFileFormatConfig get srt => $_getN(2);
+  @$pb.TagNumber(3)
+  set srt(SrtOutputFileFormatConfig v) {
+    $_setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasSrt() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearSrt() => $_clearField(3);
+  @$pb.TagNumber(3)
+  SrtOutputFileFormatConfig ensureSrt() => $_ensure(2);
+}
+
 enum RecognitionOutputConfig_Output {
   gcsOutputConfig,
   inlineResponseConfig,
@@ -4182,6 +4738,7 @@ class RecognitionOutputConfig extends $pb.GeneratedMessage {
   factory RecognitionOutputConfig({
     GcsOutputConfig? gcsOutputConfig,
     InlineOutputConfig? inlineResponseConfig,
+    OutputFormatConfig? outputFormatConfig,
   }) {
     final $result = create();
     if (gcsOutputConfig != null) {
@@ -4189,6 +4746,9 @@ class RecognitionOutputConfig extends $pb.GeneratedMessage {
     }
     if (inlineResponseConfig != null) {
       $result.inlineResponseConfig = inlineResponseConfig;
+    }
+    if (outputFormatConfig != null) {
+      $result.outputFormatConfig = outputFormatConfig;
     }
     return $result;
   }
@@ -4216,6 +4776,8 @@ class RecognitionOutputConfig extends $pb.GeneratedMessage {
         subBuilder: GcsOutputConfig.create)
     ..aOM<InlineOutputConfig>(2, _omitFieldNames ? '' : 'inlineResponseConfig',
         subBuilder: InlineOutputConfig.create)
+    ..aOM<OutputFormatConfig>(3, _omitFieldNames ? '' : 'outputFormatConfig',
+        subBuilder: OutputFormatConfig.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -4245,7 +4807,7 @@ class RecognitionOutputConfig extends $pb.GeneratedMessage {
 
   RecognitionOutputConfig_Output whichOutput() =>
       _RecognitionOutputConfig_OutputByTag[$_whichOneof(0)]!;
-  void clearOutput() => clearField($_whichOneof(0));
+  void clearOutput() => $_clearField($_whichOneof(0));
 
   /// If this message is populated, recognition results are written to the
   /// provided Google Cloud Storage URI.
@@ -4253,13 +4815,13 @@ class RecognitionOutputConfig extends $pb.GeneratedMessage {
   GcsOutputConfig get gcsOutputConfig => $_getN(0);
   @$pb.TagNumber(1)
   set gcsOutputConfig(GcsOutputConfig v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasGcsOutputConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearGcsOutputConfig() => clearField(1);
+  void clearGcsOutputConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   GcsOutputConfig ensureGcsOutputConfig() => $_ensure(0);
 
@@ -4272,15 +4834,31 @@ class RecognitionOutputConfig extends $pb.GeneratedMessage {
   InlineOutputConfig get inlineResponseConfig => $_getN(1);
   @$pb.TagNumber(2)
   set inlineResponseConfig(InlineOutputConfig v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasInlineResponseConfig() => $_has(1);
   @$pb.TagNumber(2)
-  void clearInlineResponseConfig() => clearField(2);
+  void clearInlineResponseConfig() => $_clearField(2);
   @$pb.TagNumber(2)
   InlineOutputConfig ensureInlineResponseConfig() => $_ensure(1);
+
+  /// Optional. Configuration for the format of the results stored to `output`.
+  /// If unspecified transcripts will be written in the `NATIVE` format only.
+  @$pb.TagNumber(3)
+  OutputFormatConfig get outputFormatConfig => $_getN(2);
+  @$pb.TagNumber(3)
+  set outputFormatConfig(OutputFormatConfig v) {
+    $_setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasOutputFormatConfig() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearOutputFormatConfig() => $_clearField(3);
+  @$pb.TagNumber(3)
+  OutputFormatConfig ensureOutputFormatConfig() => $_ensure(2);
 }
 
 /// Response message for
@@ -4288,12 +4866,13 @@ class RecognitionOutputConfig extends $pb.GeneratedMessage {
 /// packaged into a longrunning [Operation][google.longrunning.Operation].
 class BatchRecognizeResponse extends $pb.GeneratedMessage {
   factory BatchRecognizeResponse({
-    $core.Map<$core.String, BatchRecognizeFileResult>? results,
+    $core.Iterable<$core.MapEntry<$core.String, BatchRecognizeFileResult>>?
+        results,
     $5.Duration? totalBilledDuration,
   }) {
     final $result = create();
     if (results != null) {
-      $result.results.addAll(results);
+      $result.results.addEntries(results);
     }
     if (totalBilledDuration != null) {
       $result.totalBilledDuration = totalBilledDuration;
@@ -4352,20 +4931,20 @@ class BatchRecognizeResponse extends $pb.GeneratedMessage {
 
   /// Map from filename to the final result for that file.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, BatchRecognizeFileResult> get results => $_getMap(0);
+  $pb.PbMap<$core.String, BatchRecognizeFileResult> get results => $_getMap(0);
 
   /// When available, billed audio seconds for the corresponding request.
   @$pb.TagNumber(2)
   $5.Duration get totalBilledDuration => $_getN(1);
   @$pb.TagNumber(2)
   set totalBilledDuration($5.Duration v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasTotalBilledDuration() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTotalBilledDuration() => clearField(2);
+  void clearTotalBilledDuration() => $_clearField(2);
   @$pb.TagNumber(2)
   $5.Duration ensureTotalBilledDuration() => $_ensure(1);
 }
@@ -4435,34 +5014,251 @@ class BatchRecognizeResults extends $pb.GeneratedMessage {
   /// Sequential list of transcription results corresponding to sequential
   /// portions of audio.
   @$pb.TagNumber(1)
-  $core.List<SpeechRecognitionResult> get results => $_getList(0);
+  $pb.PbList<SpeechRecognitionResult> get results => $_getList(0);
 
   /// Metadata about the recognition.
   @$pb.TagNumber(2)
   RecognitionResponseMetadata get metadata => $_getN(1);
   @$pb.TagNumber(2)
   set metadata(RecognitionResponseMetadata v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasMetadata() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMetadata() => clearField(2);
+  void clearMetadata() => $_clearField(2);
   @$pb.TagNumber(2)
   RecognitionResponseMetadata ensureMetadata() => $_ensure(1);
+}
+
+/// Final results written to Cloud Storage.
+class CloudStorageResult extends $pb.GeneratedMessage {
+  factory CloudStorageResult({
+    $core.String? uri,
+    $core.String? vttFormatUri,
+    $core.String? srtFormatUri,
+  }) {
+    final $result = create();
+    if (uri != null) {
+      $result.uri = uri;
+    }
+    if (vttFormatUri != null) {
+      $result.vttFormatUri = vttFormatUri;
+    }
+    if (srtFormatUri != null) {
+      $result.srtFormatUri = srtFormatUri;
+    }
+    return $result;
+  }
+  CloudStorageResult._() : super();
+  factory CloudStorageResult.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory CloudStorageResult.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'CloudStorageResult',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v2'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'uri')
+    ..aOS(2, _omitFieldNames ? '' : 'vttFormatUri')
+    ..aOS(3, _omitFieldNames ? '' : 'srtFormatUri')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  CloudStorageResult clone() => CloudStorageResult()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  CloudStorageResult copyWith(void Function(CloudStorageResult) updates) =>
+      super.copyWith((message) => updates(message as CloudStorageResult))
+          as CloudStorageResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CloudStorageResult create() => CloudStorageResult._();
+  CloudStorageResult createEmptyInstance() => create();
+  static $pb.PbList<CloudStorageResult> createRepeated() =>
+      $pb.PbList<CloudStorageResult>();
+  @$core.pragma('dart2js:noInline')
+  static CloudStorageResult getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<CloudStorageResult>(create);
+  static CloudStorageResult? _defaultInstance;
+
+  /// The Cloud Storage URI to which recognition results were written.
+  @$pb.TagNumber(1)
+  $core.String get uri => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set uri($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasUri() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearUri() => $_clearField(1);
+
+  /// The Cloud Storage URI to which recognition results were written as VTT
+  /// formatted captions. This is populated only when `VTT` output is requested.
+  @$pb.TagNumber(2)
+  $core.String get vttFormatUri => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set vttFormatUri($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasVttFormatUri() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearVttFormatUri() => $_clearField(2);
+
+  /// The Cloud Storage URI to which recognition results were written as SRT
+  /// formatted captions. This is populated only when `SRT` output is requested.
+  @$pb.TagNumber(3)
+  $core.String get srtFormatUri => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set srtFormatUri($core.String v) {
+    $_setString(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasSrtFormatUri() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearSrtFormatUri() => $_clearField(3);
+}
+
+/// Final results returned inline in the recognition response.
+class InlineResult extends $pb.GeneratedMessage {
+  factory InlineResult({
+    BatchRecognizeResults? transcript,
+    $core.String? vttCaptions,
+    $core.String? srtCaptions,
+  }) {
+    final $result = create();
+    if (transcript != null) {
+      $result.transcript = transcript;
+    }
+    if (vttCaptions != null) {
+      $result.vttCaptions = vttCaptions;
+    }
+    if (srtCaptions != null) {
+      $result.srtCaptions = srtCaptions;
+    }
+    return $result;
+  }
+  InlineResult._() : super();
+  factory InlineResult.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory InlineResult.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'InlineResult',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v2'),
+      createEmptyInstance: create)
+    ..aOM<BatchRecognizeResults>(1, _omitFieldNames ? '' : 'transcript',
+        subBuilder: BatchRecognizeResults.create)
+    ..aOS(2, _omitFieldNames ? '' : 'vttCaptions')
+    ..aOS(3, _omitFieldNames ? '' : 'srtCaptions')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  InlineResult clone() => InlineResult()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  InlineResult copyWith(void Function(InlineResult) updates) =>
+      super.copyWith((message) => updates(message as InlineResult))
+          as InlineResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static InlineResult create() => InlineResult._();
+  InlineResult createEmptyInstance() => create();
+  static $pb.PbList<InlineResult> createRepeated() =>
+      $pb.PbList<InlineResult>();
+  @$core.pragma('dart2js:noInline')
+  static InlineResult getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<InlineResult>(create);
+  static InlineResult? _defaultInstance;
+
+  /// The transcript for the audio file.
+  @$pb.TagNumber(1)
+  BatchRecognizeResults get transcript => $_getN(0);
+  @$pb.TagNumber(1)
+  set transcript(BatchRecognizeResults v) {
+    $_setField(1, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasTranscript() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearTranscript() => $_clearField(1);
+  @$pb.TagNumber(1)
+  BatchRecognizeResults ensureTranscript() => $_ensure(0);
+
+  /// The transcript for the audio file as VTT formatted captions. This is
+  /// populated only when `VTT` output is requested.
+  @$pb.TagNumber(2)
+  $core.String get vttCaptions => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set vttCaptions($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasVttCaptions() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearVttCaptions() => $_clearField(2);
+
+  /// The transcript for the audio file as SRT formatted captions. This is
+  /// populated only when `SRT` output is requested.
+  @$pb.TagNumber(3)
+  $core.String get srtCaptions => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set srtCaptions($core.String v) {
+    $_setString(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasSrtCaptions() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearSrtCaptions() => $_clearField(3);
+}
+
+enum BatchRecognizeFileResult_Result {
+  cloudStorageResult,
+  inlineResult,
+  notSet
 }
 
 /// Final results for a single file.
 class BatchRecognizeFileResult extends $pb.GeneratedMessage {
   factory BatchRecognizeFileResult({
-    $core.String? uri,
+    @$core.Deprecated('This field is deprecated.') $core.String? uri,
     $6.Status? error,
     RecognitionResponseMetadata? metadata,
+    @$core.Deprecated('This field is deprecated.')
     BatchRecognizeResults? transcript,
+    CloudStorageResult? cloudStorageResult,
+    InlineResult? inlineResult,
   }) {
     final $result = create();
     if (uri != null) {
+      // ignore: deprecated_member_use_from_same_package
       $result.uri = uri;
     }
     if (error != null) {
@@ -4472,7 +5268,14 @@ class BatchRecognizeFileResult extends $pb.GeneratedMessage {
       $result.metadata = metadata;
     }
     if (transcript != null) {
+      // ignore: deprecated_member_use_from_same_package
       $result.transcript = transcript;
+    }
+    if (cloudStorageResult != null) {
+      $result.cloudStorageResult = cloudStorageResult;
+    }
+    if (inlineResult != null) {
+      $result.inlineResult = inlineResult;
     }
     return $result;
   }
@@ -4484,11 +5287,18 @@ class BatchRecognizeFileResult extends $pb.GeneratedMessage {
           [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
       create()..mergeFromJson(i, r);
 
+  static const $core.Map<$core.int, BatchRecognizeFileResult_Result>
+      _BatchRecognizeFileResult_ResultByTag = {
+    5: BatchRecognizeFileResult_Result.cloudStorageResult,
+    6: BatchRecognizeFileResult_Result.inlineResult,
+    0: BatchRecognizeFileResult_Result.notSet
+  };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'BatchRecognizeFileResult',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'google.cloud.speech.v2'),
       createEmptyInstance: create)
+    ..oo(0, [5, 6])
     ..aOS(1, _omitFieldNames ? '' : 'uri')
     ..aOM<$6.Status>(2, _omitFieldNames ? '' : 'error',
         subBuilder: $6.Status.create)
@@ -4496,6 +5306,10 @@ class BatchRecognizeFileResult extends $pb.GeneratedMessage {
         subBuilder: RecognitionResponseMetadata.create)
     ..aOM<BatchRecognizeResults>(4, _omitFieldNames ? '' : 'transcript',
         subBuilder: BatchRecognizeResults.create)
+    ..aOM<CloudStorageResult>(5, _omitFieldNames ? '' : 'cloudStorageResult',
+        subBuilder: CloudStorageResult.create)
+    ..aOM<InlineResult>(6, _omitFieldNames ? '' : 'inlineResult',
+        subBuilder: InlineResult.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -4523,31 +5337,39 @@ class BatchRecognizeFileResult extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<BatchRecognizeFileResult>(create);
   static BatchRecognizeFileResult? _defaultInstance;
 
-  /// The Cloud Storage URI to which recognition results were written.
+  BatchRecognizeFileResult_Result whichResult() =>
+      _BatchRecognizeFileResult_ResultByTag[$_whichOneof(0)]!;
+  void clearResult() => $_clearField($_whichOneof(0));
+
+  /// Deprecated. Use `cloud_storage_result.native_format_uri` instead.
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   $core.String get uri => $_getSZ(0);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   set uri($core.String v) {
     $_setString(0, v);
   }
 
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
-  void clearUri() => clearField(1);
+  void clearUri() => $_clearField(1);
 
   /// Error if one was encountered.
   @$pb.TagNumber(2)
   $6.Status get error => $_getN(1);
   @$pb.TagNumber(2)
   set error($6.Status v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
-  void clearError() => clearField(2);
+  void clearError() => $_clearField(2);
   @$pb.TagNumber(2)
   $6.Status ensureError() => $_ensure(1);
 
@@ -4555,33 +5377,72 @@ class BatchRecognizeFileResult extends $pb.GeneratedMessage {
   RecognitionResponseMetadata get metadata => $_getN(2);
   @$pb.TagNumber(3)
   set metadata(RecognitionResponseMetadata v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasMetadata() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMetadata() => clearField(3);
+  void clearMetadata() => $_clearField(3);
   @$pb.TagNumber(3)
   RecognitionResponseMetadata ensureMetadata() => $_ensure(2);
 
-  /// The transcript for the audio file. This is populated only when
+  /// Deprecated. Use `inline_result.transcript` instead.
+  @$core.Deprecated('This field is deprecated.')
+  @$pb.TagNumber(4)
+  BatchRecognizeResults get transcript => $_getN(3);
+  @$core.Deprecated('This field is deprecated.')
+  @$pb.TagNumber(4)
+  set transcript(BatchRecognizeResults v) {
+    $_setField(4, v);
+  }
+
+  @$core.Deprecated('This field is deprecated.')
+  @$pb.TagNumber(4)
+  $core.bool hasTranscript() => $_has(3);
+  @$core.Deprecated('This field is deprecated.')
+  @$pb.TagNumber(4)
+  void clearTranscript() => $_clearField(4);
+  @$core.Deprecated('This field is deprecated.')
+  @$pb.TagNumber(4)
+  BatchRecognizeResults ensureTranscript() => $_ensure(3);
+
+  /// Recognition results written to Cloud Storage. This is
+  /// populated only when
+  /// [GcsOutputConfig][google.cloud.speech.v2.GcsOutputConfig] is set in
+  /// the
+  /// [RecognitionOutputConfig][[google.cloud.speech.v2.RecognitionOutputConfig].
+  @$pb.TagNumber(5)
+  CloudStorageResult get cloudStorageResult => $_getN(4);
+  @$pb.TagNumber(5)
+  set cloudStorageResult(CloudStorageResult v) {
+    $_setField(5, v);
+  }
+
+  @$pb.TagNumber(5)
+  $core.bool hasCloudStorageResult() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearCloudStorageResult() => $_clearField(5);
+  @$pb.TagNumber(5)
+  CloudStorageResult ensureCloudStorageResult() => $_ensure(4);
+
+  /// Recognition results. This is populated only when
   /// [InlineOutputConfig][google.cloud.speech.v2.InlineOutputConfig] is set in
   /// the
   /// [RecognitionOutputConfig][[google.cloud.speech.v2.RecognitionOutputConfig].
-  @$pb.TagNumber(4)
-  BatchRecognizeResults get transcript => $_getN(3);
-  @$pb.TagNumber(4)
-  set transcript(BatchRecognizeResults v) {
-    setField(4, v);
+  @$pb.TagNumber(6)
+  InlineResult get inlineResult => $_getN(5);
+  @$pb.TagNumber(6)
+  set inlineResult(InlineResult v) {
+    $_setField(6, v);
   }
 
-  @$pb.TagNumber(4)
-  $core.bool hasTranscript() => $_has(3);
-  @$pb.TagNumber(4)
-  void clearTranscript() => clearField(4);
-  @$pb.TagNumber(4)
-  BatchRecognizeResults ensureTranscript() => $_ensure(3);
+  @$pb.TagNumber(6)
+  $core.bool hasInlineResult() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearInlineResult() => $_clearField(6);
+  @$pb.TagNumber(6)
+  InlineResult ensureInlineResult() => $_ensure(5);
 }
 
 /// Metadata about transcription for a single file (for example, progress
@@ -4664,20 +5525,20 @@ class BatchRecognizeTranscriptionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasProgressPercent() => $_has(0);
   @$pb.TagNumber(1)
-  void clearProgressPercent() => clearField(1);
+  void clearProgressPercent() => $_clearField(1);
 
   /// Error if one was encountered.
   @$pb.TagNumber(2)
   $6.Status get error => $_getN(1);
   @$pb.TagNumber(2)
   set error($6.Status v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
-  void clearError() => clearField(2);
+  void clearError() => $_clearField(2);
   @$pb.TagNumber(2)
   $6.Status ensureError() => $_ensure(1);
 
@@ -4692,19 +5553,20 @@ class BatchRecognizeTranscriptionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasUri() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUri() => clearField(3);
+  void clearUri() => $_clearField(3);
 }
 
 /// Operation metadata for
 /// [BatchRecognize][google.cloud.speech.v2.Speech.BatchRecognize].
 class BatchRecognizeMetadata extends $pb.GeneratedMessage {
   factory BatchRecognizeMetadata({
-    $core.Map<$core.String, BatchRecognizeTranscriptionMetadata>?
+    $core.Iterable<
+            $core.MapEntry<$core.String, BatchRecognizeTranscriptionMetadata>>?
         transcriptionMetadata,
   }) {
     final $result = create();
     if (transcriptionMetadata != null) {
-      $result.transcriptionMetadata.addAll(transcriptionMetadata);
+      $result.transcriptionMetadata.addEntries(transcriptionMetadata);
     }
     return $result;
   }
@@ -4758,7 +5620,7 @@ class BatchRecognizeMetadata extends $pb.GeneratedMessage {
 
   /// Map from provided filename to the transcription metadata for that file.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, BatchRecognizeTranscriptionMetadata>
+  $pb.PbMap<$core.String, BatchRecognizeTranscriptionMetadata>
       get transcriptionMetadata => $_getMap(0);
 }
 
@@ -4837,7 +5699,7 @@ class BatchRecognizeFileMetadata extends $pb.GeneratedMessage {
 
   BatchRecognizeFileMetadata_AudioSource whichAudioSource() =>
       _BatchRecognizeFileMetadata_AudioSourceByTag[$_whichOneof(0)]!;
-  void clearAudioSource() => clearField($_whichOneof(0));
+  void clearAudioSource() => $_clearField($_whichOneof(0));
 
   /// Cloud Storage URI for the audio file.
   @$pb.TagNumber(1)
@@ -4850,7 +5712,7 @@ class BatchRecognizeFileMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearUri() => clearField(1);
+  void clearUri() => $_clearField(1);
 
   /// Features and audio metadata to use for the Automatic Speech Recognition.
   /// This field in combination with the
@@ -4864,13 +5726,13 @@ class BatchRecognizeFileMetadata extends $pb.GeneratedMessage {
   RecognitionConfig get config => $_getN(1);
   @$pb.TagNumber(4)
   set config(RecognitionConfig v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasConfig() => $_has(1);
   @$pb.TagNumber(4)
-  void clearConfig() => clearField(4);
+  void clearConfig() => $_clearField(4);
   @$pb.TagNumber(4)
   RecognitionConfig ensureConfig() => $_ensure(1);
 
@@ -4891,13 +5753,13 @@ class BatchRecognizeFileMetadata extends $pb.GeneratedMessage {
   $4.FieldMask get configMask => $_getN(2);
   @$pb.TagNumber(5)
   set configMask($4.FieldMask v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasConfigMask() => $_has(2);
   @$pb.TagNumber(5)
-  void clearConfigMask() => clearField(5);
+  void clearConfigMask() => $_clearField(5);
   @$pb.TagNumber(5)
   $4.FieldMask ensureConfigMask() => $_ensure(2);
 }
@@ -4988,7 +5850,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   /// ordered in terms of accuracy, with the top (first) alternative being the
   /// most probable, as ranked by the recognizer.
   @$pb.TagNumber(1)
-  $core.List<SpeechRecognitionAlternative> get alternatives => $_getList(0);
+  $pb.PbList<SpeechRecognitionAlternative> get alternatives => $_getList(0);
 
   /// If `false`, this
   /// [StreamingRecognitionResult][google.cloud.speech.v2.StreamingRecognitionResult]
@@ -5007,7 +5869,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasIsFinal() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIsFinal() => clearField(2);
+  void clearIsFinal() => $_clearField(2);
 
   /// An estimate of the likelihood that the recognizer will not change its guess
   /// about this interim result. Values range from 0.0 (completely unstable)
@@ -5024,7 +5886,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasStability() => $_has(2);
   @$pb.TagNumber(3)
-  void clearStability() => clearField(3);
+  void clearStability() => $_clearField(3);
 
   /// Time offset of the end of this result relative to the beginning of the
   /// audio.
@@ -5032,13 +5894,13 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   $5.Duration get resultEndOffset => $_getN(3);
   @$pb.TagNumber(4)
   set resultEndOffset($5.Duration v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasResultEndOffset() => $_has(3);
   @$pb.TagNumber(4)
-  void clearResultEndOffset() => clearField(4);
+  void clearResultEndOffset() => $_clearField(4);
   @$pb.TagNumber(4)
   $5.Duration ensureResultEndOffset() => $_ensure(3);
 
@@ -5056,7 +5918,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasChannelTag() => $_has(4);
   @$pb.TagNumber(5)
-  void clearChannelTag() => clearField(5);
+  void clearChannelTag() => $_clearField(5);
 
   /// Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
   /// language tag of the language in this result. This language code was
@@ -5071,7 +5933,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasLanguageCode() => $_has(5);
   @$pb.TagNumber(6)
-  void clearLanguageCode() => clearField(6);
+  void clearLanguageCode() => $_clearField(6);
 }
 
 ///  `StreamingRecognizeResponse` is the only message returned to the client by
@@ -5203,26 +6065,26 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   StreamingRecognizeResponse_SpeechEventType get speechEventType => $_getN(0);
   @$pb.TagNumber(3)
   set speechEventType(StreamingRecognizeResponse_SpeechEventType v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasSpeechEventType() => $_has(0);
   @$pb.TagNumber(3)
-  void clearSpeechEventType() => clearField(3);
+  void clearSpeechEventType() => $_clearField(3);
 
   /// Metadata about the recognition.
   @$pb.TagNumber(5)
   RecognitionResponseMetadata get metadata => $_getN(1);
   @$pb.TagNumber(5)
   set metadata(RecognitionResponseMetadata v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasMetadata() => $_has(1);
   @$pb.TagNumber(5)
-  void clearMetadata() => clearField(5);
+  void clearMetadata() => $_clearField(5);
   @$pb.TagNumber(5)
   RecognitionResponseMetadata ensureMetadata() => $_ensure(1);
 
@@ -5234,20 +6096,20 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   /// [is_final][google.cloud.speech.v2.StreamingRecognitionResult.is_final]=`false`
   /// results (the interim results).
   @$pb.TagNumber(6)
-  $core.List<StreamingRecognitionResult> get results => $_getList(2);
+  $pb.PbList<StreamingRecognitionResult> get results => $_getList(2);
 
   /// Time offset between the beginning of the audio and event emission.
   @$pb.TagNumber(7)
   $5.Duration get speechEventOffset => $_getN(3);
   @$pb.TagNumber(7)
   set speechEventOffset($5.Duration v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasSpeechEventOffset() => $_has(3);
   @$pb.TagNumber(7)
-  void clearSpeechEventOffset() => clearField(7);
+  void clearSpeechEventOffset() => $_clearField(7);
   @$pb.TagNumber(7)
   $5.Duration ensureSpeechEventOffset() => $_ensure(3);
 }
@@ -5313,8 +6175,8 @@ class Config extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Config>(create);
   static Config? _defaultInstance;
 
-  /// Output only. The name of the config resource. There is exactly one config
-  /// resource per project per location. The expected format is
+  /// Output only. Identifier. The name of the config resource. There is exactly
+  /// one config resource per project per location. The expected format is
   /// `projects/{project}/locations/{location}/config`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
@@ -5326,7 +6188,7 @@ class Config extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Optional. An optional [KMS key
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#keys) that if
@@ -5344,20 +6206,20 @@ class Config extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasKmsKeyName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearKmsKeyName() => clearField(2);
+  void clearKmsKeyName() => $_clearField(2);
 
   /// Output only. The most recent time this resource was modified.
   @$pb.TagNumber(3)
   $3.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
   set updateTime($3.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearUpdateTime() => clearField(3);
+  void clearUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $3.Timestamp ensureUpdateTime() => $_ensure(2);
 }
@@ -5426,7 +6288,7 @@ class GetConfigRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 }
 
 /// Request message for the
@@ -5494,13 +6356,13 @@ class UpdateConfigRequest extends $pb.GeneratedMessage {
   Config get config => $_getN(0);
   @$pb.TagNumber(1)
   set config(Config v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearConfig() => clearField(1);
+  void clearConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   Config ensureConfig() => $_ensure(0);
 
@@ -5509,13 +6371,13 @@ class UpdateConfigRequest extends $pb.GeneratedMessage {
   $4.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
   set updateMask($4.FieldMask v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUpdateMask() => clearField(2);
+  void clearUpdateMask() => $_clearField(2);
   @$pb.TagNumber(2)
   $4.FieldMask ensureUpdateMask() => $_ensure(1);
 }
@@ -5583,7 +6445,7 @@ class CustomClass_ClassItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 /// CustomClass for biasing in speech recognition. Used to define a set of words
@@ -5599,7 +6461,7 @@ class CustomClass extends $pb.GeneratedMessage {
     $3.Timestamp? updateTime,
     $3.Timestamp? deleteTime,
     $3.Timestamp? expireTime,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
     $core.String? etag,
     $core.bool? reconciling,
     $core.String? kmsKeyName,
@@ -5632,7 +6494,7 @@ class CustomClass extends $pb.GeneratedMessage {
       $result.expireTime = expireTime;
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     if (etag != null) {
       $result.etag = etag;
@@ -5716,7 +6578,7 @@ class CustomClass extends $pb.GeneratedMessage {
       $pb.GeneratedMessage.$_defaultFor<CustomClass>(create);
   static CustomClass? _defaultInstance;
 
-  /// Output only. The resource name of the CustomClass.
+  /// Output only. Identifier. The resource name of the CustomClass.
   /// Format:
   /// `projects/{project}/locations/{location}/customClasses/{custom_class}`.
   @$pb.TagNumber(1)
@@ -5729,7 +6591,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. System-assigned unique identifier for the CustomClass.
   @$pb.TagNumber(2)
@@ -5742,10 +6604,10 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
-  /// User-settable, human-readable name for the CustomClass. Must be 63
-  /// characters or less.
+  /// Optional. User-settable, human-readable name for the CustomClass. Must be
+  /// 63 characters or less.
   @$pb.TagNumber(4)
   $core.String get displayName => $_getSZ(2);
   @$pb.TagNumber(4)
@@ -5756,24 +6618,24 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasDisplayName() => $_has(2);
   @$pb.TagNumber(4)
-  void clearDisplayName() => clearField(4);
+  void clearDisplayName() => $_clearField(4);
 
   /// A collection of class items.
   @$pb.TagNumber(5)
-  $core.List<CustomClass_ClassItem> get items => $_getList(3);
+  $pb.PbList<CustomClass_ClassItem> get items => $_getList(3);
 
   /// Output only. Creation time.
   @$pb.TagNumber(6)
   $3.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
   set createTime($3.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
-  void clearCreateTime() => clearField(6);
+  void clearCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $3.Timestamp ensureCreateTime() => $_ensure(4);
 
@@ -5782,13 +6644,13 @@ class CustomClass extends $pb.GeneratedMessage {
   $3.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(7)
   set updateTime($3.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(7)
-  void clearUpdateTime() => clearField(7);
+  void clearUpdateTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $3.Timestamp ensureUpdateTime() => $_ensure(5);
 
@@ -5797,13 +6659,13 @@ class CustomClass extends $pb.GeneratedMessage {
   $3.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(8)
   set deleteTime($3.Timestamp v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(6);
   @$pb.TagNumber(8)
-  void clearDeleteTime() => clearField(8);
+  void clearDeleteTime() => $_clearField(8);
   @$pb.TagNumber(8)
   $3.Timestamp ensureDeleteTime() => $_ensure(6);
 
@@ -5812,21 +6674,21 @@ class CustomClass extends $pb.GeneratedMessage {
   $3.Timestamp get expireTime => $_getN(7);
   @$pb.TagNumber(9)
   set expireTime($3.Timestamp v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasExpireTime() => $_has(7);
   @$pb.TagNumber(9)
-  void clearExpireTime() => clearField(9);
+  void clearExpireTime() => $_clearField(9);
   @$pb.TagNumber(9)
   $3.Timestamp ensureExpireTime() => $_ensure(7);
 
-  /// Allows users to store small amounts of arbitrary data.
+  /// Optional. Allows users to store small amounts of arbitrary data.
   /// Both the key and the value must be 63 characters or less each.
   /// At most 100 annotations.
   @$pb.TagNumber(10)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(8);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(8);
 
   /// Output only. This checksum is computed by the server based on the value of
   /// other fields. This may be sent on update, undelete, and delete requests to
@@ -5841,7 +6703,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasEtag() => $_has(9);
   @$pb.TagNumber(11)
-  void clearEtag() => clearField(11);
+  void clearEtag() => $_clearField(11);
 
   /// Output only. Whether or not this CustomClass is in the process of being
   /// updated.
@@ -5855,7 +6717,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasReconciling() => $_has(10);
   @$pb.TagNumber(12)
-  void clearReconciling() => clearField(12);
+  void clearReconciling() => $_clearField(12);
 
   /// Output only. The [KMS key
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#keys) with which
@@ -5871,7 +6733,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasKmsKeyName() => $_has(11);
   @$pb.TagNumber(13)
-  void clearKmsKeyName() => clearField(13);
+  void clearKmsKeyName() => $_clearField(13);
 
   /// Output only. The [KMS key version
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#key_versions)
@@ -5887,20 +6749,20 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasKmsKeyVersionName() => $_has(12);
   @$pb.TagNumber(14)
-  void clearKmsKeyVersionName() => clearField(14);
+  void clearKmsKeyVersionName() => $_clearField(14);
 
   /// Output only. The CustomClass lifecycle state.
   @$pb.TagNumber(15)
   CustomClass_State get state => $_getN(13);
   @$pb.TagNumber(15)
   set state(CustomClass_State v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasState() => $_has(13);
   @$pb.TagNumber(15)
-  void clearState() => clearField(15);
+  void clearState() => $_clearField(15);
 }
 
 ///  A Phrase contains words and phrase "hints" so that the speech recognition
@@ -5976,7 +6838,7 @@ class PhraseSet_Phrase extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 
   /// Hint Boost. Overrides the boost set at the phrase set level.
   /// Positive value will increase the probability that a specific phrase will
@@ -5998,7 +6860,7 @@ class PhraseSet_Phrase extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasBoost() => $_has(1);
   @$pb.TagNumber(2)
-  void clearBoost() => clearField(2);
+  void clearBoost() => $_clearField(2);
 }
 
 /// PhraseSet for biasing in speech recognition. A PhraseSet is used to provide
@@ -6015,7 +6877,7 @@ class PhraseSet extends $pb.GeneratedMessage {
     $3.Timestamp? updateTime,
     $3.Timestamp? deleteTime,
     $3.Timestamp? expireTime,
-    $core.Map<$core.String, $core.String>? annotations,
+    $core.Iterable<$core.MapEntry<$core.String, $core.String>>? annotations,
     $core.String? etag,
     $core.bool? reconciling,
     $core.String? kmsKeyName,
@@ -6051,7 +6913,7 @@ class PhraseSet extends $pb.GeneratedMessage {
       $result.expireTime = expireTime;
     }
     if (annotations != null) {
-      $result.annotations.addAll(annotations);
+      $result.annotations.addEntries(annotations);
     }
     if (etag != null) {
       $result.etag = etag;
@@ -6134,7 +6996,7 @@ class PhraseSet extends $pb.GeneratedMessage {
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PhraseSet>(create);
   static PhraseSet? _defaultInstance;
 
-  /// Output only. The resource name of the PhraseSet.
+  /// Output only. Identifier. The resource name of the PhraseSet.
   /// Format: `projects/{project}/locations/{location}/phraseSets/{phrase_set}`.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
@@ -6146,7 +7008,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Output only. System-assigned unique identifier for the PhraseSet.
   @$pb.TagNumber(2)
@@ -6159,11 +7021,11 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUid() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUid() => clearField(2);
+  void clearUid() => $_clearField(2);
 
   /// A list of word and phrases.
   @$pb.TagNumber(3)
-  $core.List<PhraseSet_Phrase> get phrases => $_getList(2);
+  $pb.PbList<PhraseSet_Phrase> get phrases => $_getList(2);
 
   /// Hint Boost. Positive value will increase the probability that a specific
   /// phrase will be recognized over other similar sounding phrases. The higher
@@ -6181,7 +7043,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasBoost() => $_has(3);
   @$pb.TagNumber(4)
-  void clearBoost() => clearField(4);
+  void clearBoost() => $_clearField(4);
 
   /// User-settable, human-readable name for the PhraseSet. Must be 63
   /// characters or less.
@@ -6195,20 +7057,20 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasDisplayName() => $_has(4);
   @$pb.TagNumber(5)
-  void clearDisplayName() => clearField(5);
+  void clearDisplayName() => $_clearField(5);
 
   /// Output only. Creation time.
   @$pb.TagNumber(6)
   $3.Timestamp get createTime => $_getN(5);
   @$pb.TagNumber(6)
   set createTime($3.Timestamp v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(5);
   @$pb.TagNumber(6)
-  void clearCreateTime() => clearField(6);
+  void clearCreateTime() => $_clearField(6);
   @$pb.TagNumber(6)
   $3.Timestamp ensureCreateTime() => $_ensure(5);
 
@@ -6217,13 +7079,13 @@ class PhraseSet extends $pb.GeneratedMessage {
   $3.Timestamp get updateTime => $_getN(6);
   @$pb.TagNumber(7)
   set updateTime($3.Timestamp v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasUpdateTime() => $_has(6);
   @$pb.TagNumber(7)
-  void clearUpdateTime() => clearField(7);
+  void clearUpdateTime() => $_clearField(7);
   @$pb.TagNumber(7)
   $3.Timestamp ensureUpdateTime() => $_ensure(6);
 
@@ -6232,13 +7094,13 @@ class PhraseSet extends $pb.GeneratedMessage {
   $3.Timestamp get deleteTime => $_getN(7);
   @$pb.TagNumber(8)
   set deleteTime($3.Timestamp v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(7);
   @$pb.TagNumber(8)
-  void clearDeleteTime() => clearField(8);
+  void clearDeleteTime() => $_clearField(8);
   @$pb.TagNumber(8)
   $3.Timestamp ensureDeleteTime() => $_ensure(7);
 
@@ -6247,13 +7109,13 @@ class PhraseSet extends $pb.GeneratedMessage {
   $3.Timestamp get expireTime => $_getN(8);
   @$pb.TagNumber(9)
   set expireTime($3.Timestamp v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasExpireTime() => $_has(8);
   @$pb.TagNumber(9)
-  void clearExpireTime() => clearField(9);
+  void clearExpireTime() => $_clearField(9);
   @$pb.TagNumber(9)
   $3.Timestamp ensureExpireTime() => $_ensure(8);
 
@@ -6261,7 +7123,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   /// Both the key and the value must be 63 characters or less each.
   /// At most 100 annotations.
   @$pb.TagNumber(10)
-  $core.Map<$core.String, $core.String> get annotations => $_getMap(9);
+  $pb.PbMap<$core.String, $core.String> get annotations => $_getMap(9);
 
   /// Output only. This checksum is computed by the server based on the value of
   /// other fields. This may be sent on update, undelete, and delete requests to
@@ -6276,7 +7138,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasEtag() => $_has(10);
   @$pb.TagNumber(11)
-  void clearEtag() => clearField(11);
+  void clearEtag() => $_clearField(11);
 
   /// Output only. Whether or not this PhraseSet is in the process of being
   /// updated.
@@ -6290,7 +7152,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasReconciling() => $_has(11);
   @$pb.TagNumber(12)
-  void clearReconciling() => clearField(12);
+  void clearReconciling() => $_clearField(12);
 
   /// Output only. The [KMS key
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#keys) with which
@@ -6306,7 +7168,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasKmsKeyName() => $_has(12);
   @$pb.TagNumber(13)
-  void clearKmsKeyName() => clearField(13);
+  void clearKmsKeyName() => $_clearField(13);
 
   /// Output only. The [KMS key version
   /// name](https://cloud.google.com/kms/docs/resource-hierarchy#key_versions)
@@ -6322,20 +7184,20 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasKmsKeyVersionName() => $_has(13);
   @$pb.TagNumber(14)
-  void clearKmsKeyVersionName() => clearField(14);
+  void clearKmsKeyVersionName() => $_clearField(14);
 
   /// Output only. The PhraseSet lifecycle state.
   @$pb.TagNumber(15)
   PhraseSet_State get state => $_getN(14);
   @$pb.TagNumber(15)
   set state(PhraseSet_State v) {
-    setField(15, v);
+    $_setField(15, v);
   }
 
   @$pb.TagNumber(15)
   $core.bool hasState() => $_has(14);
   @$pb.TagNumber(15)
-  void clearState() => clearField(15);
+  void clearState() => $_clearField(15);
 }
 
 /// Request message for the
@@ -6412,13 +7274,13 @@ class CreateCustomClassRequest extends $pb.GeneratedMessage {
   CustomClass get customClass => $_getN(0);
   @$pb.TagNumber(1)
   set customClass(CustomClass v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCustomClass() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCustomClass() => clearField(1);
+  void clearCustomClass() => $_clearField(1);
   @$pb.TagNumber(1)
   CustomClass ensureCustomClass() => $_ensure(0);
 
@@ -6434,7 +7296,7 @@ class CreateCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasValidateOnly() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValidateOnly() => clearField(2);
+  void clearValidateOnly() => $_clearField(2);
 
   ///  The ID to use for the CustomClass, which will become the final component of
   ///  the CustomClass's resource name.
@@ -6451,7 +7313,7 @@ class CreateCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasCustomClassId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearCustomClassId() => clearField(3);
+  void clearCustomClassId() => $_clearField(3);
 
   /// Required. The project and location where this CustomClass will be created.
   /// The expected format is `projects/{project}/locations/{location}`.
@@ -6465,7 +7327,7 @@ class CreateCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasParent() => $_has(3);
   @$pb.TagNumber(4)
-  void clearParent() => clearField(4);
+  void clearParent() => $_clearField(4);
 }
 
 /// Request message for the
@@ -6548,7 +7410,7 @@ class ListCustomClassesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
-  void clearParent() => clearField(1);
+  void clearParent() => $_clearField(1);
 
   /// Number of results per requests. A valid page_size ranges from 0 to 100
   /// inclusive. If the page_size is zero or unspecified, a page size of 5 will
@@ -6564,7 +7426,7 @@ class ListCustomClassesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPageSize() => clearField(2);
+  void clearPageSize() => $_clearField(2);
 
   ///  A page token, received from a previous
   ///  [ListCustomClasses][google.cloud.speech.v2.Speech.ListCustomClasses] call.
@@ -6583,7 +7445,7 @@ class ListCustomClassesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPageToken() => clearField(3);
+  void clearPageToken() => $_clearField(3);
 
   /// Whether, or not, to show resources that have been deleted.
   @$pb.TagNumber(4)
@@ -6596,7 +7458,7 @@ class ListCustomClassesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasShowDeleted() => $_has(3);
   @$pb.TagNumber(4)
-  void clearShowDeleted() => clearField(4);
+  void clearShowDeleted() => $_clearField(4);
 }
 
 /// Response message for the
@@ -6661,7 +7523,7 @@ class ListCustomClassesResponse extends $pb.GeneratedMessage {
 
   /// The list of requested CustomClasses.
   @$pb.TagNumber(1)
-  $core.List<CustomClass> get customClasses => $_getList(0);
+  $pb.PbList<CustomClass> get customClasses => $_getList(0);
 
   /// A token, which can be sent as
   /// [page_token][google.cloud.speech.v2.ListCustomClassesRequest.page_token] to
@@ -6677,7 +7539,7 @@ class ListCustomClassesResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNextPageToken() => clearField(2);
+  void clearNextPageToken() => $_clearField(2);
 }
 
 /// Request message for the
@@ -6745,7 +7607,7 @@ class GetCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 }
 
 /// Request message for the
@@ -6822,13 +7684,13 @@ class UpdateCustomClassRequest extends $pb.GeneratedMessage {
   CustomClass get customClass => $_getN(0);
   @$pb.TagNumber(1)
   set customClass(CustomClass v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasCustomClass() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCustomClass() => clearField(1);
+  void clearCustomClass() => $_clearField(1);
   @$pb.TagNumber(1)
   CustomClass ensureCustomClass() => $_ensure(0);
 
@@ -6838,13 +7700,13 @@ class UpdateCustomClassRequest extends $pb.GeneratedMessage {
   $4.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
   set updateMask($4.FieldMask v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUpdateMask() => clearField(2);
+  void clearUpdateMask() => $_clearField(2);
   @$pb.TagNumber(2)
   $4.FieldMask ensureUpdateMask() => $_ensure(1);
 
@@ -6860,7 +7722,7 @@ class UpdateCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasValidateOnly() => $_has(2);
   @$pb.TagNumber(4)
-  void clearValidateOnly() => clearField(4);
+  void clearValidateOnly() => $_clearField(4);
 }
 
 /// Request message for the
@@ -6944,7 +7806,7 @@ class DeleteCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// If set, validate the request and preview the deleted CustomClass, but do
   /// not actually delete it.
@@ -6958,7 +7820,7 @@ class DeleteCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasValidateOnly() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValidateOnly() => clearField(2);
+  void clearValidateOnly() => $_clearField(2);
 
   /// This checksum is computed by the server based on the value of other
   /// fields. This may be sent on update, undelete, and delete requests to ensure
@@ -6973,7 +7835,7 @@ class DeleteCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEtag() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEtag() => clearField(3);
+  void clearEtag() => $_clearField(3);
 
   /// If set to true, and the CustomClass is not found, the request will succeed
   /// and  be a no-op (no Operation is recorded in this case).
@@ -6987,7 +7849,7 @@ class DeleteCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasAllowMissing() => $_has(3);
   @$pb.TagNumber(4)
-  void clearAllowMissing() => clearField(4);
+  void clearAllowMissing() => $_clearField(4);
 }
 
 /// Request message for the
@@ -7068,7 +7930,7 @@ class UndeleteCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// If set, validate the request and preview the undeleted CustomClass, but do
   /// not actually undelete it.
@@ -7082,7 +7944,7 @@ class UndeleteCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasValidateOnly() => $_has(1);
   @$pb.TagNumber(3)
-  void clearValidateOnly() => clearField(3);
+  void clearValidateOnly() => $_clearField(3);
 
   /// This checksum is computed by the server based on the value of other
   /// fields. This may be sent on update, undelete, and delete requests to ensure
@@ -7097,7 +7959,7 @@ class UndeleteCustomClassRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasEtag() => $_has(2);
   @$pb.TagNumber(4)
-  void clearEtag() => clearField(4);
+  void clearEtag() => $_clearField(4);
 }
 
 /// Request message for the
@@ -7174,13 +8036,13 @@ class CreatePhraseSetRequest extends $pb.GeneratedMessage {
   PhraseSet get phraseSet => $_getN(0);
   @$pb.TagNumber(1)
   set phraseSet(PhraseSet v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPhraseSet() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPhraseSet() => clearField(1);
+  void clearPhraseSet() => $_clearField(1);
   @$pb.TagNumber(1)
   PhraseSet ensurePhraseSet() => $_ensure(0);
 
@@ -7196,7 +8058,7 @@ class CreatePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasValidateOnly() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValidateOnly() => clearField(2);
+  void clearValidateOnly() => $_clearField(2);
 
   ///  The ID to use for the PhraseSet, which will become the final component of
   ///  the PhraseSet's resource name.
@@ -7213,7 +8075,7 @@ class CreatePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPhraseSetId() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPhraseSetId() => clearField(3);
+  void clearPhraseSetId() => $_clearField(3);
 
   /// Required. The project and location where this PhraseSet will be created.
   /// The expected format is `projects/{project}/locations/{location}`.
@@ -7227,7 +8089,7 @@ class CreatePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasParent() => $_has(3);
   @$pb.TagNumber(4)
-  void clearParent() => clearField(4);
+  void clearParent() => $_clearField(4);
 }
 
 /// Request message for the
@@ -7310,7 +8172,7 @@ class ListPhraseSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasParent() => $_has(0);
   @$pb.TagNumber(1)
-  void clearParent() => clearField(1);
+  void clearParent() => $_clearField(1);
 
   /// The maximum number of PhraseSets to return. The service may return fewer
   /// than this value. If unspecified, at most 5 PhraseSets will be returned.
@@ -7325,7 +8187,7 @@ class ListPhraseSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPageSize() => clearField(2);
+  void clearPageSize() => $_clearField(2);
 
   ///  A page token, received from a previous
   ///  [ListPhraseSets][google.cloud.speech.v2.Speech.ListPhraseSets] call.
@@ -7344,7 +8206,7 @@ class ListPhraseSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPageToken() => clearField(3);
+  void clearPageToken() => $_clearField(3);
 
   /// Whether, or not, to show resources that have been deleted.
   @$pb.TagNumber(4)
@@ -7357,7 +8219,7 @@ class ListPhraseSetsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasShowDeleted() => $_has(3);
   @$pb.TagNumber(4)
-  void clearShowDeleted() => clearField(4);
+  void clearShowDeleted() => $_clearField(4);
 }
 
 /// Response message for the
@@ -7421,7 +8283,7 @@ class ListPhraseSetsResponse extends $pb.GeneratedMessage {
 
   /// The list of requested PhraseSets.
   @$pb.TagNumber(1)
-  $core.List<PhraseSet> get phraseSets => $_getList(0);
+  $pb.PbList<PhraseSet> get phraseSets => $_getList(0);
 
   /// A token, which can be sent as
   /// [page_token][google.cloud.speech.v2.ListPhraseSetsRequest.page_token] to
@@ -7437,7 +8299,7 @@ class ListPhraseSetsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNextPageToken() => clearField(2);
+  void clearNextPageToken() => $_clearField(2);
 }
 
 /// Request message for the
@@ -7503,7 +8365,7 @@ class GetPhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 }
 
 /// Request message for the
@@ -7579,13 +8441,13 @@ class UpdatePhraseSetRequest extends $pb.GeneratedMessage {
   PhraseSet get phraseSet => $_getN(0);
   @$pb.TagNumber(1)
   set phraseSet(PhraseSet v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasPhraseSet() => $_has(0);
   @$pb.TagNumber(1)
-  void clearPhraseSet() => clearField(1);
+  void clearPhraseSet() => $_clearField(1);
   @$pb.TagNumber(1)
   PhraseSet ensurePhraseSet() => $_ensure(0);
 
@@ -7595,13 +8457,13 @@ class UpdatePhraseSetRequest extends $pb.GeneratedMessage {
   $4.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
   set updateMask($4.FieldMask v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUpdateMask() => clearField(2);
+  void clearUpdateMask() => $_clearField(2);
   @$pb.TagNumber(2)
   $4.FieldMask ensureUpdateMask() => $_ensure(1);
 
@@ -7617,7 +8479,7 @@ class UpdatePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasValidateOnly() => $_has(2);
   @$pb.TagNumber(4)
-  void clearValidateOnly() => clearField(4);
+  void clearValidateOnly() => $_clearField(4);
 }
 
 /// Request message for the
@@ -7700,7 +8562,7 @@ class DeletePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// If set, validate the request and preview the deleted PhraseSet, but do not
   /// actually delete it.
@@ -7714,7 +8576,7 @@ class DeletePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasValidateOnly() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValidateOnly() => clearField(2);
+  void clearValidateOnly() => $_clearField(2);
 
   /// This checksum is computed by the server based on the value of other
   /// fields. This may be sent on update, undelete, and delete requests to ensure
@@ -7729,7 +8591,7 @@ class DeletePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasEtag() => $_has(2);
   @$pb.TagNumber(3)
-  void clearEtag() => clearField(3);
+  void clearEtag() => $_clearField(3);
 
   /// If set to true, and the PhraseSet is not found, the request will succeed
   /// and  be a no-op (no Operation is recorded in this case).
@@ -7743,7 +8605,7 @@ class DeletePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasAllowMissing() => $_has(3);
   @$pb.TagNumber(4)
-  void clearAllowMissing() => clearField(4);
+  void clearAllowMissing() => $_clearField(4);
 }
 
 /// Request message for the
@@ -7822,7 +8684,7 @@ class UndeletePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// If set, validate the request and preview the undeleted PhraseSet, but do
   /// not actually undelete it.
@@ -7836,7 +8698,7 @@ class UndeletePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasValidateOnly() => $_has(1);
   @$pb.TagNumber(3)
-  void clearValidateOnly() => clearField(3);
+  void clearValidateOnly() => $_clearField(3);
 
   /// This checksum is computed by the server based on the value of other
   /// fields. This may be sent on update, undelete, and delete requests to ensure
@@ -7851,7 +8713,7 @@ class UndeletePhraseSetRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasEtag() => $_has(2);
   @$pb.TagNumber(4)
-  void clearEtag() => clearField(4);
+  void clearEtag() => $_clearField(4);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

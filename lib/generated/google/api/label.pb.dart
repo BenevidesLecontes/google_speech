@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/api/label.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,6 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'label.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'label.pbenum.dart';
 
@@ -91,20 +93,20 @@ class LabelDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
-  void clearKey() => clearField(1);
+  void clearKey() => $_clearField(1);
 
   /// The type of data that can be assigned to the label.
   @$pb.TagNumber(2)
   LabelDescriptor_ValueType get valueType => $_getN(1);
   @$pb.TagNumber(2)
   set valueType(LabelDescriptor_ValueType v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasValueType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearValueType() => clearField(2);
+  void clearValueType() => $_clearField(2);
 
   /// A human-readable description for the label.
   @$pb.TagNumber(3)
@@ -117,7 +119,7 @@ class LabelDescriptor extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDescription() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDescription() => clearField(3);
+  void clearDescription() => $_clearField(3);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

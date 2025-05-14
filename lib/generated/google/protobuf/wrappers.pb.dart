@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/protobuf/wrappers.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,9 +15,14 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 import 'package:protobuf/src/protobuf/mixins/well_known.dart' as $mixin;
 
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+
 ///  Wrapper message for `double`.
 ///
 ///  The JSON representation for `DoubleValue` is JSON number.
+///
+///  Not recommended for use in new APIs, but still useful for legacy APIs and
+///  has no plan to be removed.
 class DoubleValue extends $pb.GeneratedMessage with $mixin.DoubleValueMixin {
   factory DoubleValue({
     $core.double? value,
@@ -79,12 +84,15 @@ class DoubleValue extends $pb.GeneratedMessage with $mixin.DoubleValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 ///  Wrapper message for `float`.
 ///
 ///  The JSON representation for `FloatValue` is JSON number.
+///
+///  Not recommended for use in new APIs, but still useful for legacy APIs and
+///  has no plan to be removed.
 class FloatValue extends $pb.GeneratedMessage with $mixin.FloatValueMixin {
   factory FloatValue({
     $core.double? value,
@@ -145,12 +153,15 @@ class FloatValue extends $pb.GeneratedMessage with $mixin.FloatValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 ///  Wrapper message for `int64`.
 ///
 ///  The JSON representation for `Int64Value` is JSON string.
+///
+///  Not recommended for use in new APIs, but still useful for legacy APIs and
+///  has no plan to be removed.
 class Int64Value extends $pb.GeneratedMessage with $mixin.Int64ValueMixin {
   factory Int64Value({
     $fixnum.Int64? value,
@@ -211,12 +222,15 @@ class Int64Value extends $pb.GeneratedMessage with $mixin.Int64ValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 ///  Wrapper message for `uint64`.
 ///
 ///  The JSON representation for `UInt64Value` is JSON string.
+///
+///  Not recommended for use in new APIs, but still useful for legacy APIs and
+///  has no plan to be removed.
 class UInt64Value extends $pb.GeneratedMessage with $mixin.UInt64ValueMixin {
   factory UInt64Value({
     $fixnum.Int64? value,
@@ -279,12 +293,15 @@ class UInt64Value extends $pb.GeneratedMessage with $mixin.UInt64ValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 ///  Wrapper message for `int32`.
 ///
 ///  The JSON representation for `Int32Value` is JSON number.
+///
+///  Not recommended for use in new APIs, but still useful for legacy APIs and
+///  has no plan to be removed.
 class Int32Value extends $pb.GeneratedMessage with $mixin.Int32ValueMixin {
   factory Int32Value({
     $core.int? value,
@@ -345,12 +362,15 @@ class Int32Value extends $pb.GeneratedMessage with $mixin.Int32ValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 ///  Wrapper message for `uint32`.
 ///
 ///  The JSON representation for `UInt32Value` is JSON number.
+///
+///  Not recommended for use in new APIs, but still useful for legacy APIs and
+///  has no plan to be removed.
 class UInt32Value extends $pb.GeneratedMessage with $mixin.UInt32ValueMixin {
   factory UInt32Value({
     $core.int? value,
@@ -412,12 +432,15 @@ class UInt32Value extends $pb.GeneratedMessage with $mixin.UInt32ValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 ///  Wrapper message for `bool`.
 ///
 ///  The JSON representation for `BoolValue` is JSON `true` and `false`.
+///
+///  Not recommended for use in new APIs, but still useful for legacy APIs and
+///  has no plan to be removed.
 class BoolValue extends $pb.GeneratedMessage with $mixin.BoolValueMixin {
   factory BoolValue({
     $core.bool? value,
@@ -478,12 +501,15 @@ class BoolValue extends $pb.GeneratedMessage with $mixin.BoolValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 ///  Wrapper message for `string`.
 ///
 ///  The JSON representation for `StringValue` is JSON string.
+///
+///  Not recommended for use in new APIs, but still useful for legacy APIs and
+///  has no plan to be removed.
 class StringValue extends $pb.GeneratedMessage with $mixin.StringValueMixin {
   factory StringValue({
     $core.String? value,
@@ -545,12 +571,15 @@ class StringValue extends $pb.GeneratedMessage with $mixin.StringValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 ///  Wrapper message for `bytes`.
 ///
 ///  The JSON representation for `BytesValue` is JSON string.
+///
+///  Not recommended for use in new APIs, but still useful for legacy APIs and
+///  has no plan to be removed.
 class BytesValue extends $pb.GeneratedMessage with $mixin.BytesValueMixin {
   factory BytesValue({
     $core.List<$core.int>? value,
@@ -612,7 +641,7 @@ class BytesValue extends $pb.GeneratedMessage with $mixin.BytesValueMixin {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

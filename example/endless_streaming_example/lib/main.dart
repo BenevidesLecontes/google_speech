@@ -3,8 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_sound_lite/flutter_sound.dart';
-import 'package:google_speech/config/streaming_recognition_config.dart';
-import 'package:google_speech/endless_streaming_service.dart';
 import 'package:google_speech/endless_streaming_service_v2.dart';
 import 'package:google_speech/generated/google/cloud/speech/v2/cloud_speech.pb.dart';
 import 'package:google_speech/google_speech.dart';
@@ -105,9 +103,10 @@ class _AudioRecognizeState extends State<AudioRecognize> {
     var responseText = '';
 
     responseStream.listen((data) {
-      final currentText =
-          data.results.where((e) => e.alternatives.isNotEmpty).
-          map((e) => e.alternatives.first.transcript).join('\n');
+      final currentText = data.results
+          .where((e) => e.alternatives.isNotEmpty)
+          .map((e) => e.alternatives.first.transcript)
+          .join('\n');
 
       if (data.results.first.isFinal) {
         responseText += '\n' + currentText;
@@ -202,7 +201,7 @@ class _RecognizeContent extends StatelessWidget {
           ),
           Text(
             text,
-            style: Theme.of(context).textTheme.bodyText1,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ],
       ),

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/longrunning/operations.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -16,6 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../protobuf/any.pb.dart' as $2;
 import '../protobuf/duration.pb.dart' as $4;
 import '../rpc/status.pb.dart' as $3;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 enum Operation_Result { error, response, notSet }
 
@@ -98,7 +100,7 @@ class Operation extends $pb.GeneratedMessage {
   static Operation? _defaultInstance;
 
   Operation_Result whichResult() => _Operation_ResultByTag[$_whichOneof(0)]!;
-  void clearResult() => clearField($_whichOneof(0));
+  void clearResult() => $_clearField($_whichOneof(0));
 
   /// The server-assigned name, which is only unique within the same service that
   /// originally returns it. If you use the default HTTP mapping, the
@@ -113,7 +115,7 @@ class Operation extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// Service-specific metadata associated with the operation.  It typically
   /// contains progress information and common metadata such as create time.
@@ -123,13 +125,13 @@ class Operation extends $pb.GeneratedMessage {
   $2.Any get metadata => $_getN(1);
   @$pb.TagNumber(2)
   set metadata($2.Any v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasMetadata() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMetadata() => clearField(2);
+  void clearMetadata() => $_clearField(2);
   @$pb.TagNumber(2)
   $2.Any ensureMetadata() => $_ensure(1);
 
@@ -146,24 +148,24 @@ class Operation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasDone() => $_has(2);
   @$pb.TagNumber(3)
-  void clearDone() => clearField(3);
+  void clearDone() => $_clearField(3);
 
   /// The error result of the operation in case of failure or cancellation.
   @$pb.TagNumber(4)
   $3.Status get error => $_getN(3);
   @$pb.TagNumber(4)
   set error($3.Status v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasError() => $_has(3);
   @$pb.TagNumber(4)
-  void clearError() => clearField(4);
+  void clearError() => $_clearField(4);
   @$pb.TagNumber(4)
   $3.Status ensureError() => $_ensure(3);
 
-  /// The normal response of the operation in case of success.  If the original
+  /// The normal, successful response of the operation.  If the original
   /// method returns no data on success, such as `Delete`, the response is
   /// `google.protobuf.Empty`.  If the original method is standard
   /// `Get`/`Create`/`Update`, the response should be the resource.  For other
@@ -175,18 +177,19 @@ class Operation extends $pb.GeneratedMessage {
   $2.Any get response => $_getN(4);
   @$pb.TagNumber(5)
   set response($2.Any v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasResponse() => $_has(4);
   @$pb.TagNumber(5)
-  void clearResponse() => clearField(5);
+  void clearResponse() => $_clearField(5);
   @$pb.TagNumber(5)
   $2.Any ensureResponse() => $_ensure(4);
 }
 
-/// The request message for [Operations.GetOperation][google.longrunning.Operations.GetOperation].
+/// The request message for
+/// [Operations.GetOperation][google.longrunning.Operations.GetOperation].
 class GetOperationRequest extends $pb.GeneratedMessage {
   factory GetOperationRequest({
     $core.String? name,
@@ -247,10 +250,11 @@ class GetOperationRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 }
 
-/// The request message for [Operations.ListOperations][google.longrunning.Operations.ListOperations].
+/// The request message for
+/// [Operations.ListOperations][google.longrunning.Operations.ListOperations].
 class ListOperationsRequest extends $pb.GeneratedMessage {
   factory ListOperationsRequest({
     $core.String? filter,
@@ -328,7 +332,7 @@ class ListOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasFilter() => $_has(0);
   @$pb.TagNumber(1)
-  void clearFilter() => clearField(1);
+  void clearFilter() => $_clearField(1);
 
   /// The standard list page size.
   @$pb.TagNumber(2)
@@ -341,7 +345,7 @@ class ListOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasPageSize() => $_has(1);
   @$pb.TagNumber(2)
-  void clearPageSize() => clearField(2);
+  void clearPageSize() => $_clearField(2);
 
   /// The standard list page token.
   @$pb.TagNumber(3)
@@ -354,7 +358,7 @@ class ListOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasPageToken() => $_has(2);
   @$pb.TagNumber(3)
-  void clearPageToken() => clearField(3);
+  void clearPageToken() => $_clearField(3);
 
   /// The name of the operation's parent resource.
   @$pb.TagNumber(4)
@@ -367,10 +371,11 @@ class ListOperationsRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasName() => $_has(3);
   @$pb.TagNumber(4)
-  void clearName() => clearField(4);
+  void clearName() => $_clearField(4);
 }
 
-/// The response message for [Operations.ListOperations][google.longrunning.Operations.ListOperations].
+/// The response message for
+/// [Operations.ListOperations][google.longrunning.Operations.ListOperations].
 class ListOperationsResponse extends $pb.GeneratedMessage {
   factory ListOperationsResponse({
     $core.Iterable<Operation>? operations,
@@ -430,7 +435,7 @@ class ListOperationsResponse extends $pb.GeneratedMessage {
 
   /// A list of operations that matches the specified filter in the request.
   @$pb.TagNumber(1)
-  $core.List<Operation> get operations => $_getList(0);
+  $pb.PbList<Operation> get operations => $_getList(0);
 
   /// The standard List next-page token.
   @$pb.TagNumber(2)
@@ -443,10 +448,11 @@ class ListOperationsResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasNextPageToken() => $_has(1);
   @$pb.TagNumber(2)
-  void clearNextPageToken() => clearField(2);
+  void clearNextPageToken() => $_clearField(2);
 }
 
-/// The request message for [Operations.CancelOperation][google.longrunning.Operations.CancelOperation].
+/// The request message for
+/// [Operations.CancelOperation][google.longrunning.Operations.CancelOperation].
 class CancelOperationRequest extends $pb.GeneratedMessage {
   factory CancelOperationRequest({
     $core.String? name,
@@ -509,10 +515,11 @@ class CancelOperationRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 }
 
-/// The request message for [Operations.DeleteOperation][google.longrunning.Operations.DeleteOperation].
+/// The request message for
+/// [Operations.DeleteOperation][google.longrunning.Operations.DeleteOperation].
 class DeleteOperationRequest extends $pb.GeneratedMessage {
   factory DeleteOperationRequest({
     $core.String? name,
@@ -575,10 +582,11 @@ class DeleteOperationRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 }
 
-/// The request message for [Operations.WaitOperation][google.longrunning.Operations.WaitOperation].
+/// The request message for
+/// [Operations.WaitOperation][google.longrunning.Operations.WaitOperation].
 class WaitOperationRequest extends $pb.GeneratedMessage {
   factory WaitOperationRequest({
     $core.String? name,
@@ -646,7 +654,7 @@ class WaitOperationRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// The maximum duration to wait before timing out. If left blank, the wait
   /// will be at most the time permitted by the underlying HTTP/RPC protocol.
@@ -655,13 +663,13 @@ class WaitOperationRequest extends $pb.GeneratedMessage {
   $4.Duration get timeout => $_getN(1);
   @$pb.TagNumber(2)
   set timeout($4.Duration v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasTimeout() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTimeout() => clearField(2);
+  void clearTimeout() => $_clearField(2);
   @$pb.TagNumber(2)
   $4.Duration ensureTimeout() => $_ensure(1);
 }
@@ -670,13 +678,12 @@ class WaitOperationRequest extends $pb.GeneratedMessage {
 ///
 ///  Example:
 ///
-///    rpc LongRunningRecognize(LongRunningRecognizeRequest)
-///        returns (google.longrunning.Operation) {
-///      option (google.longrunning.operation_info) = {
-///        response_type: "LongRunningRecognizeResponse"
-///        metadata_type: "LongRunningRecognizeMetadata"
-///      };
-///    }
+///      rpc Export(ExportRequest) returns (google.longrunning.Operation) {
+///        option (google.longrunning.operation_info) = {
+///          response_type: "ExportResponse"
+///          metadata_type: "ExportMetadata"
+///        };
+///      }
 class OperationInfo extends $pb.GeneratedMessage {
   factory OperationInfo({
     $core.String? responseType,
@@ -749,7 +756,7 @@ class OperationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasResponseType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearResponseType() => clearField(1);
+  void clearResponseType() => $_clearField(1);
 
   ///  Required. The message name of the metadata type for this long-running
   ///  operation.
@@ -768,7 +775,7 @@ class OperationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMetadataType() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMetadataType() => clearField(2);
+  void clearMetadataType() => $_clearField(2);
 }
 
 class Operations {

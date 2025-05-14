@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/cloud/speech/v1/resource.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -144,3 +144,36 @@ final $typed_data.Uint8List speechAdaptationDescriptor = $convert.base64Decode(
     'dvb2dsZS5jbG91ZC5zcGVlY2gudjEuU3BlZWNoQWRhcHRhdGlvbi5BQk5GR3JhbW1hclILYWJu'
     'ZkdyYW1tYXIaMAoLQUJORkdyYW1tYXISIQoMYWJuZl9zdHJpbmdzGAEgAygJUgthYm5mU3RyaW'
     '5ncw==');
+
+@$core.Deprecated('Use transcriptNormalizationDescriptor instead')
+const TranscriptNormalization$json = {
+  '1': 'TranscriptNormalization',
+  '2': [
+    {
+      '1': 'entries',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.google.cloud.speech.v1.TranscriptNormalization.Entry',
+      '10': 'entries'
+    },
+  ],
+  '3': [TranscriptNormalization_Entry$json],
+};
+
+@$core.Deprecated('Use transcriptNormalizationDescriptor instead')
+const TranscriptNormalization_Entry$json = {
+  '1': 'Entry',
+  '2': [
+    {'1': 'search', '3': 1, '4': 1, '5': 9, '10': 'search'},
+    {'1': 'replace', '3': 2, '4': 1, '5': 9, '10': 'replace'},
+    {'1': 'case_sensitive', '3': 3, '4': 1, '5': 8, '10': 'caseSensitive'},
+  ],
+};
+
+/// Descriptor for `TranscriptNormalization`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List transcriptNormalizationDescriptor = $convert.base64Decode(
+    'ChdUcmFuc2NyaXB0Tm9ybWFsaXphdGlvbhJPCgdlbnRyaWVzGAEgAygLMjUuZ29vZ2xlLmNsb3'
+    'VkLnNwZWVjaC52MS5UcmFuc2NyaXB0Tm9ybWFsaXphdGlvbi5FbnRyeVIHZW50cmllcxpgCgVF'
+    'bnRyeRIWCgZzZWFyY2gYASABKAlSBnNlYXJjaBIYCgdyZXBsYWNlGAIgASgJUgdyZXBsYWNlEi'
+    'UKDmNhc2Vfc2Vuc2l0aXZlGAMgASgIUg1jYXNlU2Vuc2l0aXZl');

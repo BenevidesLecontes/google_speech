@@ -125,15 +125,14 @@ class _AudioRecognizeState extends State<AudioRecognize> {
   }
 
   RecognitionConfigV2 _getConfig() => RecognitionConfigV2(
-        model: RecognitionModelV2.long,
-        languageCodes: ['de-DE', 'en-US'],
-        features: RecognitionFeatures(),
-        explicitDecodingConfig: ExplicitDecodingConfig(
-          encoding: ExplicitDecodingConfig_AudioEncoding.LINEAR16,
-          sampleRateHertz: kAudioSampleRate,
-          audioChannelCount: kAudioNumChannels,
-        )
-      );
+      model: RecognitionModelV2.long,
+      languageCodes: ['de-DE', 'en-US'],
+      features: RecognitionFeatures(),
+      explicitDecodingConfig: ExplicitDecodingConfig(
+        encoding: ExplicitDecodingConfig_AudioEncoding.LINEAR16,
+        sampleRateHertz: kAudioSampleRate,
+        audioChannelCount: kAudioNumChannels,
+      ));
 
   @override
   Widget build(BuildContext context) {
@@ -181,7 +180,7 @@ class _RecognizeContent extends StatelessWidget {
           ),
           Text(
             text,
-            style: Theme.of(context).textTheme.bodyText1,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ],
       ),

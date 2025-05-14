@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_speech/config/longrunning_result.dart';
 import 'package:google_speech/generated/google/cloud/speech/v2/cloud_speech.pb.dart';
-import 'package:google_speech/generated/google/longrunning/operations.pb.dart';
-import 'package:google_speech/generated/google/longrunning/operations.pbgrpc.dart';
 import 'package:google_speech/google_speech.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -110,9 +108,10 @@ class _AudioRecognizeState extends State<AudioRecognize> {
         .pollingLongRunningRecognize(config, 'YOUR-GS-URI')
         .then((LongRunningRequestResult result) {
       setState(() {
-        text =
-            result.results?.map((e) => e.alternatives.first.transcript).join('\n') ??
-                "";
+        text = result.results
+                ?.map((e) => e.alternatives.first.transcript)
+                .join('\n') ??
+            "";
         recognizeFinished = true;
         recognizing = false;
       });
@@ -230,7 +229,7 @@ class _RecognizeContent extends StatelessWidget {
           ),
           Text(
             text ?? '---',
-            style: Theme.of(context).textTheme.bodyText1,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ],
       ),

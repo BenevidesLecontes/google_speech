@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/cloud/speech/v1/cloud_speech.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -20,6 +20,8 @@ import '../../../protobuf/wrappers.pb.dart' as $5;
 import '../../../rpc/status.pb.dart' as $6;
 import 'cloud_speech.pbenum.dart';
 import 'resource.pb.dart' as $4;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'cloud_speech.pbenum.dart';
 
@@ -86,13 +88,13 @@ class RecognizeRequest extends $pb.GeneratedMessage {
   RecognitionConfig get config => $_getN(0);
   @$pb.TagNumber(1)
   set config(RecognitionConfig v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearConfig() => clearField(1);
+  void clearConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   RecognitionConfig ensureConfig() => $_ensure(0);
 
@@ -101,13 +103,13 @@ class RecognizeRequest extends $pb.GeneratedMessage {
   RecognitionAudio get audio => $_getN(1);
   @$pb.TagNumber(2)
   set audio(RecognitionAudio v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasAudio() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAudio() => clearField(2);
+  void clearAudio() => $_clearField(2);
   @$pb.TagNumber(2)
   RecognitionAudio ensureAudio() => $_ensure(1);
 }
@@ -186,13 +188,13 @@ class LongRunningRecognizeRequest extends $pb.GeneratedMessage {
   RecognitionConfig get config => $_getN(0);
   @$pb.TagNumber(1)
   set config(RecognitionConfig v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearConfig() => clearField(1);
+  void clearConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   RecognitionConfig ensureConfig() => $_ensure(0);
 
@@ -201,13 +203,13 @@ class LongRunningRecognizeRequest extends $pb.GeneratedMessage {
   RecognitionAudio get audio => $_getN(1);
   @$pb.TagNumber(2)
   set audio(RecognitionAudio v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasAudio() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAudio() => clearField(2);
+  void clearAudio() => $_clearField(2);
   @$pb.TagNumber(2)
   RecognitionAudio ensureAudio() => $_ensure(1);
 
@@ -216,13 +218,13 @@ class LongRunningRecognizeRequest extends $pb.GeneratedMessage {
   TranscriptOutputConfig get outputConfig => $_getN(2);
   @$pb.TagNumber(4)
   set outputConfig(TranscriptOutputConfig v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasOutputConfig() => $_has(2);
   @$pb.TagNumber(4)
-  void clearOutputConfig() => clearField(4);
+  void clearOutputConfig() => $_clearField(4);
   @$pb.TagNumber(4)
   TranscriptOutputConfig ensureOutputConfig() => $_ensure(2);
 }
@@ -289,7 +291,7 @@ class TranscriptOutputConfig extends $pb.GeneratedMessage {
 
   TranscriptOutputConfig_OutputType whichOutputType() =>
       _TranscriptOutputConfig_OutputTypeByTag[$_whichOneof(0)]!;
-  void clearOutputType() => clearField($_whichOneof(0));
+  void clearOutputType() => $_clearField($_whichOneof(0));
 
   /// Specifies a Cloud Storage URI for the recognition results. Must be
   /// specified in the format: `gs://bucket_name/object_name`, and the bucket
@@ -304,7 +306,7 @@ class TranscriptOutputConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasGcsUri() => $_has(0);
   @$pb.TagNumber(1)
-  void clearGcsUri() => clearField(1);
+  void clearGcsUri() => $_clearField(1);
 }
 
 enum StreamingRecognizeRequest_StreamingRequest {
@@ -386,7 +388,7 @@ class StreamingRecognizeRequest extends $pb.GeneratedMessage {
 
   StreamingRecognizeRequest_StreamingRequest whichStreamingRequest() =>
       _StreamingRecognizeRequest_StreamingRequestByTag[$_whichOneof(0)]!;
-  void clearStreamingRequest() => clearField($_whichOneof(0));
+  void clearStreamingRequest() => $_clearField($_whichOneof(0));
 
   /// Provides information to the recognizer that specifies how to process the
   /// request. The first `StreamingRecognizeRequest` message must contain a
@@ -395,13 +397,13 @@ class StreamingRecognizeRequest extends $pb.GeneratedMessage {
   StreamingRecognitionConfig get streamingConfig => $_getN(0);
   @$pb.TagNumber(1)
   set streamingConfig(StreamingRecognitionConfig v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStreamingConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStreamingConfig() => clearField(1);
+  void clearStreamingConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   StreamingRecognitionConfig ensureStreamingConfig() => $_ensure(0);
 
@@ -423,7 +425,7 @@ class StreamingRecognizeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasAudioContent() => $_has(1);
   @$pb.TagNumber(2)
-  void clearAudioContent() => clearField(2);
+  void clearAudioContent() => $_clearField(2);
 }
 
 /// Events that a timeout can be set on for voice activity.
@@ -501,13 +503,13 @@ class StreamingRecognitionConfig_VoiceActivityTimeout
   $3.Duration get speechStartTimeout => $_getN(0);
   @$pb.TagNumber(1)
   set speechStartTimeout($3.Duration v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasSpeechStartTimeout() => $_has(0);
   @$pb.TagNumber(1)
-  void clearSpeechStartTimeout() => clearField(1);
+  void clearSpeechStartTimeout() => $_clearField(1);
   @$pb.TagNumber(1)
   $3.Duration ensureSpeechStartTimeout() => $_ensure(0);
 
@@ -516,13 +518,13 @@ class StreamingRecognitionConfig_VoiceActivityTimeout
   $3.Duration get speechEndTimeout => $_getN(1);
   @$pb.TagNumber(2)
   set speechEndTimeout($3.Duration v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasSpeechEndTimeout() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSpeechEndTimeout() => clearField(2);
+  void clearSpeechEndTimeout() => $_clearField(2);
   @$pb.TagNumber(2)
   $3.Duration ensureSpeechEndTimeout() => $_ensure(1);
 }
@@ -610,13 +612,13 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
   RecognitionConfig get config => $_getN(0);
   @$pb.TagNumber(1)
   set config(RecognitionConfig v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasConfig() => $_has(0);
   @$pb.TagNumber(1)
-  void clearConfig() => clearField(1);
+  void clearConfig() => $_clearField(1);
   @$pb.TagNumber(1)
   RecognitionConfig ensureConfig() => $_ensure(0);
 
@@ -651,7 +653,7 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSingleUtterance() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSingleUtterance() => clearField(2);
+  void clearSingleUtterance() => $_clearField(2);
 
   /// If `true`, interim results (tentative hypotheses) may be
   /// returned as they become available (these interim results are indicated with
@@ -667,7 +669,7 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasInterimResults() => $_has(2);
   @$pb.TagNumber(3)
-  void clearInterimResults() => clearField(3);
+  void clearInterimResults() => $_clearField(3);
 
   /// If `true`, responses with voice activity speech events will be returned as
   /// they are detected.
@@ -681,7 +683,7 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasEnableVoiceActivityEvents() => $_has(3);
   @$pb.TagNumber(5)
-  void clearEnableVoiceActivityEvents() => clearField(5);
+  void clearEnableVoiceActivityEvents() => $_clearField(5);
 
   /// If set, the server will automatically close the stream after the specified
   /// duration has elapsed after the last VOICE_ACTIVITY speech event has been
@@ -691,13 +693,13 @@ class StreamingRecognitionConfig extends $pb.GeneratedMessage {
       $_getN(4);
   @$pb.TagNumber(6)
   set voiceActivityTimeout(StreamingRecognitionConfig_VoiceActivityTimeout v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasVoiceActivityTimeout() => $_has(4);
   @$pb.TagNumber(6)
-  void clearVoiceActivityTimeout() => clearField(6);
+  void clearVoiceActivityTimeout() => $_clearField(6);
   @$pb.TagNumber(6)
   StreamingRecognitionConfig_VoiceActivityTimeout
       ensureVoiceActivityTimeout() => $_ensure(4);
@@ -726,6 +728,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
     $4.SpeechAdaptation? adaptation,
     $5.BoolValue? enableSpokenPunctuation,
     $5.BoolValue? enableSpokenEmojis,
+    $4.TranscriptNormalization? transcriptNormalization,
   }) {
     final $result = create();
     if (encoding != null) {
@@ -786,6 +789,9 @@ class RecognitionConfig extends $pb.GeneratedMessage {
     if (enableSpokenEmojis != null) {
       $result.enableSpokenEmojis = enableSpokenEmojis;
     }
+    if (transcriptNormalization != null) {
+      $result.transcriptNormalization = transcriptNormalization;
+    }
     return $result;
   }
   RecognitionConfig._() : super();
@@ -835,6 +841,9 @@ class RecognitionConfig extends $pb.GeneratedMessage {
         subBuilder: $5.BoolValue.create)
     ..aOM<$5.BoolValue>(23, _omitFieldNames ? '' : 'enableSpokenEmojis',
         subBuilder: $5.BoolValue.create)
+    ..aOM<$4.TranscriptNormalization>(
+        24, _omitFieldNames ? '' : 'transcriptNormalization',
+        subBuilder: $4.TranscriptNormalization.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -868,13 +877,13 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   RecognitionConfig_AudioEncoding get encoding => $_getN(0);
   @$pb.TagNumber(1)
   set encoding(RecognitionConfig_AudioEncoding v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasEncoding() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEncoding() => clearField(1);
+  void clearEncoding() => $_clearField(1);
 
   /// Sample rate in Hertz of the audio data sent in all
   /// `RecognitionAudio` messages. Valid values are: 8000-48000.
@@ -894,7 +903,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasSampleRateHertz() => $_has(1);
   @$pb.TagNumber(2)
-  void clearSampleRateHertz() => clearField(2);
+  void clearSampleRateHertz() => $_clearField(2);
 
   /// Required. The language of the supplied audio as a
   /// [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tag.
@@ -912,7 +921,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasLanguageCode() => $_has(2);
   @$pb.TagNumber(3)
-  void clearLanguageCode() => clearField(3);
+  void clearLanguageCode() => $_clearField(3);
 
   /// Maximum number of recognition hypotheses to be returned.
   /// Specifically, the maximum number of `SpeechRecognitionAlternative` messages
@@ -930,7 +939,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasMaxAlternatives() => $_has(3);
   @$pb.TagNumber(4)
-  void clearMaxAlternatives() => clearField(4);
+  void clearMaxAlternatives() => $_clearField(4);
 
   /// If set to `true`, the server will attempt to filter out
   /// profanities, replacing all but the initial character in each filtered word
@@ -946,7 +955,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasProfanityFilter() => $_has(4);
   @$pb.TagNumber(5)
-  void clearProfanityFilter() => clearField(5);
+  void clearProfanityFilter() => $_clearField(5);
 
   /// Array of [SpeechContext][google.cloud.speech.v1.SpeechContext].
   /// A means to provide context to assist the speech recognition. For more
@@ -954,7 +963,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   /// [speech
   /// adaptation](https://cloud.google.com/speech-to-text/docs/adaptation).
   @$pb.TagNumber(6)
-  $core.List<SpeechContext> get speechContexts => $_getList(5);
+  $pb.PbList<SpeechContext> get speechContexts => $_getList(5);
 
   /// The number of channels in the input audio data.
   /// ONLY set this for MULTI-CHANNEL recognition.
@@ -974,7 +983,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasAudioChannelCount() => $_has(6);
   @$pb.TagNumber(7)
-  void clearAudioChannelCount() => clearField(7);
+  void clearAudioChannelCount() => $_clearField(7);
 
   /// If `true`, the top result includes a list of words and
   /// the start and end time offsets (timestamps) for those words. If
@@ -990,20 +999,20 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasEnableWordTimeOffsets() => $_has(7);
   @$pb.TagNumber(8)
-  void clearEnableWordTimeOffsets() => clearField(8);
+  void clearEnableWordTimeOffsets() => $_clearField(8);
 
   /// Metadata regarding this request.
   @$pb.TagNumber(9)
   RecognitionMetadata get metadata => $_getN(8);
   @$pb.TagNumber(9)
   set metadata(RecognitionMetadata v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasMetadata() => $_has(8);
   @$pb.TagNumber(9)
-  void clearMetadata() => clearField(9);
+  void clearMetadata() => $_clearField(9);
   @$pb.TagNumber(9)
   RecognitionMetadata ensureMetadata() => $_ensure(8);
 
@@ -1021,7 +1030,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $core.bool hasEnableAutomaticPunctuation() => $_has(9);
   @$pb.TagNumber(11)
-  void clearEnableAutomaticPunctuation() => clearField(11);
+  void clearEnableAutomaticPunctuation() => $_clearField(11);
 
   /// This needs to be set to `true` explicitly and `audio_channel_count` > 1
   /// to get each channel recognized separately. The recognition result will
@@ -1039,7 +1048,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.bool hasEnableSeparateRecognitionPerChannel() => $_has(10);
   @$pb.TagNumber(12)
-  void clearEnableSeparateRecognitionPerChannel() => clearField(12);
+  void clearEnableSeparateRecognitionPerChannel() => $_clearField(12);
 
   /// Which model to select for the given request. Select the model
   /// best suited to your domain to get best results. If a model is not
@@ -1102,7 +1111,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(13)
   $core.bool hasModel() => $_has(11);
   @$pb.TagNumber(13)
-  void clearModel() => clearField(13);
+  void clearModel() => $_clearField(13);
 
   ///  Set to true to use an enhanced model for speech recognition.
   ///  If `use_enhanced` is set to true and the `model` field is not set, then
@@ -1122,7 +1131,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $core.bool hasUseEnhanced() => $_has(12);
   @$pb.TagNumber(14)
-  void clearUseEnhanced() => clearField(14);
+  void clearUseEnhanced() => $_clearField(14);
 
   /// If `true`, the top result includes a list of words and the
   /// confidence for those words. If `false`, no word-level confidence
@@ -1137,7 +1146,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   $core.bool hasEnableWordConfidence() => $_has(13);
   @$pb.TagNumber(15)
-  void clearEnableWordConfidence() => clearField(15);
+  void clearEnableWordConfidence() => $_clearField(15);
 
   /// A list of up to 3 additional
   /// [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tags,
@@ -1152,7 +1161,7 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   /// and performance may vary for other use cases (e.g., phone call
   /// transcription).
   @$pb.TagNumber(18)
-  $core.List<$core.String> get alternativeLanguageCodes => $_getList(14);
+  $pb.PbList<$core.String> get alternativeLanguageCodes => $_getList(14);
 
   /// Config to enable speaker diarization and set additional
   /// parameters to make diarization better suited for your application.
@@ -1166,13 +1175,13 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   SpeakerDiarizationConfig get diarizationConfig => $_getN(15);
   @$pb.TagNumber(19)
   set diarizationConfig(SpeakerDiarizationConfig v) {
-    setField(19, v);
+    $_setField(19, v);
   }
 
   @$pb.TagNumber(19)
   $core.bool hasDiarizationConfig() => $_has(15);
   @$pb.TagNumber(19)
-  void clearDiarizationConfig() => clearField(19);
+  void clearDiarizationConfig() => $_clearField(19);
   @$pb.TagNumber(19)
   SpeakerDiarizationConfig ensureDiarizationConfig() => $_ensure(15);
 
@@ -1185,13 +1194,13 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   $4.SpeechAdaptation get adaptation => $_getN(16);
   @$pb.TagNumber(20)
   set adaptation($4.SpeechAdaptation v) {
-    setField(20, v);
+    $_setField(20, v);
   }
 
   @$pb.TagNumber(20)
   $core.bool hasAdaptation() => $_has(16);
   @$pb.TagNumber(20)
-  void clearAdaptation() => clearField(20);
+  void clearAdaptation() => $_clearField(20);
   @$pb.TagNumber(20)
   $4.SpeechAdaptation ensureAdaptation() => $_ensure(16);
 
@@ -1206,13 +1215,13 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   $5.BoolValue get enableSpokenPunctuation => $_getN(17);
   @$pb.TagNumber(22)
   set enableSpokenPunctuation($5.BoolValue v) {
-    setField(22, v);
+    $_setField(22, v);
   }
 
   @$pb.TagNumber(22)
   $core.bool hasEnableSpokenPunctuation() => $_has(17);
   @$pb.TagNumber(22)
-  void clearEnableSpokenPunctuation() => clearField(22);
+  void clearEnableSpokenPunctuation() => $_clearField(22);
   @$pb.TagNumber(22)
   $5.BoolValue ensureEnableSpokenPunctuation() => $_ensure(17);
 
@@ -1225,15 +1234,33 @@ class RecognitionConfig extends $pb.GeneratedMessage {
   $5.BoolValue get enableSpokenEmojis => $_getN(18);
   @$pb.TagNumber(23)
   set enableSpokenEmojis($5.BoolValue v) {
-    setField(23, v);
+    $_setField(23, v);
   }
 
   @$pb.TagNumber(23)
   $core.bool hasEnableSpokenEmojis() => $_has(18);
   @$pb.TagNumber(23)
-  void clearEnableSpokenEmojis() => clearField(23);
+  void clearEnableSpokenEmojis() => $_clearField(23);
   @$pb.TagNumber(23)
   $5.BoolValue ensureEnableSpokenEmojis() => $_ensure(18);
+
+  /// Optional. Use transcription normalization to automatically replace parts of
+  /// the transcript with phrases of your choosing. For StreamingRecognize, this
+  /// normalization only applies to stable partial transcripts (stability > 0.8)
+  /// and final transcripts.
+  @$pb.TagNumber(24)
+  $4.TranscriptNormalization get transcriptNormalization => $_getN(19);
+  @$pb.TagNumber(24)
+  set transcriptNormalization($4.TranscriptNormalization v) {
+    $_setField(24, v);
+  }
+
+  @$pb.TagNumber(24)
+  $core.bool hasTranscriptNormalization() => $_has(19);
+  @$pb.TagNumber(24)
+  void clearTranscriptNormalization() => $_clearField(24);
+  @$pb.TagNumber(24)
+  $4.TranscriptNormalization ensureTranscriptNormalization() => $_ensure(19);
 }
 
 /// Config to enable speaker diarization.
@@ -1307,8 +1334,8 @@ class SpeakerDiarizationConfig extends $pb.GeneratedMessage {
   static SpeakerDiarizationConfig? _defaultInstance;
 
   /// If 'true', enables speaker detection for each recognized word in
-  /// the top alternative of the recognition result using a speaker_tag provided
-  /// in the WordInfo.
+  /// the top alternative of the recognition result using a speaker_label
+  /// provided in the WordInfo.
   @$pb.TagNumber(1)
   $core.bool get enableSpeakerDiarization => $_getBF(0);
   @$pb.TagNumber(1)
@@ -1319,7 +1346,7 @@ class SpeakerDiarizationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasEnableSpeakerDiarization() => $_has(0);
   @$pb.TagNumber(1)
-  void clearEnableSpeakerDiarization() => clearField(1);
+  void clearEnableSpeakerDiarization() => $_clearField(1);
 
   /// Minimum number of speakers in the conversation. This range gives you more
   /// flexibility by allowing the system to automatically determine the correct
@@ -1334,7 +1361,7 @@ class SpeakerDiarizationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMinSpeakerCount() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMinSpeakerCount() => clearField(2);
+  void clearMinSpeakerCount() => $_clearField(2);
 
   /// Maximum number of speakers in the conversation. This range gives you more
   /// flexibility by allowing the system to automatically determine the correct
@@ -1349,7 +1376,7 @@ class SpeakerDiarizationConfig extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasMaxSpeakerCount() => $_has(2);
   @$pb.TagNumber(3)
-  void clearMaxSpeakerCount() => clearField(3);
+  void clearMaxSpeakerCount() => $_clearField(3);
 
   /// Output only. Unused.
   @$core.Deprecated('This field is deprecated.')
@@ -1366,10 +1393,11 @@ class SpeakerDiarizationConfig extends $pb.GeneratedMessage {
   $core.bool hasSpeakerTag() => $_has(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  void clearSpeakerTag() => clearField(5);
+  void clearSpeakerTag() => $_clearField(5);
 }
 
 /// Description of audio data to be recognized.
+@$core.Deprecated('This message is deprecated')
 class RecognitionMetadata extends $pb.GeneratedMessage {
   factory RecognitionMetadata({
     RecognitionMetadata_InteractionType? interactionType,
@@ -1480,13 +1508,13 @@ class RecognitionMetadata extends $pb.GeneratedMessage {
   RecognitionMetadata_InteractionType get interactionType => $_getN(0);
   @$pb.TagNumber(1)
   set interactionType(RecognitionMetadata_InteractionType v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasInteractionType() => $_has(0);
   @$pb.TagNumber(1)
-  void clearInteractionType() => clearField(1);
+  void clearInteractionType() => $_clearField(1);
 
   /// The industry vertical to which this speech recognition request most
   /// closely applies. This is most indicative of the topics contained
@@ -1502,46 +1530,46 @@ class RecognitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasIndustryNaicsCodeOfAudio() => $_has(1);
   @$pb.TagNumber(3)
-  void clearIndustryNaicsCodeOfAudio() => clearField(3);
+  void clearIndustryNaicsCodeOfAudio() => $_clearField(3);
 
   /// The audio type that most closely describes the audio being recognized.
   @$pb.TagNumber(4)
   RecognitionMetadata_MicrophoneDistance get microphoneDistance => $_getN(2);
   @$pb.TagNumber(4)
   set microphoneDistance(RecognitionMetadata_MicrophoneDistance v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasMicrophoneDistance() => $_has(2);
   @$pb.TagNumber(4)
-  void clearMicrophoneDistance() => clearField(4);
+  void clearMicrophoneDistance() => $_clearField(4);
 
   /// The original media the speech was recorded on.
   @$pb.TagNumber(5)
   RecognitionMetadata_OriginalMediaType get originalMediaType => $_getN(3);
   @$pb.TagNumber(5)
   set originalMediaType(RecognitionMetadata_OriginalMediaType v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasOriginalMediaType() => $_has(3);
   @$pb.TagNumber(5)
-  void clearOriginalMediaType() => clearField(5);
+  void clearOriginalMediaType() => $_clearField(5);
 
   /// The type of device the speech was recorded with.
   @$pb.TagNumber(6)
   RecognitionMetadata_RecordingDeviceType get recordingDeviceType => $_getN(4);
   @$pb.TagNumber(6)
   set recordingDeviceType(RecognitionMetadata_RecordingDeviceType v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasRecordingDeviceType() => $_has(4);
   @$pb.TagNumber(6)
-  void clearRecordingDeviceType() => clearField(6);
+  void clearRecordingDeviceType() => $_clearField(6);
 
   /// The device used to make the recording.  Examples 'Nexus 5X' or
   /// 'Polycom SoundStation IP 6000' or 'POTS' or 'VoIP' or
@@ -1556,7 +1584,7 @@ class RecognitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   $core.bool hasRecordingDeviceName() => $_has(5);
   @$pb.TagNumber(7)
-  void clearRecordingDeviceName() => clearField(7);
+  void clearRecordingDeviceName() => $_clearField(7);
 
   /// Mime type of the original audio file.  For example `audio/m4a`,
   /// `audio/x-alaw-basic`, `audio/mp3`, `audio/3gpp`.
@@ -1572,7 +1600,7 @@ class RecognitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasOriginalMimeType() => $_has(6);
   @$pb.TagNumber(8)
-  void clearOriginalMimeType() => clearField(8);
+  void clearOriginalMimeType() => $_clearField(8);
 
   /// Description of the content. Eg. "Recordings of federal supreme court
   /// hearings from 2012".
@@ -1586,7 +1614,7 @@ class RecognitionMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasAudioTopic() => $_has(7);
   @$pb.TagNumber(10)
-  void clearAudioTopic() => clearField(10);
+  void clearAudioTopic() => $_clearField(10);
 }
 
 /// Provides "hints" to the speech recognizer to favor specific words and phrases
@@ -1658,7 +1686,7 @@ class SpeechContext extends $pb.GeneratedMessage {
   ///  improves the likelihood of correctly transcribing audio that includes
   ///  months.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get phrases => $_getList(0);
+  $pb.PbList<$core.String> get phrases => $_getList(0);
 
   /// Hint Boost. Positive value will increase the probability that a specific
   /// phrase will be recognized over other similar sounding phrases. The higher
@@ -1678,7 +1706,7 @@ class SpeechContext extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasBoost() => $_has(1);
   @$pb.TagNumber(4)
-  void clearBoost() => clearField(4);
+  void clearBoost() => $_clearField(4);
 }
 
 enum RecognitionAudio_AudioSource { content, uri, notSet }
@@ -1751,7 +1779,7 @@ class RecognitionAudio extends $pb.GeneratedMessage {
 
   RecognitionAudio_AudioSource whichAudioSource() =>
       _RecognitionAudio_AudioSourceByTag[$_whichOneof(0)]!;
-  void clearAudioSource() => clearField($_whichOneof(0));
+  void clearAudioSource() => $_clearField($_whichOneof(0));
 
   /// The audio data bytes encoded as specified in
   /// `RecognitionConfig`. Note: as with all bytes fields, proto buffers use a
@@ -1766,7 +1794,7 @@ class RecognitionAudio extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasContent() => $_has(0);
   @$pb.TagNumber(1)
-  void clearContent() => clearField(1);
+  void clearContent() => $_clearField(1);
 
   /// URI that points to a file that contains audio data bytes as specified in
   /// `RecognitionConfig`. The file must not be compressed (for example, gzip).
@@ -1786,7 +1814,7 @@ class RecognitionAudio extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasUri() => $_has(1);
   @$pb.TagNumber(2)
-  void clearUri() => clearField(2);
+  void clearUri() => $_clearField(2);
 }
 
 /// The only message returned to the client by the `Recognize` method. It
@@ -1864,20 +1892,20 @@ class RecognizeResponse extends $pb.GeneratedMessage {
   /// Sequential list of transcription results corresponding to
   /// sequential portions of audio.
   @$pb.TagNumber(2)
-  $core.List<SpeechRecognitionResult> get results => $_getList(0);
+  $pb.PbList<SpeechRecognitionResult> get results => $_getList(0);
 
   /// When available, billed audio seconds for the corresponding request.
   @$pb.TagNumber(3)
   $3.Duration get totalBilledTime => $_getN(1);
   @$pb.TagNumber(3)
   set totalBilledTime($3.Duration v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasTotalBilledTime() => $_has(1);
   @$pb.TagNumber(3)
-  void clearTotalBilledTime() => clearField(3);
+  void clearTotalBilledTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $3.Duration ensureTotalBilledTime() => $_ensure(1);
 
@@ -1886,13 +1914,13 @@ class RecognizeResponse extends $pb.GeneratedMessage {
   SpeechAdaptationInfo get speechAdaptationInfo => $_getN(2);
   @$pb.TagNumber(7)
   set speechAdaptationInfo(SpeechAdaptationInfo v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasSpeechAdaptationInfo() => $_has(2);
   @$pb.TagNumber(7)
-  void clearSpeechAdaptationInfo() => clearField(7);
+  void clearSpeechAdaptationInfo() => $_clearField(7);
   @$pb.TagNumber(7)
   SpeechAdaptationInfo ensureSpeechAdaptationInfo() => $_ensure(2);
 
@@ -1908,7 +1936,7 @@ class RecognizeResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $core.bool hasRequestId() => $_has(3);
   @$pb.TagNumber(8)
-  void clearRequestId() => clearField(8);
+  void clearRequestId() => $_clearField(8);
 }
 
 /// The only message returned to the client by the `LongRunningRecognize` method.
@@ -2004,20 +2032,20 @@ class LongRunningRecognizeResponse extends $pb.GeneratedMessage {
   /// Sequential list of transcription results corresponding to
   /// sequential portions of audio.
   @$pb.TagNumber(2)
-  $core.List<SpeechRecognitionResult> get results => $_getList(0);
+  $pb.PbList<SpeechRecognitionResult> get results => $_getList(0);
 
   /// When available, billed audio seconds for the corresponding request.
   @$pb.TagNumber(3)
   $3.Duration get totalBilledTime => $_getN(1);
   @$pb.TagNumber(3)
   set totalBilledTime($3.Duration v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasTotalBilledTime() => $_has(1);
   @$pb.TagNumber(3)
-  void clearTotalBilledTime() => clearField(3);
+  void clearTotalBilledTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $3.Duration ensureTotalBilledTime() => $_ensure(1);
 
@@ -2026,13 +2054,13 @@ class LongRunningRecognizeResponse extends $pb.GeneratedMessage {
   TranscriptOutputConfig get outputConfig => $_getN(2);
   @$pb.TagNumber(6)
   set outputConfig(TranscriptOutputConfig v) {
-    setField(6, v);
+    $_setField(6, v);
   }
 
   @$pb.TagNumber(6)
   $core.bool hasOutputConfig() => $_has(2);
   @$pb.TagNumber(6)
-  void clearOutputConfig() => clearField(6);
+  void clearOutputConfig() => $_clearField(6);
   @$pb.TagNumber(6)
   TranscriptOutputConfig ensureOutputConfig() => $_ensure(2);
 
@@ -2041,13 +2069,13 @@ class LongRunningRecognizeResponse extends $pb.GeneratedMessage {
   $6.Status get outputError => $_getN(3);
   @$pb.TagNumber(7)
   set outputError($6.Status v) {
-    setField(7, v);
+    $_setField(7, v);
   }
 
   @$pb.TagNumber(7)
   $core.bool hasOutputError() => $_has(3);
   @$pb.TagNumber(7)
-  void clearOutputError() => clearField(7);
+  void clearOutputError() => $_clearField(7);
   @$pb.TagNumber(7)
   $6.Status ensureOutputError() => $_ensure(3);
 
@@ -2056,13 +2084,13 @@ class LongRunningRecognizeResponse extends $pb.GeneratedMessage {
   SpeechAdaptationInfo get speechAdaptationInfo => $_getN(4);
   @$pb.TagNumber(8)
   set speechAdaptationInfo(SpeechAdaptationInfo v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasSpeechAdaptationInfo() => $_has(4);
   @$pb.TagNumber(8)
-  void clearSpeechAdaptationInfo() => clearField(8);
+  void clearSpeechAdaptationInfo() => $_clearField(8);
   @$pb.TagNumber(8)
   SpeechAdaptationInfo ensureSpeechAdaptationInfo() => $_ensure(4);
 
@@ -2078,7 +2106,7 @@ class LongRunningRecognizeResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $core.bool hasRequestId() => $_has(5);
   @$pb.TagNumber(9)
-  void clearRequestId() => clearField(9);
+  void clearRequestId() => $_clearField(9);
 }
 
 /// Describes the progress of a long-running `LongRunningRecognize` call. It is
@@ -2167,20 +2195,20 @@ class LongRunningRecognizeMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasProgressPercent() => $_has(0);
   @$pb.TagNumber(1)
-  void clearProgressPercent() => clearField(1);
+  void clearProgressPercent() => $_clearField(1);
 
   /// Time when the request was received.
   @$pb.TagNumber(2)
   $7.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
   set startTime($7.Timestamp v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearStartTime() => clearField(2);
+  void clearStartTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $7.Timestamp ensureStartTime() => $_ensure(1);
 
@@ -2189,13 +2217,13 @@ class LongRunningRecognizeMetadata extends $pb.GeneratedMessage {
   $7.Timestamp get lastUpdateTime => $_getN(2);
   @$pb.TagNumber(3)
   set lastUpdateTime($7.Timestamp v) {
-    setField(3, v);
+    $_setField(3, v);
   }
 
   @$pb.TagNumber(3)
   $core.bool hasLastUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
-  void clearLastUpdateTime() => clearField(3);
+  void clearLastUpdateTime() => $_clearField(3);
   @$pb.TagNumber(3)
   $7.Timestamp ensureLastUpdateTime() => $_ensure(2);
 
@@ -2211,7 +2239,7 @@ class LongRunningRecognizeMetadata extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasUri() => $_has(3);
   @$pb.TagNumber(4)
-  void clearUri() => clearField(4);
+  void clearUri() => $_clearField(4);
 }
 
 ///  `StreamingRecognizeResponse` is the only message returned to the client by
@@ -2363,13 +2391,13 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   $6.Status get error => $_getN(0);
   @$pb.TagNumber(1)
   set error($6.Status v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasError() => $_has(0);
   @$pb.TagNumber(1)
-  void clearError() => clearField(1);
+  void clearError() => $_clearField(1);
   @$pb.TagNumber(1)
   $6.Status ensureError() => $_ensure(0);
 
@@ -2378,20 +2406,20 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   /// It contains zero or one `is_final=true` result (the newly settled portion),
   /// followed by zero or more `is_final=false` results (the interim results).
   @$pb.TagNumber(2)
-  $core.List<StreamingRecognitionResult> get results => $_getList(1);
+  $pb.PbList<StreamingRecognitionResult> get results => $_getList(1);
 
   /// Indicates the type of speech event.
   @$pb.TagNumber(4)
   StreamingRecognizeResponse_SpeechEventType get speechEventType => $_getN(2);
   @$pb.TagNumber(4)
   set speechEventType(StreamingRecognizeResponse_SpeechEventType v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasSpeechEventType() => $_has(2);
   @$pb.TagNumber(4)
-  void clearSpeechEventType() => clearField(4);
+  void clearSpeechEventType() => $_clearField(4);
 
   /// When available, billed audio seconds for the stream.
   /// Set only if this is the last response in the stream.
@@ -2399,13 +2427,13 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   $3.Duration get totalBilledTime => $_getN(3);
   @$pb.TagNumber(5)
   set totalBilledTime($3.Duration v) {
-    setField(5, v);
+    $_setField(5, v);
   }
 
   @$pb.TagNumber(5)
   $core.bool hasTotalBilledTime() => $_has(3);
   @$pb.TagNumber(5)
-  void clearTotalBilledTime() => clearField(5);
+  void clearTotalBilledTime() => $_clearField(5);
   @$pb.TagNumber(5)
   $3.Duration ensureTotalBilledTime() => $_ensure(3);
 
@@ -2414,13 +2442,13 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   $3.Duration get speechEventTime => $_getN(4);
   @$pb.TagNumber(8)
   set speechEventTime($3.Duration v) {
-    setField(8, v);
+    $_setField(8, v);
   }
 
   @$pb.TagNumber(8)
   $core.bool hasSpeechEventTime() => $_has(4);
   @$pb.TagNumber(8)
-  void clearSpeechEventTime() => clearField(8);
+  void clearSpeechEventTime() => $_clearField(8);
   @$pb.TagNumber(8)
   $3.Duration ensureSpeechEventTime() => $_ensure(4);
 
@@ -2429,13 +2457,13 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   SpeechAdaptationInfo get speechAdaptationInfo => $_getN(5);
   @$pb.TagNumber(9)
   set speechAdaptationInfo(SpeechAdaptationInfo v) {
-    setField(9, v);
+    $_setField(9, v);
   }
 
   @$pb.TagNumber(9)
   $core.bool hasSpeechAdaptationInfo() => $_has(5);
   @$pb.TagNumber(9)
-  void clearSpeechAdaptationInfo() => clearField(9);
+  void clearSpeechAdaptationInfo() => $_clearField(9);
   @$pb.TagNumber(9)
   SpeechAdaptationInfo ensureSpeechAdaptationInfo() => $_ensure(5);
 
@@ -2451,7 +2479,7 @@ class StreamingRecognizeResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $core.bool hasRequestId() => $_has(6);
   @$pb.TagNumber(10)
-  void clearRequestId() => clearField(10);
+  void clearRequestId() => $_clearField(10);
 }
 
 /// A streaming speech recognition result corresponding to a portion of the audio
@@ -2541,7 +2569,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   /// These alternatives are ordered in terms of accuracy, with the top (first)
   /// alternative being the most probable, as ranked by the recognizer.
   @$pb.TagNumber(1)
-  $core.List<SpeechRecognitionAlternative> get alternatives => $_getList(0);
+  $pb.PbList<SpeechRecognitionAlternative> get alternatives => $_getList(0);
 
   /// If `false`, this `StreamingRecognitionResult` represents an
   /// interim result that may change. If `true`, this is the final time the
@@ -2558,7 +2586,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasIsFinal() => $_has(1);
   @$pb.TagNumber(2)
-  void clearIsFinal() => clearField(2);
+  void clearIsFinal() => $_clearField(2);
 
   /// An estimate of the likelihood that the recognizer will not
   /// change its guess about this interim result. Values range from 0.0
@@ -2575,7 +2603,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasStability() => $_has(2);
   @$pb.TagNumber(3)
-  void clearStability() => clearField(3);
+  void clearStability() => $_clearField(3);
 
   /// Time offset of the end of this result relative to the
   /// beginning of the audio.
@@ -2583,13 +2611,13 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   $3.Duration get resultEndTime => $_getN(3);
   @$pb.TagNumber(4)
   set resultEndTime($3.Duration v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasResultEndTime() => $_has(3);
   @$pb.TagNumber(4)
-  void clearResultEndTime() => clearField(4);
+  void clearResultEndTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $3.Duration ensureResultEndTime() => $_ensure(3);
 
@@ -2606,7 +2634,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasChannelTag() => $_has(4);
   @$pb.TagNumber(5)
-  void clearChannelTag() => clearField(5);
+  void clearChannelTag() => $_clearField(5);
 
   /// Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
   /// language tag of the language in this result. This language code was
@@ -2621,7 +2649,7 @@ class StreamingRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   $core.bool hasLanguageCode() => $_has(5);
   @$pb.TagNumber(6)
-  void clearLanguageCode() => clearField(6);
+  void clearLanguageCode() => $_clearField(6);
 }
 
 /// A speech recognition result corresponding to a portion of the audio.
@@ -2699,7 +2727,7 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   /// These alternatives are ordered in terms of accuracy, with the top (first)
   /// alternative being the most probable, as ranked by the recognizer.
   @$pb.TagNumber(1)
-  $core.List<SpeechRecognitionAlternative> get alternatives => $_getList(0);
+  $pb.PbList<SpeechRecognitionAlternative> get alternatives => $_getList(0);
 
   /// For multi-channel audio, this is the channel number corresponding to the
   /// recognized result for the audio from that channel.
@@ -2714,7 +2742,7 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasChannelTag() => $_has(1);
   @$pb.TagNumber(2)
-  void clearChannelTag() => clearField(2);
+  void clearChannelTag() => $_clearField(2);
 
   /// Time offset of the end of this result relative to the
   /// beginning of the audio.
@@ -2722,13 +2750,13 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   $3.Duration get resultEndTime => $_getN(2);
   @$pb.TagNumber(4)
   set resultEndTime($3.Duration v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasResultEndTime() => $_has(2);
   @$pb.TagNumber(4)
-  void clearResultEndTime() => clearField(4);
+  void clearResultEndTime() => $_clearField(4);
   @$pb.TagNumber(4)
   $3.Duration ensureResultEndTime() => $_ensure(2);
 
@@ -2745,7 +2773,7 @@ class SpeechRecognitionResult extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $core.bool hasLanguageCode() => $_has(3);
   @$pb.TagNumber(5)
-  void clearLanguageCode() => clearField(5);
+  void clearLanguageCode() => $_clearField(5);
 }
 
 /// Alternative hypotheses (a.k.a. n-best list).
@@ -2828,7 +2856,7 @@ class SpeechRecognitionAlternative extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasTranscript() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTranscript() => clearField(1);
+  void clearTranscript() => $_clearField(1);
 
   /// The confidence estimate between 0.0 and 1.0. A higher number
   /// indicates an estimated greater likelihood that the recognized words are
@@ -2847,13 +2875,13 @@ class SpeechRecognitionAlternative extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasConfidence() => $_has(1);
   @$pb.TagNumber(2)
-  void clearConfidence() => clearField(2);
+  void clearConfidence() => $_clearField(2);
 
   /// A list of word-specific information for each recognized word.
   /// Note: When `enable_speaker_diarization` is true, you will see all the words
   /// from the beginning of the audio.
   @$pb.TagNumber(3)
-  $core.List<WordInfo> get words => $_getList(2);
+  $pb.PbList<WordInfo> get words => $_getList(2);
 }
 
 /// Word-specific information for recognized words.
@@ -2863,7 +2891,8 @@ class WordInfo extends $pb.GeneratedMessage {
     $3.Duration? endTime,
     $core.String? word,
     $core.double? confidence,
-    $core.int? speakerTag,
+    @$core.Deprecated('This field is deprecated.') $core.int? speakerTag,
+    $core.String? speakerLabel,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -2879,7 +2908,11 @@ class WordInfo extends $pb.GeneratedMessage {
       $result.confidence = confidence;
     }
     if (speakerTag != null) {
+      // ignore: deprecated_member_use_from_same_package
       $result.speakerTag = speakerTag;
+    }
+    if (speakerLabel != null) {
+      $result.speakerLabel = speakerLabel;
     }
     return $result;
   }
@@ -2904,6 +2937,7 @@ class WordInfo extends $pb.GeneratedMessage {
     ..a<$core.double>(
         4, _omitFieldNames ? '' : 'confidence', $pb.PbFieldType.OF)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'speakerTag', $pb.PbFieldType.O3)
+    ..aOS(6, _omitFieldNames ? '' : 'speakerLabel')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -2937,13 +2971,13 @@ class WordInfo extends $pb.GeneratedMessage {
   $3.Duration get startTime => $_getN(0);
   @$pb.TagNumber(1)
   set startTime($3.Duration v) {
-    setField(1, v);
+    $_setField(1, v);
   }
 
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
-  void clearStartTime() => clearField(1);
+  void clearStartTime() => $_clearField(1);
   @$pb.TagNumber(1)
   $3.Duration ensureStartTime() => $_ensure(0);
 
@@ -2957,13 +2991,13 @@ class WordInfo extends $pb.GeneratedMessage {
   $3.Duration get endTime => $_getN(1);
   @$pb.TagNumber(2)
   set endTime($3.Duration v) {
-    setField(2, v);
+    $_setField(2, v);
   }
 
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEndTime() => clearField(2);
+  void clearEndTime() => $_clearField(2);
   @$pb.TagNumber(2)
   $3.Duration ensureEndTime() => $_ensure(1);
 
@@ -2978,7 +3012,7 @@ class WordInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasWord() => $_has(2);
   @$pb.TagNumber(3)
-  void clearWord() => clearField(3);
+  void clearWord() => $_clearField(3);
 
   /// The confidence estimate between 0.0 and 1.0. A higher number
   /// indicates an estimated greater likelihood that the recognized words are
@@ -2997,24 +3031,47 @@ class WordInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasConfidence() => $_has(3);
   @$pb.TagNumber(4)
-  void clearConfidence() => clearField(4);
+  void clearConfidence() => $_clearField(4);
 
   /// Output only. A distinct integer value is assigned for every speaker within
   /// the audio. This field specifies which one of those speakers was detected to
   /// have spoken this word. Value ranges from '1' to diarization_speaker_count.
-  /// speaker_tag is set if enable_speaker_diarization = 'true' and only in the
+  /// speaker_tag is set if enable_speaker_diarization = 'true' and only for the
   /// top alternative.
+  /// Note: Use speaker_label instead.
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
   $core.int get speakerTag => $_getIZ(4);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
   set speakerTag($core.int v) {
     $_setSignedInt32(4, v);
   }
 
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
   $core.bool hasSpeakerTag() => $_has(4);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  void clearSpeakerTag() => clearField(5);
+  void clearSpeakerTag() => $_clearField(5);
+
+  /// Output only. A label value assigned for every unique speaker within the
+  /// audio. This field specifies which speaker was detected to have spoken this
+  /// word. For some models, like medical_conversation this can be actual speaker
+  /// role, for example "patient" or "provider", but generally this would be a
+  /// number identifying a speaker. This field is only set if
+  /// enable_speaker_diarization = 'true' and only for the top alternative.
+  @$pb.TagNumber(6)
+  $core.String get speakerLabel => $_getSZ(5);
+  @$pb.TagNumber(6)
+  set speakerLabel($core.String v) {
+    $_setString(5, v);
+  }
+
+  @$pb.TagNumber(6)
+  $core.bool hasSpeakerLabel() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearSpeakerLabel() => $_clearField(6);
 }
 
 /// Information on speech adaptation use in results
@@ -3085,7 +3142,7 @@ class SpeechAdaptationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasAdaptationTimeout() => $_has(0);
   @$pb.TagNumber(1)
-  void clearAdaptationTimeout() => clearField(1);
+  void clearAdaptationTimeout() => $_clearField(1);
 
   /// If set, returns a message specifying which part of the speech adaptation
   /// request timed out.
@@ -3099,7 +3156,7 @@ class SpeechAdaptationInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasTimeoutMessage() => $_has(1);
   @$pb.TagNumber(4)
-  void clearTimeoutMessage() => clearField(4);
+  void clearTimeoutMessage() => $_clearField(4);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/cloud/speech/v1/resource.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -12,6 +12,8 @@
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 /// An item of the class.
 class CustomClass_ClassItem extends $pb.GeneratedMessage {
@@ -76,7 +78,7 @@ class CustomClass_ClassItem extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 }
 
 /// A set of words or phrases that represents a common concept likely to appear
@@ -153,7 +155,7 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// If this custom class is a resource, the custom_class_id is the resource id
   /// of the CustomClass. Case sensitive.
@@ -167,11 +169,11 @@ class CustomClass extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasCustomClassId() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCustomClassId() => clearField(2);
+  void clearCustomClassId() => $_clearField(2);
 
   /// A collection of class items.
   @$pb.TagNumber(3)
-  $core.List<CustomClass_ClassItem> get items => $_getList(2);
+  $pb.PbList<CustomClass_ClassItem> get items => $_getList(2);
 }
 
 ///  A phrases containing words and phrase "hints" so that
@@ -264,7 +266,7 @@ class PhraseSet_Phrase extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(1)
-  void clearValue() => clearField(1);
+  void clearValue() => $_clearField(1);
 
   /// Hint Boost. Overrides the boost set at the phrase set level.
   /// Positive value will increase the probability that a specific phrase will
@@ -285,7 +287,7 @@ class PhraseSet_Phrase extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasBoost() => $_has(1);
   @$pb.TagNumber(2)
-  void clearBoost() => clearField(2);
+  void clearBoost() => $_clearField(2);
 }
 
 /// Provides "hints" to the speech recognizer to favor specific words and phrases
@@ -360,11 +362,11 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
-  void clearName() => clearField(1);
+  void clearName() => $_clearField(1);
 
   /// A list of word and phrases.
   @$pb.TagNumber(2)
-  $core.List<PhraseSet_Phrase> get phrases => $_getList(1);
+  $pb.PbList<PhraseSet_Phrase> get phrases => $_getList(1);
 
   /// Hint Boost. Positive value will increase the probability that a specific
   /// phrase will be recognized over other similar sounding phrases. The higher
@@ -385,7 +387,7 @@ class PhraseSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.bool hasBoost() => $_has(2);
   @$pb.TagNumber(4)
-  void clearBoost() => clearField(4);
+  void clearBoost() => $_clearField(4);
 }
 
 class SpeechAdaptation_ABNFGrammar extends $pb.GeneratedMessage {
@@ -444,7 +446,7 @@ class SpeechAdaptation_ABNFGrammar extends $pb.GeneratedMessage {
   /// All declarations and rules of an ABNF grammar broken up into multiple
   /// strings that will end up concatenated.
   @$pb.TagNumber(1)
-  $core.List<$core.String> get abnfStrings => $_getList(0);
+  $pb.PbList<$core.String> get abnfStrings => $_getList(0);
 }
 
 /// Speech adaptation configuration.
@@ -520,18 +522,18 @@ class SpeechAdaptation extends $pb.GeneratedMessage {
   /// phrase set's `name` blank and fill in the rest of its fields. Any
   /// phrase set can use any custom class.
   @$pb.TagNumber(1)
-  $core.List<PhraseSet> get phraseSets => $_getList(0);
+  $pb.PbList<PhraseSet> get phraseSets => $_getList(0);
 
   /// A collection of phrase set resource names to use.
   @$pb.TagNumber(2)
-  $core.List<$core.String> get phraseSetReferences => $_getList(1);
+  $pb.PbList<$core.String> get phraseSetReferences => $_getList(1);
 
   /// A collection of custom classes. To specify the classes inline, leave the
   /// class' `name` blank and fill in the rest of its fields, giving it a unique
   /// `custom_class_id`. Refer to the inline defined class in phrase hints by its
   /// `custom_class_id`.
   @$pb.TagNumber(3)
-  $core.List<CustomClass> get customClasses => $_getList(2);
+  $pb.PbList<CustomClass> get customClasses => $_getList(2);
 
   /// Augmented Backus-Naur form (ABNF) is a standardized grammar notation
   /// comprised by a set of derivation rules.
@@ -540,15 +542,184 @@ class SpeechAdaptation extends $pb.GeneratedMessage {
   SpeechAdaptation_ABNFGrammar get abnfGrammar => $_getN(3);
   @$pb.TagNumber(4)
   set abnfGrammar(SpeechAdaptation_ABNFGrammar v) {
-    setField(4, v);
+    $_setField(4, v);
   }
 
   @$pb.TagNumber(4)
   $core.bool hasAbnfGrammar() => $_has(3);
   @$pb.TagNumber(4)
-  void clearAbnfGrammar() => clearField(4);
+  void clearAbnfGrammar() => $_clearField(4);
   @$pb.TagNumber(4)
   SpeechAdaptation_ABNFGrammar ensureAbnfGrammar() => $_ensure(3);
+}
+
+/// A single replacement configuration.
+class TranscriptNormalization_Entry extends $pb.GeneratedMessage {
+  factory TranscriptNormalization_Entry({
+    $core.String? search,
+    $core.String? replace,
+    $core.bool? caseSensitive,
+  }) {
+    final $result = create();
+    if (search != null) {
+      $result.search = search;
+    }
+    if (replace != null) {
+      $result.replace = replace;
+    }
+    if (caseSensitive != null) {
+      $result.caseSensitive = caseSensitive;
+    }
+    return $result;
+  }
+  TranscriptNormalization_Entry._() : super();
+  factory TranscriptNormalization_Entry.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TranscriptNormalization_Entry.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TranscriptNormalization.Entry',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v1'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'search')
+    ..aOS(2, _omitFieldNames ? '' : 'replace')
+    ..aOB(3, _omitFieldNames ? '' : 'caseSensitive')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TranscriptNormalization_Entry clone() =>
+      TranscriptNormalization_Entry()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TranscriptNormalization_Entry copyWith(
+          void Function(TranscriptNormalization_Entry) updates) =>
+      super.copyWith(
+              (message) => updates(message as TranscriptNormalization_Entry))
+          as TranscriptNormalization_Entry;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static TranscriptNormalization_Entry create() =>
+      TranscriptNormalization_Entry._();
+  TranscriptNormalization_Entry createEmptyInstance() => create();
+  static $pb.PbList<TranscriptNormalization_Entry> createRepeated() =>
+      $pb.PbList<TranscriptNormalization_Entry>();
+  @$core.pragma('dart2js:noInline')
+  static TranscriptNormalization_Entry getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TranscriptNormalization_Entry>(create);
+  static TranscriptNormalization_Entry? _defaultInstance;
+
+  /// What to replace. Max length is 100 characters.
+  @$pb.TagNumber(1)
+  $core.String get search => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set search($core.String v) {
+    $_setString(0, v);
+  }
+
+  @$pb.TagNumber(1)
+  $core.bool hasSearch() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearSearch() => $_clearField(1);
+
+  /// What to replace with. Max length is 100 characters.
+  @$pb.TagNumber(2)
+  $core.String get replace => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set replace($core.String v) {
+    $_setString(1, v);
+  }
+
+  @$pb.TagNumber(2)
+  $core.bool hasReplace() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearReplace() => $_clearField(2);
+
+  /// Whether the search is case sensitive.
+  @$pb.TagNumber(3)
+  $core.bool get caseSensitive => $_getBF(2);
+  @$pb.TagNumber(3)
+  set caseSensitive($core.bool v) {
+    $_setBool(2, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasCaseSensitive() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearCaseSensitive() => $_clearField(3);
+}
+
+/// Transcription normalization configuration. Use transcription normalization
+/// to automatically replace parts of the transcript with phrases of your
+/// choosing. For StreamingRecognize, this normalization only applies to stable
+/// partial transcripts (stability > 0.8) and final transcripts.
+class TranscriptNormalization extends $pb.GeneratedMessage {
+  factory TranscriptNormalization({
+    $core.Iterable<TranscriptNormalization_Entry>? entries,
+  }) {
+    final $result = create();
+    if (entries != null) {
+      $result.entries.addAll(entries);
+    }
+    return $result;
+  }
+  TranscriptNormalization._() : super();
+  factory TranscriptNormalization.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory TranscriptNormalization.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'TranscriptNormalization',
+      package: const $pb.PackageName(
+          _omitMessageNames ? '' : 'google.cloud.speech.v1'),
+      createEmptyInstance: create)
+    ..pc<TranscriptNormalization_Entry>(
+        1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM,
+        subBuilder: TranscriptNormalization_Entry.create)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
+  TranscriptNormalization clone() =>
+      TranscriptNormalization()..mergeFromMessage(this);
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  TranscriptNormalization copyWith(
+          void Function(TranscriptNormalization) updates) =>
+      super.copyWith((message) => updates(message as TranscriptNormalization))
+          as TranscriptNormalization;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static TranscriptNormalization create() => TranscriptNormalization._();
+  TranscriptNormalization createEmptyInstance() => create();
+  static $pb.PbList<TranscriptNormalization> createRepeated() =>
+      $pb.PbList<TranscriptNormalization>();
+  @$core.pragma('dart2js:noInline')
+  static TranscriptNormalization getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<TranscriptNormalization>(create);
+  static TranscriptNormalization? _defaultInstance;
+
+  /// A list of replacement entries. We will perform replacement with one entry
+  /// at a time. For example, the second entry in ["cat" => "dog", "mountain cat"
+  /// => "mountain dog"] will never be applied because we will always process the
+  /// first entry before it. At most 100 entries.
+  @$pb.TagNumber(1)
+  $pb.PbList<TranscriptNormalization_Entry> get entries => $_getList(0);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

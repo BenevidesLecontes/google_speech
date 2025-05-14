@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/rpc/status.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -14,6 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../protobuf/any.pb.dart' as $0;
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 ///  The `Status` type defines a logical error model that is suitable for
 ///  different programming environments, including REST APIs and RPC APIs. It is
@@ -91,7 +93,7 @@ class Status extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasCode() => $_has(0);
   @$pb.TagNumber(1)
-  void clearCode() => clearField(1);
+  void clearCode() => $_clearField(1);
 
   /// A developer-facing error message, which should be in English. Any
   /// user-facing error message should be localized and sent in the
@@ -107,12 +109,12 @@ class Status extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasMessage() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessage() => clearField(2);
+  void clearMessage() => $_clearField(2);
 
   /// A list of messages that carry the error details.  There is a common set of
   /// message types for APIs to use.
   @$pb.TagNumber(3)
-  $core.List<$0.Any> get details => $_getList(2);
+  $pb.PbList<$0.Any> get details => $_getList(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: google/api/label.proto
 //
-// @dart = 2.12
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names, library_prefixes
@@ -15,10 +15,15 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 /// Value types that can be used as label values.
 class LabelDescriptor_ValueType extends $pb.ProtobufEnum {
+  /// A variable-length string. This is the default.
   static const LabelDescriptor_ValueType STRING =
       LabelDescriptor_ValueType._(0, _omitEnumNames ? '' : 'STRING');
+
+  /// Boolean; true or false.
   static const LabelDescriptor_ValueType BOOL =
       LabelDescriptor_ValueType._(1, _omitEnumNames ? '' : 'BOOL');
+
+  /// A 64-bit signed integer.
   static const LabelDescriptor_ValueType INT64 =
       LabelDescriptor_ValueType._(2, _omitEnumNames ? '' : 'INT64');
 
@@ -33,7 +38,7 @@ class LabelDescriptor_ValueType extends $pb.ProtobufEnum {
       $pb.ProtobufEnum.initByValue(values);
   static LabelDescriptor_ValueType? valueOf($core.int value) => _byValue[value];
 
-  const LabelDescriptor_ValueType._($core.int v, $core.String n) : super(v, n);
+  const LabelDescriptor_ValueType._(super.v, super.n);
 }
 
 const _omitEnumNames = $core.bool.fromEnvironment('protobuf.omit_enum_names');

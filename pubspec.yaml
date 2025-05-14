@@ -9,14 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  grpc: ^3.2.4
-  protobuf: ^3.1.0
-  path_provider: ^2.1.2
-  fixnum: ^1.1.0
-  meta: ^1.9.1
-  googleapis_auth: ^1.4.1
-  http: ^1.2.0
-  rxdart: ^0.27.7
+  grpc: ^4.0.4
+  protobuf: ^4.0.0
+  path_provider: ^2.1.5
+  fixnum: ^1.1.1
+  meta: ^1.16.0
+  googleapis_auth: ^2.0.0
+  http: ^1.4.0
+  rxdart: ^0.28.0
 
 dependency_overrides:
   pedantic: ^1.11.1
@@ -25,11 +25,11 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   pedantic: ^1.11.1
-  mockito: ^5.4.2
+  mockito: ^5.4.6
 
 false_secrets:
-  - /test/*
-  - /example/*
+- /test/*
+- /example/*
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
